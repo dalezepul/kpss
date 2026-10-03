@@ -76,6 +76,9 @@ h2.sec{font-size:15px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;m
 @keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.2)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
 .owl .ear{transform-box:fill-box;transform-origin:center bottom;animation:ear 3.8s ease-in-out infinite}
 .owl .ear.r{animation-delay:-1.9s}
+.owl .baby{transform-box:fill-box;transform-origin:center bottom;animation:babyBob 2.2s ease-in-out infinite}
+@keyframes babyBob{50%{transform:translateY(-3px) rotate(5deg)}}
+.owl.happy .baby{animation:hop .5s var(--spring) 3}
 @keyframes ear{0%,80%,100%{transform:rotate(0)}88%{transform:rotate(-9deg)}94%{transform:rotate(7deg)}}
 .owl .wing{transform-box:fill-box;transform-origin:top center}
 .owl .joy,.owl .brow{opacity:0;transition:opacity .2s}
@@ -326,7 +329,7 @@ const sz = t => t.replace(/\{h\}/g, hit);
 /* ---------- durum ---------- */
 const KEY = "kpss-baykus-v1";
 const VARS = () => ({xp:0,testler:{},gorulen:{},yanlis:{},rozet:[],seri:{n:0,son:""},cozulen:0,dogru:0,temiz:0,
-  ayar:{testSayisi:10,soruSayisi:10,dersler:Object.keys(DERS),ses:true,isim:""},ek:[],yol:{},aktifYol:"karisik"});
+  ayar:{testSayisi:10,soruSayisi:10,dersler:Object.keys(DERS),ses:true,isim:"",mola:true},ek:[],yol:{},aktifYol:"karisik"});
 let S = VARS();
 try { const k = JSON.parse(localStorage.getItem(KEY)); if (k) S = Object.assign(VARS(), k, {ayar:Object.assign(VARS().ayar, k.ayar)}); } catch (e) {}
 if (S.testler) { if (Object.keys(S.testler).length && !Object.keys(S.yol).length) S.yol.karisik = S.testler; delete S.testler; }
@@ -379,6 +382,17 @@ function koala(cls = "") {
   <g class="wing r"><ellipse cx="84" cy="102" rx="9" ry="15" fill="#8592a7" transform="rotate(-30 84 102)"/></g>
   <path class="heart" d="M60 122C44 111 45 97 54 98c3 0 5 2 6 4 1-2 3-4 6-4 9-1 10 13-6 24z" fill="#ff4d7e" stroke="#fff" stroke-width="2"/>
   <ellipse cx="46" cy="127" rx="9" ry="4.5" fill="#8592a7"/><ellipse cx="74" cy="127" rx="9" ry="4.5" fill="#8592a7"/>
+  <g class="baby">
+    <circle cx="88" cy="96" r="7" fill="#a9b4c6"/><circle cx="88" cy="96" r="4" fill="#f6c9d6"/>
+    <circle cx="112" cy="96" r="7" fill="#a9b4c6"/><circle cx="112" cy="96" r="4" fill="#f6c9d6"/>
+    <ellipse cx="100" cy="118" rx="11" ry="10" fill="#97a3b6"/>
+    <ellipse cx="100" cy="104" rx="13" ry="11.5" fill="#b8c2d1"/>
+    <circle cx="95" cy="102" r="2.2" fill="#2a2540"/><circle cx="105" cy="102" r="2.2" fill="#2a2540"/>
+    <circle cx="95.7" cy="101.3" r=".8" fill="#fff"/><circle cx="105.7" cy="101.3" r=".8" fill="#fff"/>
+    <ellipse cx="100" cy="107" rx="3.6" ry="4.2" fill="#3b3552"/>
+    <circle cx="91" cy="107" r="2.2" fill="#ff9fbf" opacity=".8"/><circle cx="109" cy="107" r="2.2" fill="#ff9fbf" opacity=".8"/>
+    <ellipse cx="91" cy="115" rx="3.5" ry="6" fill="#8592a7" transform="rotate(45 91 115)"/>
+  </g>
   </g></svg>`;
 }
 
@@ -440,6 +454,7 @@ function goster(html, sonra) {
 function overlay(html, sure) {
   return new Promise(res => {
     const o = document.createElement("div"); o.className = "overlay"; o.setAttribute("role","dialog"); o.innerHTML = html;
+    document.activeElement?.blur?.(); // arkadaki düğme Enter ile yeniden tetiklenmesin
     document.body.appendChild(o);
     const kapat = () => { if (!o.isConnected) return; o.classList.add("out"); setTimeout(() => { o.remove(); res(); }, 240); document.removeEventListener("keydown", kd); };
     const kd = e => { if (e.key === "Enter" || e.key === " " || e.key === "Escape") { e.preventDefault(); kapat(); } };
@@ -495,7 +510,7 @@ function anaSayfa() {
         <div class="chips"><span class="chip fire ${seriAktif() && S.seri.n ? "on" : ""}" title="Günlük seri">🔥 ${seriAktif() ? S.seri.n : 0}</span><span class="chip" title="Toplam XP">⭐ ${S.xp}</span></div>
       </header>
       <section class="hero glass stagger">
-        <div class="speaker" style="--i:0">${koala()}<div class="bubble">${esc(sz(S.cozulen ? rnd(MOTIV) : "Merhaba {h}! Ben Pamuk 🐨 KPSS yolculuğunda hep yanındayım. İlk testle başlayalım mı? 💕"))}</div></div>
+        <div class="speaker" style="--i:0">${koala()}<div class="bubble">${esc(sz(S.cozulen ? rnd(MOTIV) : "Merhaba {h}! Ben Kucak Kucak 🐨, bu da yavrum Minik Minik. KPSS yolculuğunda hep yanındayız. Başlayalım mı? 💕"))}</div></div>
         <div class="lvl" style="--i:1">
           <div class="lvl-row"><span>Seviye ${sv.lv} · ${sv.unvan}</span><small>${sv.cur}/${sv.need} XP</small></div>
           <div class="bar"><i id="lvbar"></i></div>
@@ -517,13 +532,13 @@ function anaSayfa() {
       <h2 class="sec">Yol Haritaları</h2>
       <div class="yollar" role="tablist">${YL.map(y => { const n = Object.keys(yolTest(y.id)).filter(k => +k < N).length;
         return `<button class="yol ${y.id === Y.id ? "on" : ""}" role="tab" aria-selected="${y.id === Y.id}" style="--c:${y.c}" data-yol="${y.id}">${y.ic} ${esc(y.ad)} <small>${n}/${N}</small></button>`; }).join("")}</div>
-      <h2 class="sec yolbas" style="--c:${Y.c}">${Y.ic} ${esc(Y.ad)} Yolu · ${N} test × ${S.ayar.soruSayisi} soru</h2>
+      <h2 class="sec yolbas" style="--c:${Y.c}">${Y.ic} ${esc(Y.ad)} · ${N} test × ${S.ayar.soruSayisi} soru</h2>
       <div class="map" style="--c:${Y.c};height:${top(N - 1) + 90}px">
         <svg class="path" viewBox="0 0 100 ${top(N - 1) + 90}" preserveAspectRatio="none"><path d="${d}" vector-effect="non-scaling-stroke"/></svg>
         ${nodes}
       </div>
       <div class="pool">Bu yolda ${H.length} soru${Y.id === "karisik" ? " · " + Object.entries(sayim).map(([k, v]) => `<span>${DERS[k].ic} ${DERS[k].ad} ${v}</span>`).join("") : ""}</div>
-      ${Object.keys(TT).length ? `<div style="text-align:center;margin-top:14px"><button class="btn ghost" id="yolsifir" style="--c:${Y.c}">↺ ${esc(Y.ad)} yolunu sıfırla</button></div>` : ""}
+      ${Object.keys(TT).length ? `<div style="text-align:center;margin-top:14px"><button class="btn ghost" id="yolsifir" style="--c:${Y.c}">↺ ${esc(Y.ad)} ilerlemesini sıfırla</button></div>` : ""}
     </div>
     <div class="bdgs">
       <h2 class="sec">Rozetler</h2>
@@ -545,7 +560,7 @@ function anaSayfa() {
     $("#t-ayar").onclick = ayarlar;
     $("#yolsifir") && ($("#yolsifir").onclick = e => {
       if (!e.target.dataset.o) { e.target.dataset.o = 1; e.target.textContent = "Emin misin? Yıldızlar silinecek, tekrar dokun"; return; }
-      S.yol[Y.id] = {}; save(); toast("↺", Y.ad + " yolu sıfırlandı"); tutScroll = scrollY; anaSayfa();
+      S.yol[Y.id] = {}; save(); toast("↺", Y.ad + " sıfırlandı"); tutScroll = scrollY; anaSayfa();
     });
   });
 }
@@ -569,7 +584,9 @@ function hazirla(q) {
   return {...q, perm, dogruK: perm.indexOf(q.a)};
 }
 
+let basliyor = false;
 async function testBaslat(opt) {
+  if (basliyor) return;
   let sorular;
   if (opt.tip === "yanlis") {
     const m = new Map(tumu().map(q => [q.id, q]));
@@ -577,9 +594,11 @@ async function testBaslat(opt) {
   } else sorular = soruSec(S.ayar.soruSayisi, opt.yol || "karisik");
   if (!sorular.length) { toast("⚠️", "Seçili derslerde soru yok"); return; }
   T = {...opt, sorular:sorular.map(hazirla), i:0, dogru:0, combo:0, maxCombo:0, xp:0, cevap:[], t0:Date.now(), molaVerildi:false};
+  basliyor = true;
   if (!azHareket) {
     for (const n of ["3","2","1"]) await overlay(`<div class="ov-card"><div class="count">${n}</div></div>`, 650);
   }
+  basliyor = false;
   soruGoster();
 }
 
@@ -651,12 +670,12 @@ async function ilerle() {
   const n = T.sorular.length;
   // dikkat molası: yarıda bir kez, ya da 3 yanlış üst üste
   const sonUc = T.cevap.slice(-3);
-  if (n >= 6 && !T.molaVerildi && T.i === Math.floor(n / 2)) {
+  if (S.ayar.mola && n >= 6 && !T.molaVerildi && T.i === Math.floor(n / 2)) {
     T.molaVerildi = true;
     const [b, ipucu] = rnd(MOLA).map(sz);
     await overlay(`<div class="ov-card">${koala("happy")}<h2>${esc(b)}</h2><p>${T.dogru} / ${T.i} doğru · ${T.xp} XP topladın</p>
       ${b.includes("Nefes") ? '<div class="breath">nefes</div>' : ""}<div class="tip">💡 ${esc(ipucu)}</div><button class="btn gold wide" data-kapat>Devam et!</button></div>`);
-  } else if (sonUc.length === 3 && sonUc.every(c => !c.ok) && !T.teselli) {
+  } else if (S.ayar.mola && sonUc.length === 3 && sonUc.every(c => !c.ok) && !T.teselli) {
     T.teselli = true;
     await overlay(`<div class="ov-card">${koala("sad")}<h2>${esc(sz("Hey {h}, moral bozmak yok! 🤗"))}</h2><p>Zor sorular en çok öğreten sorulardır. Hepsini defterine yazdım, birlikte tekrar edeceğiz. Ben sana inanıyorum 💗</p>
       <div class="tip">💡 Soruyu okurken anahtar kelimelerin altını zihninde çiz.</div><button class="btn gold wide" data-kapat>Hadi devam!</button></div>`);
@@ -716,7 +735,7 @@ async function sonuc() {
     $("#r-ev").onclick = anaSayfa;
     if (lvSonra > lvOnce) setTimeout(() => {
       ses("lvl"); konfeti(200);
-      overlay(`<div class="ov-card">${koala("happy")}<h2>Seviye ${lvSonra}! 🎉</h2><p>Yeni unvanın: <b>${seviye(S.xp).unvan}</b></p><div class="tip">Pamuk da ben de seninle gurur duyuyoruz 💖</div><button class="btn gold wide" data-kapat>Süper!</button></div>`);
+      overlay(`<div class="ov-card">${koala("happy")}<h2>Seviye ${lvSonra}! 🎉</h2><p>Yeni unvanın: <b>${seviye(S.xp).unvan}</b></p><div class="tip">Kucak Kucak da Minik Minik de seninle gurur duyuyor 💖</div><button class="btn gold wide" data-kapat>Süper!</button></div>`);
     }, 1400);
   });
   T = null;
@@ -737,18 +756,19 @@ function ayarlar() {
       <p class="note">Sorular her başlatmada havuzdan rastgele seçilir; az gördüğün sorular önceliklidir.</p>
     </section>
     <section class="panel glass">
-      <h3>Karışık yolda hangi dersler olsun?</h3>
+      <h3>Karışık’ta hangi dersler olsun?</h3>
       <div class="checks">${Object.entries(DERS).map(([k, D]) => `<label class="ck" style="--c:${D.c}"><input type="checkbox" value="${k}" ${A.dersler.includes(k) ? "checked" : ""}><span>${D.ic} ${D.ad}</span></label>`).join("")}</div>
     </section>
     <section class="panel glass">
       <h3>Diğer</h3>
       <label style="display:block;font-weight:700;margin-bottom:6px" for="isim">Sana nasıl seslenelim? 💕</label>
       <input class="isim" id="isim" maxlength="24" placeholder="İsim ya da lakap (boşsa aşkım, sevgilim…)" value="${esc(A.isim || "")}">
+      <label class="row"><span>Test ortasında motivasyon molası</span><input type="checkbox" id="molak" ${A.mola ? "checked" : ""} style="width:22px;height:22px;accent-color:var(--gold)"></label>
       <label class="row"><span>Ses efektleri</span><input type="checkbox" id="sesk" ${A.ses ? "checked" : ""} style="width:22px;height:22px;accent-color:var(--gold)"></label>
     </section>
     <section class="panel glass">
       <h3>Sıfırlama</h3>
-      <p class="note" style="margin-top:0">Tek bir yolu sıfırlamak için ana sayfada haritanın altındaki “yolunu sıfırla” düğmesini kullan.</p>
+      <p class="note" style="margin-top:0">Tek bir dersi sıfırlamak için ana sayfada haritanın altındaki “ilerlemesini sıfırla” düğmesini kullan.</p>
       <div style="display:grid;gap:12px">
         <button class="btn ghost wide" id="yanlissifir">📒 Yanlışlar defterini temizle (${Object.keys(S.yanlis).length})</button>
         <button class="btn bad wide" id="sifirla">↺ Tüm ilerlemeyi sıfırla</button>
@@ -765,6 +785,7 @@ function ayarlar() {
       A.dersler = s; save();
     });
     $("#isim").oninput = e => { A.isim = e.target.value.trim(); save(); };
+    $("#molak").onchange = e => { A.mola = e.target.checked; save(); };
     $("#sesk").onchange = e => { A.ses = e.target.checked; save(); ses("tik"); };
     const ikiDokun = (el, soru, yap) => el.onclick = () => {
       if (!el.dataset.o) { el.dataset.o = 1; el.textContent = soru; return; }
