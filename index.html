@@ -512,7 +512,7 @@ function anaSayfa() {
         <div class="chips"><span class="chip fire ${seriAktif() && S.seri.n ? "on" : ""}" title="Günlük seri">🔥 ${seriAktif() ? S.seri.n : 0}</span><span class="chip" title="Toplam XP">⭐ ${S.xp}</span></div>
       </header>
       <section class="hero glass stagger">
-        <div class="speaker" style="--i:0">${koala()}<div class="bubble">${esc(sz(S.cozulen ? rnd(MOTIV) : "Merhaba {h}! Ben Kucak Kucak 🐨, bu da yavrum Minik Minik. KPSS yolculuğunda hep yanındayız. Başlayalım mı? 💕"))}</div></div>
+        <div class="speaker" style="--i:0">${koala()}<div class="bubble">${esc(S.cozulen ? "Hoş geldin Karıcımm! 💕 " + sz(rnd(MOTIV)) : "Merhaba Karıcımm! Ben Kucak Kucak 🐨, bu da yavrum Minik Minik. KPSS yolculuğunda hep yanındayız. Başlayalım mı? 💕")}</div></div>
         <div class="lvl" style="--i:1">
           <div class="lvl-row"><span>Seviye ${sv.lv} · ${sv.unvan}</span><small>${sv.cur}/${sv.need} XP</small></div>
           <div class="bar"><i id="lvbar"></i></div>
