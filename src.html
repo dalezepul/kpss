@@ -240,7 +240,9 @@ h2.yolbas{opacity:1;color:var(--c)}
 .rv .body{font-size:14px;line-height:1.55;margin-top:10px;opacity:.9;white-space:pre-line}
 
 .toast{position:fixed;top:14px;left:50%;z-index:50;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:18px;
-  background:linear-gradient(135deg,#fcd34d,#f59e0b);color:#3b2600;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.4);animation:toast 3.2s var(--spring) forwards;white-space:nowrap}
+  background:linear-gradient(135deg,#fcd34d,#f59e0b);color:#3b2600;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.4);animation:toast 3.6s var(--spring) forwards;width:max-content;max-width:calc(100vw - 32px)}
+.turrow{display:grid;grid-template-columns:1fr auto;gap:6px 10px;margin:14px 0;font-weight:700;font-size:14px}
+.turrow .bar{grid-column:1/-1;height:9px}.turrow .bar>i{background:var(--c)}
 .toast .e{font-size:28px}
 @keyframes toast{0%{transform:translate(-50%,-140%)}12%,85%{transform:translate(-50%,0)}100%{transform:translate(-50%,-140%)}}
 #confetti{position:fixed;inset:0;pointer-events:none;z-index:60}
@@ -329,7 +331,7 @@ const sz = t => t.replace(/\{h\}/g, hit);
 /* ---------- durum ---------- */
 const KEY = "kpss-baykus-v1";
 const VARS = () => ({xp:0,testler:{},gorulen:{},yanlis:{},rozet:[],seri:{n:0,son:""},cozulen:0,dogru:0,temiz:0,
-  ayar:{testSayisi:10,soruSayisi:10,dersler:Object.keys(DERS),ses:true,isim:"",mola:true},ek:[],yol:{},aktifYol:"karisik"});
+  ayar:{testSayisi:10,soruSayisi:10,dersler:Object.keys(DERS),ses:true,isim:"",mola:true},ek:[],yol:{},tur:{},aktifYol:"karisik"});
 let S = VARS();
 try { const k = JSON.parse(localStorage.getItem(KEY)); if (k) S = Object.assign(VARS(), k, {ayar:Object.assign(VARS().ayar, k.ayar)}); } catch (e) {}
 if (S.testler) { if (Object.keys(S.testler).length && !Object.keys(S.yol).length) S.yol.karisik = S.testler; delete S.testler; }
@@ -598,6 +600,17 @@ function geriSayim() {
     o.onclick = bitir; document.addEventListener("keydown", kd); goster(0);
   });
 }
+// tur: dersin en az görülen sorusunun görülme sayısı + 1
+const turBilgi = d => {
+  const g = tumu().filter(q => dk(q) === d).map(q => S.gorulen[q.id] || 0), min = g.length ? Math.min(...g) : 0;
+  return {tur:min + 1, bu:g.filter(x => x > min).length, n:g.length};
+};
+function turKontrol(d) {
+  const t = turBilgi(d);
+  if (!t.n || t.tur - 1 <= (S.tur[d] || 0)) return;
+  S.tur[d] = t.tur - 1;
+  setTimeout(() => { toast("🎉", sz(`${DERS[d].ad}: tüm sorular bitti {h}! ${t.tur}. tur başladı`)); ses("win"); }, 900);
+}
 let basliyor = false;
 async function testBaslat(opt) {
   if (basliyor) return;
@@ -642,7 +655,7 @@ function cevapla(k) {
   T.cevaplandi = T.i;
   const q = T.sorular[T.i], ok = k === q.dogruK, btns = [...app.querySelectorAll(".opt")];
   btns.forEach((b, j) => { b.disabled = true; if (j === q.dogruK) b.classList.add("ok"); else if (j === k) b.classList.add("bad"); else b.classList.add("dim"); });
-  S.gorulen[q.id] = (S.gorulen[q.id] || 0) + 1; S.cozulen++;
+  S.gorulen[q.id] = (S.gorulen[q.id] || 0) + 1; S.cozulen++; turKontrol(dk(q));
   T.cevap.push({q, k, ok});
   let kazanc = 0;
   if (ok) {
@@ -777,6 +790,12 @@ function ayarlar() {
       <input class="isim" id="isim" maxlength="24" placeholder="İsim ya da lakap (boşsa aşkım, sevgilim…)" value="${esc(A.isim || "")}">
       <label class="row"><span>Test ortasında motivasyon molası</span><input type="checkbox" id="molak" ${A.mola ? "checked" : ""} style="width:22px;height:22px;accent-color:var(--gold)"></label>
       <label class="row"><span>Ses efektleri</span><input type="checkbox" id="sesk" ${A.ses ? "checked" : ""} style="width:22px;height:22px;accent-color:var(--gold)"></label>
+    </section>
+    <section class="panel glass">
+      <h3>Soru turları</h3>
+      <p class="note" style="margin-top:0">Bir dersin bütün soruları görülünce yeni tur başlar ve sorular baştan gelmeye başlar.</p>
+      ${Object.keys(DERS).filter(d => d !== "ek" || S.ek.length).map(d => { const t = turBilgi(d);
+        return `<div class="turrow" style="--c:${DERS[d].c}"><span>${DERS[d].ic} ${DERS[d].ad} — <b>${t.tur}. tur</b></span><small>${t.bu}/${t.n}</small><div class="bar"><i style="width:${t.n ? t.bu / t.n * 100 : 0}%"></i></div></div>`; }).join("")}
     </section>
     <section class="panel glass">
       <h3>Sıfırlama</h3>
