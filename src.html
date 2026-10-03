@@ -537,7 +537,7 @@ function anaSayfa() {
         <svg class="path" viewBox="0 0 100 ${top(N - 1) + 90}" preserveAspectRatio="none"><path d="${d}" vector-effect="non-scaling-stroke"/></svg>
         ${nodes}
       </div>
-      <div class="pool">Bu yolda ${H.length} soru${Y.id === "karisik" ? " · " + Object.entries(sayim).map(([k, v]) => `<span>${DERS[k].ic} ${DERS[k].ad} ${v}</span>`).join("") : ""}</div>
+      <div class="pool">${H.length} soru · ${H.filter(q => !S.gorulen[q.id]).length} tanesi henüz görülmedi${Y.id === "karisik" ? " · " + Object.entries(sayim).map(([k, v]) => `<span>${DERS[k].ic} ${DERS[k].ad} ${v}</span>`).join("") : ""}</div>
       ${Object.keys(TT).length ? `<div style="text-align:center;margin-top:14px"><button class="btn ghost" id="yolsifir" style="--c:${Y.c}">↺ ${esc(Y.ad)} ilerlemesini sıfırla</button></div>` : ""}
     </div>
     <div class="bdgs">
@@ -584,6 +584,20 @@ function hazirla(q) {
   return {...q, perm, dogruK: perm.indexOf(q.a)};
 }
 
+// tek karartma, rakamlar içinde değişir; dokunma/Enter atlatır
+function geriSayim() {
+  return new Promise(res => {
+    document.activeElement?.blur?.();
+    const o = document.createElement("div"); o.className = "overlay"; document.body.appendChild(o);
+    let bitti = false, t;
+    const bitir = () => { if (bitti) return; bitti = true; clearTimeout(t); document.removeEventListener("keydown", kd);
+      o.classList.add("out"); setTimeout(() => { o.remove(); res(); }, 240); };
+    const kd = e => { if (["Enter", " ", "Escape"].includes(e.key)) { e.preventDefault(); bitir(); } };
+    const goster = i => { if (bitti) return; if (i > 2) return bitir();
+      o.innerHTML = `<div class="ov-card" style="animation:none"><div class="count">${3 - i}</div></div>`; t = setTimeout(() => goster(i + 1), 700); };
+    o.onclick = bitir; document.addEventListener("keydown", kd); goster(0);
+  });
+}
 let basliyor = false;
 async function testBaslat(opt) {
   if (basliyor) return;
@@ -595,9 +609,7 @@ async function testBaslat(opt) {
   if (!sorular.length) { toast("⚠️", "Seçili derslerde soru yok"); return; }
   T = {...opt, sorular:sorular.map(hazirla), i:0, dogru:0, combo:0, maxCombo:0, xp:0, cevap:[], t0:Date.now(), molaVerildi:false};
   basliyor = true;
-  if (!azHareket) {
-    for (const n of ["3","2","1"]) await overlay(`<div class="ov-card"><div class="count">${n}</div></div>`, 650);
-  }
+  if (!azHareket) await geriSayim();
   basliyor = false;
   soruGoster();
 }
