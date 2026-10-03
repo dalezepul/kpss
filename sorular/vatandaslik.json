@@ -1,0 +1,492 @@
+[
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Aşağıdakilerden hangisi hukukun yazılı kaynaklarından biri değildir?",
+  "o": [
+   "Örf ve âdet hukuku",
+   "Kanun",
+   "Cumhurbaşkanlığı kararnamesi",
+   "Yönetmelik",
+   "Anayasa"
+  ],
+  "a": 0,
+  "c": "Örf ve âdet hukuku, toplumda uzun süre uygulanarak bağlayıcılık kazanmış yazısız bir kaynaktır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Aşağıdakilerden hangisi özel hukukun dallarından biridir?",
+  "o": [
+   "Ticaret hukuku",
+   "Vergi hukuku",
+   "İdare hukuku",
+   "Ceza hukuku",
+   "Anayasa hukuku"
+  ],
+  "a": 0,
+  "c": "Ticaret hukuku eşit kişiler arasındaki ilişkileri düzenlediği için özel hukuk dalıdır; diğerleri devletin taraf olduğu kamu hukuku dallarıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Hukuk kurallarını ahlak, din ve görgü kurallarından ayıran temel özellik aşağıdakilerden hangisidir?",
+  "o": [
+   "Toplum hayatını düzenlemesi",
+   "Toplumda genel kabul görmesi",
+   "Kişilerin vicdanına hitap etmesi",
+   "Zamanla değişebilmesi",
+   "Uyulmaması hâlinde devlet zoruyla uygulanan maddi bir yaptırıma bağlanması"
+  ],
+  "a": 4,
+  "c": "Diğer sosyal düzen kurallarının yaptırımı manevidir; hukuk kurallarının yaptırımı ise devlet gücüyle uygulanır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yasama",
+  "q": "1982 Anayasası'nın güncel hâline göre;\nI. Türkiye Büyük Millet Meclisi 600 milletvekilinden oluşur.\nII. Milletvekili seçilme yaşı 18'dir.\nIII. TBMM ve Cumhurbaşkanlığı seçimleri dört yılda bir yapılır.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 2,
+  "c": "2017 değişikliğiyle milletvekili sayısı 600'e çıkarılmış, seçilme yaşı 18'e indirilmiştir. TBMM ve Cumhurbaşkanlığı seçimleri beş yılda bir aynı gün yapılır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi Cumhurbaşkanı seçilebilmek için aranan şartlardan biri değildir?",
+  "o": [
+   "TBMM üyesi olmak",
+   "Yükseköğrenim yapmış olmak",
+   "Milletvekili seçilme yeterliliğine sahip olmak",
+   "Türk vatandaşı olmak",
+   "Kırk yaşını doldurmuş olmak"
+  ],
+  "a": 0,
+  "c": "Cumhurbaşkanı; kırk yaşını doldurmuş, yükseköğrenim yapmış, milletvekili seçilme yeterliliğine sahip Türk vatandaşları arasından halkça seçilir. TBMM üyesi olmak şart değildir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre Cumhurbaşkanının görev süresi ve bir kişinin en fazla kaç defa Cumhurbaşkanı seçilebileceği aşağıdakilerin hangisinde doğru verilmiştir?",
+  "o": [
+   "4 yıl – 2 defa",
+   "5 yıl – 1 defa",
+   "7 yıl – 1 defa",
+   "5 yıl – 2 defa",
+   "5 yıl – 3 defa"
+  ],
+  "a": 3,
+  "c": "Cumhurbaşkanının görev süresi beş yıldır ve bir kimse en fazla iki defa Cumhurbaşkanı seçilebilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yasama",
+  "q": "1982 Anayasası'nın güncel hâline göre kanun teklif etme yetkisi aşağıdakilerden hangisine aittir?",
+  "o": [
+   "Cumhurbaşkanı",
+   "Cumhurbaşkanı yardımcıları",
+   "Bakanlar",
+   "Anayasa Mahkemesi",
+   "Milletvekilleri"
+  ],
+  "a": 4,
+  "c": "2017 değişikliğinden sonra kanun teklif etme yetkisi yalnızca milletvekillerine aittir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yasama",
+  "q": "1982 Anayasası'nın güncel hâline göre aşağıdakilerden hangisi TBMM'nin bilgi edinme ve denetim yollarından biri değildir?",
+  "o": [
+   "Gensoru",
+   "Genel görüşme",
+   "Meclis soruşturması",
+   "Yazılı soru",
+   "Meclis araştırması"
+  ],
+  "a": 0,
+  "c": "2017 değişikliğiyle gensoru ve sözlü soru kaldırılmıştır. Güncel denetim yolları meclis araştırması, genel görüşme, meclis soruşturması ve yazılı sorudur."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre aşağıdaki konulardan hangisi Cumhurbaşkanlığı kararnamesiyle düzenlenemez?",
+  "o": [
+   "Bakanlıkların kurulması ve görevleri",
+   "Seçme ve seçilme hakkı",
+   "Üst kademe kamu yöneticilerinin atanma usulleri",
+   "Devlet Denetleme Kurulunun işleyişi",
+   "Millî Güvenlik Kurulu Genel Sekreterliğinin teşkilatı"
+  ],
+  "a": 1,
+  "c": "Temel haklar, kişi hakları ve ödevleri ile siyasi haklar ve ödevler Cumhurbaşkanlığı kararnamesiyle düzenlenemez; seçme ve seçilme hakkı siyasi haklardandır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması hâlinde aşağıdakilerden hangisi geçerlidir?",
+  "o": [
+   "Cumhurbaşkanlığı kararnamesi hükümleri uygulanır.",
+   "Sonra yürürlüğe giren düzenleme uygulanır.",
+   "Kanun hükümleri uygulanır.",
+   "Anayasa Mahkemesi hangisinin uygulanacağına karar verir.",
+   "İki düzenleme de yürürlükten kalkar."
+  ],
+  "a": 2,
+  "c": "Anayasa'nın 104. maddesine göre Cumhurbaşkanlığı kararnamesi ile kanunlarda farklı hükümler bulunması hâlinde kanun hükümleri uygulanır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yargı",
+  "q": "1982 Anayasası'na göre Anayasa Mahkemesi ile ilgili;\nI. On beş üyeden oluşur.\nII. Üyelerinin tamamı Cumhurbaşkanınca seçilir.\nIII. Üyeler on iki yıllığına seçilir.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 3,
+  "c": "Anayasa Mahkemesi 15 üyeden oluşur; üyelerin 3'ünü TBMM, 12'sini Cumhurbaşkanı seçer. Üyeler 12 yıl için seçilir ve iki defa seçilemez."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yargı",
+  "q": "1982 Anayasası'na göre Hâkimler ve Savcılar Kurulunun başkanı aşağıdakilerden hangisidir?",
+  "o": [
+   "Yargıtay Birinci Başkanı",
+   "Anayasa Mahkemesi Başkanı",
+   "Cumhurbaşkanı",
+   "Adalet Bakanı",
+   "Danıştay Başkanı"
+  ],
+  "a": 3,
+  "c": "Hâkimler ve Savcılar Kurulu 13 üyeden oluşur; Kurulun başkanı Adalet Bakanıdır, Adalet Bakan Yardımcısı tabii üyedir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Denetim kurumları",
+  "q": "Merkezî yönetim bütçesi kapsamındaki kamu idarelerinin gelir, gider ve mallarını TBMM adına denetlemekle görevli kurum aşağıdakilerden hangisidir?",
+  "o": [
+   "Devlet Denetleme Kurulu",
+   "Kamu Denetçiliği Kurumu",
+   "Uyuşmazlık Mahkemesi",
+   "Danıştay",
+   "Sayıştay"
+  ],
+  "a": 4,
+  "c": "Anayasa'nın 160. maddesine göre bu denetimi TBMM adına Sayıştay yapar."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Temel hak ve özgürlükler",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi siyasi haklar ve ödevler arasında yer alır?",
+  "o": [
+   "Dilekçe hakkı",
+   "Eğitim ve öğrenim hakkı",
+   "Konut dokunulmazlığı",
+   "Mülkiyet hakkı",
+   "Sendika kurma hakkı"
+  ],
+  "a": 0,
+  "c": "Dilekçe hakkı Anayasa'da siyasi haklar ve ödevler bölümünde düzenlenmiştir. Mülkiyet ve konut dokunulmazlığı kişinin hakları, eğitim ve sendika hakları sosyal ve ekonomik haklardandır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Temel hak ve özgürlükler",
+  "q": "1982 Anayasası'nın 15. maddesine göre aşağıdakilerden hangisine savaş, seferberlik veya olağanüstü hâllerde dahi dokunulamaz?",
+  "o": [
+   "Toplantı ve gösteri yürüyüşü hakkı",
+   "Suç ve cezaların geçmişe yürümemesi",
+   "Yerleşme ve seyahat özgürlüğü",
+   "Basın özgürlüğü",
+   "Dernek kurma özgürlüğü"
+  ],
+  "a": 1,
+  "c": "Olağanüstü dönemlerde bile yaşama hakkı, maddi ve manevi varlığın bütünlüğü, din ve vicdan özgürlüğü, suç ve cezaların geçmişe yürümemesi ile masumiyet karinesine dokunulamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'nın güncel hâline göre aşağıdakilerden hangisi Millî Güvenlik Kurulunun üyeleri arasında yer almaz?",
+  "o": [
+   "Dışişleri Bakanı",
+   "Genelkurmay Başkanı",
+   "Hazine ve Maliye Bakanı",
+   "İçişleri Bakanı",
+   "Hava Kuvvetleri Komutanı"
+  ],
+  "a": 2,
+  "c": "MGK; Cumhurbaşkanı başkanlığında Cumhurbaşkanı yardımcıları, Adalet, Millî Savunma, İçişleri ve Dışişleri bakanları, Genelkurmay Başkanı ile Kara, Deniz ve Hava Kuvvetleri komutanlarından oluşur."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre olağanüstü hâl ilan etme yetkisi ve bir defada ilan edilebilecek en uzun süre aşağıdakilerin hangisinde doğru verilmiştir?",
+  "o": [
+   "TBMM – 4 ay",
+   "Cumhurbaşkanı – 1 yıl",
+   "Millî Güvenlik Kurulu – 6 ay",
+   "Cumhurbaşkanı – 6 ay",
+   "İçişleri Bakanı – 3 ay"
+  ],
+  "a": 3,
+  "c": "Olağanüstü hâli Cumhurbaşkanı, süresi altı ayı geçmemek üzere ilan eder; karar aynı gün TBMM'nin onayına sunulur ve Meclis süreyi her defasında dört ayı geçmemek üzere uzatabilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı örgütü",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi yüksek mahkemelerden biri değildir?",
+  "o": [
+   "Anayasa Mahkemesi",
+   "Yargıtay",
+   "Danıştay",
+   "Uyuşmazlık Mahkemesi",
+   "Sayıştay"
+  ],
+  "a": 4,
+  "c": "Yüksek mahkemeler Anayasa Mahkemesi, Yargıtay, Danıştay ve Uyuşmazlık Mahkemesidir. Sayıştay bir denetim kurumudur, yüksek mahkeme sayılmaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı örgütü",
+  "q": "Aşağıdakilerden hangisi idari yargı ilk derece mahkemelerinden biridir?",
+  "o": [
+   "Vergi mahkemesi",
+   "İş mahkemesi",
+   "Asliye ceza mahkemesi",
+   "Tüketici mahkemesi",
+   "Kadastro mahkemesi"
+  ],
+  "a": 0,
+  "c": "İdari yargının ilk derece mahkemeleri idare ve vergi mahkemeleridir; diğerleri adli yargı mahkemeleridir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı örgütü",
+  "q": "Adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını kesin olarak çözmeye yetkili merci aşağıdakilerden hangisidir?",
+  "o": [
+   "Anayasa Mahkemesi",
+   "Uyuşmazlık Mahkemesi",
+   "Danıştay",
+   "Yargıtay",
+   "Hâkimler ve Savcılar Kurulu"
+  ],
+  "a": 1,
+  "c": "Anayasa'nın 158. maddesine göre adli ve idari yargı mercileri arasındaki görev ve hüküm uyuşmazlıklarını Uyuşmazlık Mahkemesi kesin olarak çözer."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı örgütü",
+  "q": "Adli yargıda ilk derece mahkemelerinin kararlarına karşı istinaf incelemesini yapan merci aşağıdakilerden hangisidir?",
+  "o": [
+   "Yargıtay",
+   "Bölge idare mahkemesi",
+   "Bölge adliye mahkemesi",
+   "Danıştay",
+   "Uyuşmazlık Mahkemesi"
+  ],
+  "a": 2,
+  "c": "Adli yargıda istinaf merci bölge adliye mahkemesi, temyiz merci Yargıtaydır. Bölge idare mahkemesi idari yargının istinaf merciidir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Kişiler",
+  "q": "4721 sayılı Türk Medeni Kanunu'na göre çocuk hak ehliyetini hangi andan itibaren elde eder?",
+  "o": [
+   "Nüfus kütüğüne kayıtla",
+   "On sekiz yaşın doldurulmasıyla",
+   "Ayırt etme gücüne sahip olunduğunda",
+   "Tam ve sağ doğmak koşuluyla ana rahmine düşüldüğü anda",
+   "Doğumdan bir ay sonra"
+  ],
+  "a": 3,
+  "c": "TMK'nın 28. maddesine göre kişilik sağ olarak tamamıyla doğumla başlar; ancak çocuk hak ehliyetini sağ doğmak koşuluyla ana rahmine düştüğü andan itibaren elde eder."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Ehliyet",
+  "q": "Türk Medeni Kanunu'na göre fiil ehliyetine sahip olabilmek için;\nI. Ayırt etme gücüne sahip olmak\nII. Ergin olmak\nIII. Kısıtlı olmamak\nIV. Evli olmak\nkoşullarından hangilerinin birlikte bulunması gerekir?",
+  "o": [
+   "I ve II",
+   "I ve III",
+   "I, II ve III",
+   "II, III ve IV",
+   "I, II, III ve IV"
+  ],
+  "a": 2,
+  "c": "Ayırt etme gücüne sahip, ergin ve kısıtlı olmayan herkesin fiil ehliyeti vardır. Evlilik erginliği sağlayan yollardan biridir ama ayrı bir koşul değildir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Ehliyet",
+  "q": "Türk Medeni Kanunu'na göre bir küçüğün kendi isteği ve velisinin rızasıyla mahkeme kararıyla ergin kılınabilmesi için en az kaç yaşını doldurmuş olması gerekir?",
+  "o": [
+   "12",
+   "14",
+   "15",
+   "16",
+   "17"
+  ],
+  "a": 2,
+  "c": "TMK'nın 12. maddesine göre on beş yaşını dolduran küçük, kendi isteği ve velisinin rızasıyla mahkeme kararıyla ergin kılınabilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Kişiler",
+  "q": "Türk Medeni Kanunu'na göre yerleşim yeriyle ilgili;\nI. Yerleşim yeri, bir kimsenin sürekli kalma niyetiyle oturduğu yerdir.\nII. Bir kimse aynı anda birden çok yerleşim yerine sahip olabilir.\nIII. Velayet altındaki çocuğun yerleşim yeri, ana ve babasının yerleşim yeridir.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 3,
+  "c": "Yerleşim yeri sürekli kalma niyetiyle oturulan yerdir ve kimse aynı anda birden çok yerleşim yerine sahip olamaz. Velayet altındaki çocuğun yerleşim yeri ana ve babasının yerleşim yeridir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Kişiler",
+  "q": "Türk Medeni Kanunu'na göre ölüm tehlikesi içinde kaybolan bir kişinin gaipliğine karar verilmesi, ölüm tehlikesinin gerçekleşmesinden itibaren en az ne kadar süre geçtikten sonra istenebilir?",
+  "o": [
+   "6 ay",
+   "1 yıl",
+   "2 yıl",
+   "5 yıl",
+   "10 yıl"
+  ],
+  "a": 1,
+  "c": "Gaiplik istemi, ölüm tehlikesinin gerçekleşmesinden itibaren en az bir yıl, son haber alma tarihinden itibaren en az beş yıl geçtikten sonra yapılabilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre aday memurluk süresi aşağıdakilerin hangisinde doğru verilmiştir?",
+  "o": [
+   "En az 6 ay, en çok 1 yıl",
+   "En az 3 ay, en çok 6 ay",
+   "En az 2 yıl, en çok 3 yıl",
+   "En az 1 yıl, en çok 3 yıl",
+   "En az 1 yıl, en çok 2 yıl"
+  ],
+  "a": 4,
+  "c": "Adaylık süresi bir yıldan az, iki yıldan fazla olamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre 7 yıllık hizmeti bulunan bir memurun yıllık izin süresi kural olarak kaç gündür?",
+  "o": [
+   "15",
+   "20",
+   "25",
+   "30",
+   "35"
+  ],
+  "a": 1,
+  "c": "Hizmet süresi bir yıldan on yıla kadar (on yıl dâhil) olan memurların yıllık izni 20 gün, on yıldan fazla olanlarınki 30 gündür."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'nda sayılan disiplin cezaları arasında aşağıdakilerden hangisi yer almaz?",
+  "o": [
+   "Görevden uzaklaştırma",
+   "Kınama",
+   "Aylıktan kesme",
+   "Kademe ilerlemesinin durdurulması",
+   "Uyarma"
+  ],
+  "a": 0,
+  "c": "Disiplin cezaları uyarma, kınama, aylıktan kesme, kademe ilerlemesinin durdurulması ve devlet memurluğundan çıkarmadır. Görevden uzaklaştırma bir ihtiyati tedbirdir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "Memura, görevinde ve davranışlarında kusurlu sayıldığının yazı ile bildirilmesi şeklindeki disiplin cezası aşağıdakilerden hangisidir?",
+  "o": [
+   "Uyarma",
+   "Kınama",
+   "Aylıktan kesme",
+   "Kademe ilerlemesinin durdurulması",
+   "Devlet memurluğundan çıkarma"
+  ],
+  "a": 1,
+  "c": "Kınama, memura kusurlu sayıldığının yazıyla bildirilmesidir. Uyarma ise görevinde ve davranışlarında daha dikkatli olması gerektiğinin yazıyla bildirilmesidir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre aşağıdakilerden hangisi devlet memurluğuna alınmada aranan genel şartlardan biri değildir?",
+  "o": [
+   "Türk vatandaşı olmak",
+   "Türkiye'de doğmuş olmak",
+   "Kamu haklarından mahrum bulunmamak",
+   "On sekiz yaşını bitirmiş olmak",
+   "Askerlik durumu itibarıyla askerlikle ilgisi bulunmamak"
+  ],
+  "a": 1,
+  "c": "Kanunun 48. maddesinde doğum yeriyle ilgili bir şart yoktur; diğerleri memurluğa alınmada aranan genel şartlardandır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "Aşağıdakilerden hangisi hizmet yönünden yerinden yönetim kuruluşuna örnektir?",
+  "o": [
+   "Belediye",
+   "Valilik",
+   "Üniversite",
+   "Kaymakamlık",
+   "Köy"
+  ],
+  "a": 2,
+  "c": "Üniversiteler belli bir kamu hizmetini özerk biçimde yürüttüğü için hizmet yönünden yerinden yönetim kuruluşudur. Belediye ve köy yer yönünden yerinden yönetim, valilik ve kaymakamlık merkezî yönetimin taşra teşkilatıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "Merkezî idarenin, mahalli idareler üzerinde kanunda belirtilen esas ve usuller çerçevesinde sahip olduğu denetim yetkisi aşağıdakilerden hangisidir?",
+  "o": [
+   "Hiyerarşi",
+   "Yetki devri",
+   "Yetki genişliği",
+   "İdari vesayet",
+   "Yargısal denetim"
+  ],
+  "a": 3,
+  "c": "Anayasa'nın 127. maddesine göre merkezî idare mahalli idareler üzerinde idari vesayet yetkisine sahiptir. Hiyerarşi ise merkezî idarenin kendi içindeki üst-ast ilişkisidir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "1982 Anayasası'na göre illerin idaresi aşağıdaki esaslardan hangisine dayanır?",
+  "o": [
+   "Yetki devri",
+   "İdari vesayet",
+   "Özerklik",
+   "Hizmet yerinden yönetim",
+   "Yetki genişliği"
+  ],
+  "a": 4,
+  "c": "Anayasa'nın 126. maddesine göre illerin idaresi yetki genişliği esasına dayanır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "I. Mahalli idarelerin seçimleri beş yılda bir yapılır.\nII. Köy muhtarı seçimle göreve gelir.\nIII. Vali, il özel idaresinin organlarından biridir.\nYukarıdaki ifadelerden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "I ve II",
+   "I ve III",
+   "II ve III",
+   "I, II ve III"
+  ],
+  "a": 4,
+  "c": "Mahalli idare seçimleri beş yılda bir yapılır; köy muhtarı seçimle gelir. İl özel idaresinin organları il genel meclisi, il encümeni ve validir."
+ }
+]

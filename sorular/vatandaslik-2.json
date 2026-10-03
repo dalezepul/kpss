@@ -1,0 +1,422 @@
+[
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Kanunun emredici hükümlerine, ahlaka veya kamu düzenine aykırı olarak yapılan bir sözleşmenin baştan itibaren geçersiz sayılması hangi yaptırım türüdür?",
+  "o": [
+   "Kesin hükümsüzlük",
+   "Tazminat",
+   "Cebrî icra",
+   "Ceza",
+   "Disiplin cezası"
+  ],
+  "a": 0,
+  "c": "Türk Borçlar Kanunu'na göre emredici hükümlere, ahlaka veya kamu düzenine aykırı sözleşmeler kesin olarak hükümsüzdür; bu yaptırım işlemi hiç doğmamış gibi sonuçsuz bırakır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Mahkeme kararına rağmen borcunu ödemeyen kişinin mallarının devlet gücüyle haczedilip satılarak alacaklıya ödeme yapılması hangi yaptırım türüdür?",
+  "o": [
+   "Tazminat",
+   "Cebrî icra",
+   "İptal",
+   "Kesin hükümsüzlük",
+   "Ceza"
+  ],
+  "a": 1,
+  "c": "Cebrî icra, borcunu kendi isteğiyle yerine getirmeyen kişiyi devletin zor kullanarak borcunu yerine getirmeye zorlamasıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Mülkiyet hakkı gibi herkese karşı ileri sürülebilen ve herkesin saygı göstermekle yükümlü olduğu haklara ne ad verilir?",
+  "o": [
+   "Nispi hak",
+   "Siyasi hak",
+   "Mutlak hak",
+   "Yenilik doğuran hak",
+   "Kamu hakkı"
+  ],
+  "a": 2,
+  "c": "Mutlak haklar herkese karşı ileri sürülebilir. Nispi haklar ise yalnızca belirli kişilere, örneğin sözleşmenin karşı tarafına karşı ileri sürülebilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Hukukun temel kavramları",
+  "q": "Normlar hiyerarşisinde en üst sırada yer alan hukuk kuralı aşağıdakilerden hangisidir?",
+  "o": [
+   "Kanun",
+   "Cumhurbaşkanlığı kararnamesi",
+   "Yönetmelik",
+   "Anayasa",
+   "Genelge"
+  ],
+  "a": 3,
+  "c": "Anayasa normlar hiyerarşisinin en üstündedir; kanunlar, Cumhurbaşkanlığı kararnameleri ve yönetmelikler Anayasa'ya aykırı olamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Genel esaslar",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi değiştirilemeyecek ve değiştirilmesi teklif edilemeyecek hükümler arasında yer almaz?",
+  "o": [
+   "Türkiye Devletinin şeklinin Cumhuriyet olduğu",
+   "Devletin dilinin Türkçe olduğu",
+   "Başkentin Ankara olduğu",
+   "Millî marşın İstiklal Marşı olduğu",
+   "Egemenliğin kayıtsız şartsız milletin olduğu"
+  ],
+  "a": 4,
+  "c": "Anayasa'nın 4. maddesi ilk üç maddeyi (devletin şekli, Cumhuriyetin nitelikleri, ülke ve millet bütünlüğü, dil, bayrak, millî marş, başkent) değiştirilemez kılar. Egemenliğe ilişkin hüküm 6. maddededir ve bu koruma kapsamında değildir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Anayasa değişikliği",
+  "q": "1982 Anayasası'na göre bir Anayasa değişikliği teklifinin TBMM'de kabul edilebilmesi için gizli oylamada en az kaç milletvekilinin oyu gerekir?",
+  "o": [
+   "360",
+   "200",
+   "301",
+   "400",
+   "151"
+  ],
+  "a": 0,
+  "c": "Anayasa değişikliği teklifi üye tamsayısının en az üçte biri (200) ile verilir ve beşte üç (360) çoğunlukla kabul edilir. 360-399 oyla kabul edilen değişiklik halkoyuna sunulur."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Temel hak ve ödevler",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi sosyal ve ekonomik haklar arasında yer alır?",
+  "o": [
+   "Konut dokunulmazlığı",
+   "Eğitim ve öğrenim hakkı",
+   "Seçme ve seçilme hakkı",
+   "Dilekçe hakkı",
+   "Haberleşme hürriyeti"
+  ],
+  "a": 1,
+  "c": "Eğitim ve öğrenim hakkı sosyal ve ekonomik haklar arasındadır. Konut dokunulmazlığı ve haberleşme hürriyeti kişinin hakları, seçme-seçilme ve dilekçe hakkı ise siyasi haklardır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Temel hak ve ödevler",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi bir ödev olarak düzenlenmiştir?",
+  "o": [
+   "Mülkiyet hakkı",
+   "Sendika kurma hakkı",
+   "Vergi ödevi",
+   "Toplantı ve gösteri yürüyüşü hakkı",
+   "Yerleşme ve seyahat hürriyeti"
+  ],
+  "a": 2,
+  "c": "Anayasa'ya göre herkes kamu giderlerini karşılamak üzere mali gücüne göre vergi ödemekle yükümlüdür. Vatan hizmeti de siyasi haklar ve ödevler bölümünde düzenlenen bir ödevdir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yasama",
+  "q": "Milletvekillerinin Meclis çalışmalarındaki oy ve sözlerinden, Mecliste ileri sürdükleri düşüncelerden dolayı sorumlu tutulamamalarına ne ad verilir?",
+  "o": [
+   "Yasama dokunulmazlığı",
+   "Hâkimlik teminatı",
+   "Meclis soruşturması",
+   "Yasama sorumsuzluğu",
+   "Gensoru"
+  ],
+  "a": 3,
+  "c": "Yasama sorumsuzluğu milletvekilinin Meclisteki oy ve sözleri için mutlak bir korumadır. Yasama dokunulmazlığı ise milletvekilinin seçimden önce veya sonra suç işlediği iddiasıyla tutulamaması ve yargılanamamasıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yasama",
+  "q": "1982 Anayasası'nın güncel hâline göre aşağıdakilerden hangisi TBMM'nin görev ve yetkilerinden biri değildir?",
+  "o": [
+   "Bütçe kanun teklifini görüşmek ve kabul etmek",
+   "Para basılmasına ve savaş ilanına karar vermek",
+   "Milletlerarası antlaşmaları onaylamayı uygun bulmak",
+   "Genel ve özel af ilanına karar vermek",
+   "Yönetmelik çıkarmak"
+  ],
+  "a": 4,
+  "c": "Yönetmelik çıkarma yetkisi Cumhurbaşkanı, bakanlıklar ve kamu tüzel kişilerine aittir. Diğerleri Anayasa'nın 87. maddesinde TBMM'nin görevleri olarak sayılmıştır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Bütçe",
+  "q": "1982 Anayasası'nın güncel hâline göre merkezî yönetim bütçe kanun teklifini TBMM'ye sunmaya yetkili olan aşağıdakilerden hangisidir?",
+  "o": [
+   "Cumhurbaşkanı",
+   "Hazine ve Maliye Bakanı",
+   "TBMM Plan ve Bütçe Komisyonu",
+   "Sayıştay Başkanı",
+   "TBMM Başkanı"
+  ],
+  "a": 0,
+  "c": "Cumhurbaşkanı, merkezî yönetim bütçe kanun teklifini mali yıl başından en az yetmiş beş gün önce TBMM'ye sunar."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Yürütme",
+  "q": "1982 Anayasası'na göre aşağıdakilerden hangisi Cumhurbaşkanının yetkilerinden biri değildir?",
+  "o": [
+   "Kanunları yayımlamak",
+   "Sayıştay Başkanı ve üyelerini seçmek",
+   "Gerektiğinde TBMM'yi toplantıya çağırmak",
+   "Üst kademe kamu yöneticilerini atamak",
+   "Millî Güvenlik Kurulunu toplantıya çağırmak"
+  ],
+  "a": 1,
+  "c": "Sayıştay Başkanı ve üyeleri TBMM tarafından seçilir. Diğerleri Anayasa'nın 104. maddesinde Cumhurbaşkanına tanınan yetkilerdir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Anayasal kurumlar",
+  "q": "1982 Anayasası'na göre Kamu Denetçiliği Kurumu aşağıdakilerden hangisine bağlıdır?",
+  "o": [
+   "Cumhurbaşkanlığı",
+   "Adalet Bakanlığı",
+   "TBMM Başkanlığı",
+   "Danıştay",
+   "İçişleri Bakanlığı"
+  ],
+  "a": 2,
+  "c": "Kamu Denetçiliği Kurumu, idarenin işleyişiyle ilgili şikâyetleri incelemek üzere TBMM Başkanlığına bağlı olarak kurulmuştur. Kamu Başdenetçisi TBMM tarafından dört yıl için seçilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Anayasal kurumlar",
+  "q": "Yüksek Seçim Kurulu ile ilgili;\nI. Yedi asıl ve dört yedek üyeden oluşur.\nII. Üyeleri Yargıtay ve Danıştay genel kurullarınca kendi üyeleri arasından seçilir.\nIII. Kararları aleyhine başka bir mercie başvurulamaz.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "I ve II",
+   "I ve III",
+   "II ve III",
+   "I, II ve III"
+  ],
+  "a": 4,
+  "c": "YSK yedi asıl ve dört yedek üyeden oluşur; altı üye Yargıtay, beş üye Danıştay genel kurullarınca seçilir. Anayasa'ya göre YSK kararları aleyhine başka bir mercie başvurulamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "1982 Anayasası – Anayasal kurumlar",
+  "q": "1982 Anayasası'na göre Radyo ve Televizyon Üst Kurulu (RTÜK) üyelerini seçen merci aşağıdakilerden hangisidir?",
+  "o": [
+   "Cumhurbaşkanı",
+   "Anayasa Mahkemesi",
+   "Yükseköğretim Kurulu",
+   "TBMM",
+   "Danıştay"
+  ],
+  "a": 3,
+  "c": "RTÜK dokuz üyeden oluşur ve üyeleri, siyasi parti gruplarının üye sayısı oranında TBMM tarafından seçilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı",
+  "q": "\"Hâkimler azlolunamaz; kendileri istemedikçe Anayasa'da gösterilen yaştan önce emekliye ayrılamaz.\"\nAnayasa'daki bu hüküm aşağıdaki ilkelerden hangisiyle ilgilidir?",
+  "o": [
+   "Kanuni hâkim güvencesi",
+   "Yargılamanın aleniyeti",
+   "Hak arama hürriyeti",
+   "Suç ve cezaların kanuniliği",
+   "Hâkimlik teminatı"
+  ],
+  "a": 4,
+  "c": "Hâkimlik teminatı, hâkimlerin görevlerinden uzaklaştırılmamasını ve aylık ile ödeneklerinden yoksun bırakılmamasını güvence altına alır. Kanuni hâkim güvencesi ise kişinin tabi olduğu mahkemeden başka mercie çıkarılamamasıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Yargı örgütü",
+  "q": "İdari yargının en üst mahkemesi olup idare ve vergi mahkemelerince verilen ve kanunun başka bir idari yargı merciine bırakmadığı kararların son inceleme mercii aşağıdakilerden hangisidir?",
+  "o": [
+   "Danıştay",
+   "Yargıtay",
+   "Anayasa Mahkemesi",
+   "Sayıştay",
+   "Uyuşmazlık Mahkemesi"
+  ],
+  "a": 0,
+  "c": "Danıştay idari yargının en üst mahkemesidir. Yargıtay adli yargıda son inceleme merciidir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Aile",
+  "q": "Türk Medeni Kanunu'na göre hâkim, olağanüstü durumlarda ve pek önemli bir sebeple en az kaç yaşını doldurmuş olan kişinin evlenmesine izin verebilir?",
+  "o": [
+   "15",
+   "16",
+   "17",
+   "18",
+   "14"
+  ],
+  "a": 1,
+  "c": "Kural olarak erkek veya kadın 17 yaşını doldurmadıkça evlenemez. Hâkim olağanüstü durumlarda ve pek önemli bir sebeple 16 yaşını doldurmuş kişinin evlenmesine izin verebilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Aile",
+  "q": "Türk Medeni Kanunu'na göre eşler arasında başka bir mal rejimi seçilmediği sürece geçerli olan yasal mal rejimi aşağıdakilerden hangisidir?",
+  "o": [
+   "Mal ayrılığı",
+   "Paylaşmalı mal ayrılığı",
+   "Edinilmiş mallara katılma",
+   "Mal ortaklığı",
+   "Mal birliği"
+  ],
+  "a": 2,
+  "c": "4721 sayılı Türk Medeni Kanunu'nda yasal mal rejimi edinilmiş mallara katılmadır. Eşler mal sözleşmesiyle mal ayrılığı, paylaşmalı mal ayrılığı veya mal ortaklığını seçebilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Türk Medeni Kanunu – Miras",
+  "q": "Türk Medeni Kanunu'na göre aşağıdakilerden hangisi yasal mirasçılar arasında yer almaz?",
+  "o": [
+   "Altsoy",
+   "Sağ kalan eş",
+   "Ana ve baba",
+   "Kayınvalide",
+   "Devlet"
+  ],
+  "a": 3,
+  "c": "Yasal mirasçılar kan hısımları (altsoy, ana-baba ve büyük ana-baba zümreleri), sağ kalan eş ve mirasçı yoksa Devlettir. Kayın hısımları mirasçı olamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Borçlar hukuku",
+  "q": "Aşağıdakilerden hangisi borcu sona erdiren sebeplerden biridir?",
+  "o": [
+   "Sözleşme",
+   "Haksız fiil",
+   "Sebepsiz zenginleşme",
+   "Vekâletsiz iş görme",
+   "İfa"
+  ],
+  "a": 4,
+  "c": "İfa, borcun gereği gibi yerine getirilmesiyle borcu sona erdirir. Sözleşme, haksız fiil ve sebepsiz zenginleşme borcun doğum kaynaklarıdır; vekâletsiz iş görme de borç doğuran bir ilişkidir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Ceza hukuku",
+  "q": "\"Kanunun açıkça suç saymadığı bir fiil için kimseye ceza verilemez.\"\nBu ifade aşağıdaki ilkelerden hangisini yansıtır?",
+  "o": [
+   "Suç ve cezaların kanuniliği",
+   "Ceza sorumluluğunun şahsiliği",
+   "Hukuki güvenlik",
+   "Masumiyet karinesi",
+   "Eşitlik"
+  ],
+  "a": 0,
+  "c": "Suç ve cezaların kanuniliği ilkesine göre suç ve ceza ancak kanunla belirlenebilir; kanunda suç olarak tanımlanmamış bir fiil cezalandırılamaz."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "Ceza hukuku",
+  "q": "5237 sayılı Türk Ceza Kanunu'na göre fiili işlediği sırada kaç yaşını doldurmamış olan çocukların ceza sorumluluğu yoktur?",
+  "o": [
+   "10",
+   "12",
+   "13",
+   "15",
+   "18"
+  ],
+  "a": 1,
+  "c": "Fiili işlediği sırada 12 yaşını doldurmamış çocukların ceza sorumluluğu yoktur; bunlar hakkında yalnızca güvenlik tedbirleri uygulanabilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre aşağıdakilerden hangisi memurun haklarından biri değildir?",
+  "o": [
+   "Sendikaya üye olma",
+   "Çekilme",
+   "Ticaret ve kazanç getirici faaliyette bulunma",
+   "Şikâyet ve dava açma",
+   "Kanunda belirtilen hâller dışında görevine son verilmeme (güvenlik)"
+  ],
+  "a": 2,
+  "c": "Memurların ticaret ve diğer kazanç getirici faaliyetlerde bulunmaları 657 sayılı Kanun'da yasaklanmıştır. Diğerleri kanunda memurlara tanınan haklardır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "Memurların kamu hizmetlerini aksatacak şekilde toplu olarak görevlerine gelmemeleri veya görevlerini yavaşlatmaları 657 sayılı Kanun'daki hangi yasak kapsamındadır?",
+  "o": [
+   "Hediye alma yasağı",
+   "Ticaret yasağı",
+   "Basına bilgi veya demeç verme yasağı",
+   "Toplu hareket yasağı",
+   "Gizli bilgileri açıklama yasağı"
+  ],
+  "a": 3,
+  "c": "657 sayılı Kanun'un 26. maddesindeki toplu hareket yasağı, memurların kamu hizmetlerini aksatacak biçimde toplu olarak görevlerine gelmemelerini veya görevlerini yavaşlatmalarını yasaklar."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre eşi doğum yapan erkek memura isteği üzerine kaç gün mazeret izni verilir?",
+  "o": [
+   "3",
+   "5",
+   "7",
+   "15",
+   "10"
+  ],
+  "a": 4,
+  "c": "657 sayılı Kanun'a göre eşi doğum yapan memura isteği üzerine 10 gün mazeret izni verilir. Evlenme veya yakınlarının ölümü hâlinde ise 7 gün izin verilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "657 sayılı DMK",
+  "q": "657 sayılı Devlet Memurları Kanunu'na göre aşağıdaki disiplin cezalarından hangisi yüksek disiplin kurulu kararı alınarak verilir?",
+  "o": [
+   "Devlet memurluğundan çıkarma",
+   "Uyarma",
+   "Kınama",
+   "Aylıktan kesme",
+   "Kademe ilerlemesinin durdurulması"
+  ],
+  "a": 0,
+  "c": "Devlet memurluğundan çıkarma cezası yüksek disiplin kurulu kararıyla atamaya yetkili amirlerce verilir. Uyarma, kınama ve aylıktan kesme disiplin amirlerince; kademe ilerlemesinin durdurulması disiplin kurulu kararıyla verilir."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "İlçe yönetiminde merkezî idareyi temsil eden ve ilçenin genel idaresinden sorumlu olan görevli aşağıdakilerden hangisidir?",
+  "o": [
+   "Belediye başkanı",
+   "Kaymakam",
+   "Muhtar",
+   "İlçe seçim kurulu başkanı",
+   "İl genel meclisi üyesi"
+  ],
+  "a": 1,
+  "c": "Kaymakam, ilçede merkezî idarenin temsilcisi ve genel idare amiridir. Belediye başkanı ve muhtar ise yerel halkın seçtiği mahalli idare organlarıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "5393 sayılı Belediye Kanunu'na göre aşağıdakilerden hangisi belediyenin organlarından biridir?",
+  "o": [
+   "İl genel meclisi",
+   "Köy ihtiyar heyeti",
+   "Belediye encümeni",
+   "İl idare kurulu",
+   "Mahalle muhtarı"
+  ],
+  "a": 2,
+  "c": "Belediyenin organları belediye meclisi, belediye encümeni ve belediye başkanıdır. İl genel meclisi il özel idaresinin, ihtiyar heyeti köyün organıdır."
+ },
+ {
+  "d": "vatandaslik",
+  "k": "İdare hukuku",
+  "q": "I. Köy derneği\nII. Köy ihtiyar heyeti\nIII. Muhtar\nIV. Encümen\nKöy Kanunu'na göre yukarıdakilerden hangileri köyün organlarındandır?",
+  "o": [
+   "Yalnız III",
+   "I ve III",
+   "II ve IV",
+   "I, II ve III",
+   "I, II, III ve IV"
+  ],
+  "a": 3,
+  "c": "Köy Kanunu'na göre köyün organları köy derneği, köy ihtiyar heyeti ve muhtardır. Encümen belediye ve il özel idaresine özgü bir organdır."
+ }
+]

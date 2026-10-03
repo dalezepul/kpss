@@ -1,0 +1,602 @@
+[
+ {
+  "d": "guncel",
+  "k": "Türk dünyası",
+  "q": "TÜRKSOY tarafından \"2026 Türk Dünyası Kültür Başkenti\" ilan edilen şehir aşağıdakilerden hangisidir?",
+  "o": [
+   "Andican",
+   "Aktau",
+   "Şuşa",
+   "Anav",
+   "Bursa"
+  ],
+  "a": 0,
+  "c": "TÜRKSOY Daimi Konseyi, 2025 Türk Dünyası Kültür Başkenti Aktau'daki toplantısında Özbekistan'ın Andican şehrini 2026 Türk Dünyası Kültür Başkenti ilan etti (Aralık 2025).",
+  "src": "https://www.aa.com.tr/tr/kultur/ozbekistanin-andican-sehri-2026-turk-dunyasi-kultur-baskenti-ilan-edildi/3757173"
+ },
+ {
+  "d": "guncel",
+  "k": "Türk dünyası",
+  "q": "Andican'ı 2026 Türk Dünyası Kültür Başkenti ilan eden TÜRKSOY Daimi Konseyi toplantısına ev sahipliği yapan ve 2025 Türk Dünyası Kültür Başkenti olan Aktau şehri hangi ülkededir?",
+  "o": [
+   "Özbekistan",
+   "Kazakistan",
+   "Türkmenistan",
+   "Kırgızistan",
+   "Azerbaycan"
+  ],
+  "a": 1,
+  "c": "2025 Türk Dünyası Kültür Başkenti Aktau, Kazakistan'ın Hazar kıyısındaki şehridir; TÜRKSOY'un 42. Daimi Konsey toplantısı burada yapıldı (2025).",
+  "src": "https://www.aa.com.tr/tr/kultur/ozbekistanin-andican-sehri-2026-turk-dunyasi-kultur-baskenti-ilan-edildi/3757173"
+ },
+ {
+  "d": "guncel",
+  "k": "UNESCO",
+  "q": "2025 yılında UNESCO Yaratıcı Şehirler Ağı'na \"edebiyat\" alanında katılan Türk şehri aşağıdakilerden hangisidir?",
+  "o": [
+   "Konya",
+   "Erzurum",
+   "Kahramanmaraş",
+   "Trabzon",
+   "Eskişehir"
+  ],
+  "a": 2,
+  "c": "Kahramanmaraş 2025'te edebiyat temasıyla ağa katıldı; böylece Türkiye'nin UNESCO Yaratıcı Şehir sayısı 9'a ulaştı ve edebiyat alanındaki ilk Türk şehri oldu.",
+  "src": "https://www.unesco.org.tr/home/AnnouncementDetail/6587"
+ },
+ {
+  "d": "guncel",
+  "k": "Enerji",
+  "q": "Mayıs 2025'te Karadeniz'de 75 milyar metreküplük yeni doğal gaz keşfinin yapıldığı kuyu aşağıdakilerden hangisidir?",
+  "o": [
+   "Türkali-1",
+   "Sakarya-1",
+   "Amasra-1",
+   "Göktepe-3",
+   "Tuna-1"
+  ],
+  "a": 3,
+  "c": "Cumhurbaşkanı Erdoğan 17 Mayıs 2025'te Göktepe-3 kuyusunda 75 milyar m³ yeni rezerv bulunduğunu açıkladı; Karadeniz'deki toplam rezerv 785 milyar m³'e çıktı.",
+  "src": "https://tr.euronews.com/2025/05/17/erdogan-75-milyar-metrekup-dogalgaz-kesfettik-konutlarimizin-ihtiyacini-35-yil-karsilayaca"
+ },
+ {
+  "d": "guncel",
+  "k": "Enerji",
+  "q": "Mayıs 2025'te açıklanan Göktepe-3 kuyusundaki 75 milyar metreküplük doğal gaz keşfini gerçekleştiren yedinci nesil sondaj gemisi aşağıdakilerden hangisidir?",
+  "o": [
+   "Fatih",
+   "Yavuz",
+   "Kanuni",
+   "Oruç Reis",
+   "Abdülhamid Han"
+  ],
+  "a": 4,
+  "c": "Göktepe-3 sondajı 27 Mart 2025'te Abdülhamid Han sondaj gemisiyle başladı; keşif 17 Mayıs 2025'te duyuruldu. Oruç Reis bir sismik araştırma gemisidir.",
+  "src": "https://www.gazetebirlik.com/ekonomi/turkiyenin-gururu-abdulhamid-han-sondaj-gemisi-75-milyar-metrekup-dogal-gaz-kesfetti/912253"
+ },
+ {
+  "d": "guncel",
+  "k": "Yasal düzenleme",
+  "q": "Türkiye'nin ilk iklim kanunu olan 7552 sayılı İklim Kanunu, Resmî Gazete'de yayımlanarak hangi tarihte yürürlüğe girmiştir?",
+  "o": [
+   "9 Temmuz 2025",
+   "19 Mart 2025",
+   "1 Ocak 2025",
+   "29 Ekim 2024",
+   "15 Temmuz 2026"
+  ],
+  "a": 0,
+  "c": "TBMM'de 2 Temmuz 2025'te kabul edilen İklim Kanunu 9 Temmuz 2025'te Resmî Gazete'de yayımlanarak yürürlüğe girdi; 2053 net sıfır emisyon hedefini yasal çerçeveye oturttu.",
+  "src": "https://www.aa.com.tr/tr/gundem/iklim-kanunu-resmi-gazetede/3625549"
+ },
+ {
+  "d": "guncel",
+  "k": "Yasal düzenleme",
+  "q": "Mart 2025'te TBMM'de kabul edilip 19 Mart 2025'te Resmî Gazete'de yayımlanan 7545 sayılı kanun aşağıdakilerden hangisidir?",
+  "o": [
+   "İklim Kanunu",
+   "Siber Güvenlik Kanunu",
+   "Kişisel Verilerin Korunması Kanunu",
+   "Maden Kanunu",
+   "Hayvanları Koruma Kanunu"
+  ],
+  "a": 1,
+  "c": "7545 sayılı Siber Güvenlik Kanunu 12 Mart 2025'te kabul edildi, 19 Mart 2025'te yayımlanarak yürürlüğe girdi ve Siber Güvenlik Kurulu'nu kurdu.",
+  "src": "https://www.tbb.gov.tr/tr/mevzuat-duyurulari/7545-siber-guvenlik-kanunu"
+ },
+ {
+  "d": "guncel",
+  "k": "Savunma sanayii",
+  "q": "27 Ekim 2025'te imzalanan anlaşmayla Türkiye, Birleşik Krallık'tan 20 adet hangi savaş uçağını satın almıştır?",
+  "o": [
+   "F-35 Lightning II",
+   "Rafale",
+   "Eurofighter Typhoon",
+   "F-16 Block 70",
+   "Gripen"
+  ],
+  "a": 2,
+  "c": "Türkiye ile Birleşik Krallık arasında 27 Ekim 2025'te yaklaşık 8 milyar sterlinlik, 20 Eurofighter Typhoon uçağını kapsayan anlaşma imzalandı.",
+  "src": "https://medyascope.tv/2025/10/27/imzalar-atildi-turkiye-ingiltereden-20-eurofighter-lar-typhoon-alacak/"
+ },
+ {
+  "d": "guncel",
+  "k": "Savunma sanayii",
+  "q": "TUSAŞ tarafından geliştirilen jet eğitim ve hafif taarruz uçağı HÜRJET'in ihracatı için 2025 yılında anlaşma imzalanan ilk Avrupa ülkesi aşağıdakilerden hangisidir?",
+  "o": [
+   "Endonezya",
+   "Macaristan",
+   "Azerbaycan",
+   "İspanya",
+   "Pakistan"
+  ],
+  "a": 3,
+  "c": "İspanya ile HÜRJET tedariki için 2025'te imzalar atıldı (IDEF 2025'te Airbus ile iş ortaklığı); bu, Türkiye'nin bir AB ve NATO ülkesine ilk insanlı askeri jet ihracatıdır.",
+  "src": "https://www.aa.com.tr/tr/ekonomi/tusastan-hurjet-icin-ispanyada-tarihi-anlasma/3567543"
+ },
+ {
+  "d": "guncel",
+  "k": "Savunma sanayii",
+  "q": "Türkiye'nin tamamen yerli tasarımla inşa edeceği ilk uçak gemisi MUGEM'in ilk sacının kesimi 2 Ocak 2025'te nerede yapılmıştır?",
+  "o": [
+   "Gölcük Tersanesi Komutanlığı",
+   "İzmir Tersanesi Komutanlığı",
+   "Aksaz Deniz Üssü",
+   "Sedef Tersanesi",
+   "İstanbul Tersanesi Komutanlığı"
+  ],
+  "a": 4,
+  "c": "MUGEM'in inşa faaliyetleri 2 Ocak 2025'te İstanbul Tersanesi Komutanlığı'nda ilk sac kesimiyle başladı; gemi yaklaşık 285 m boyunda ve 60 bin ton üzerinde olacak.",
+  "src": "https://www.savunmasanayist.com/mugem-milli-ucak-gemisi-insasi-basladi-donanma-durmuyor/"
+ },
+ {
+  "d": "guncel",
+  "k": "Savunma sanayii",
+  "q": "28 Kasım 2025'te Karadeniz'de yapılan atışta GÖKDOĞAN füzesiyle bir hava hedefini vurarak bunu başaran dünyadaki ilk insansız savaş uçağı olan platform aşağıdakilerden hangisidir?",
+  "o": [
+   "Bayraktar KIZILELMA",
+   "ANKA-3",
+   "Bayraktar TB3",
+   "AKSUNGUR",
+   "Bayraktar AKINCI"
+  ],
+  "a": 0,
+  "c": "Bayraktar KIZILELMA, 28 Kasım 2025'te ASELSAN MURAD AESA radarıyla tespit ettiği hedefi TÜBİTAK SAGE'nin GÖKDOĞAN görüş ötesi hava-hava füzesiyle vurdu.",
+  "src": "https://www.aa.com.tr/tr/gundem/bayraktar-kizilelma-supersonik-fuze-ile-vurdu/3996929"
+ },
+ {
+  "d": "guncel",
+  "k": "Savunma sanayii",
+  "q": "Türkiye'nin ilk yerli genel maksat helikopteri T625 GÖKBEY, 29 Ekim 2024'te düzenlenen törenle ilk olarak hangi kuruma teslim edilmiştir?",
+  "o": [
+   "Kara Kuvvetleri Komutanlığı",
+   "Jandarma Genel Komutanlığı",
+   "Emniyet Genel Müdürlüğü",
+   "Sahil Güvenlik Komutanlığı",
+   "AFAD Başkanlığı"
+  ],
+  "a": 1,
+  "c": "T625 GÖKBEY 29 Ekim 2024'te Cumhurbaşkanı Erdoğan'ın katıldığı törenle Jandarma Genel Komutanlığına teslim edildi.",
+  "src": "https://www.aa.com.tr/tr/gundem/gokbey-helikopteri-jandarma-genel-komutanligina-teslim-edildi/3378585"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Milli motosikletçi Toprak Razgatlıoğlu, 2025 sezonunu şampiyon tamamlayarak Dünya Superbike Şampiyonası'nda kaçıncı kez dünya şampiyonu olmuştur?",
+  "o": [
+   "İkinci",
+   "Dördüncü",
+   "Üçüncü",
+   "Birinci",
+   "Beşinci"
+  ],
+  "a": 2,
+  "c": "Toprak Razgatlıoğlu 2021 ve 2024'ün ardından Ekim 2025'te üçüncü kez Dünya Superbike şampiyonu oldu.",
+  "src": "https://www.aa.com.tr/tr/dunyadan-spor/milli-motosikletci-toprak-razgatlioglu-2025-dunya-superbiketa-sampiyon-oldu/3721045"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "2026 sezonunda MotoGP'de yarışan ilk Türk pilot olan Toprak Razgatlıoğlu hangi takımla anlaşmıştır?",
+  "o": [
+   "Ducati Lenovo",
+   "Red Bull KTM",
+   "Repsol Honda",
+   "Prima Pramac Yamaha",
+   "Aprilia Racing"
+  ],
+  "a": 3,
+  "c": "Razgatlıoğlu'nun Prima Pramac Yamaha ile 2026 MotoGP anlaşması 10 Haziran 2025'te açıklandı; böylece MotoGP'de yarışan ilk Türk sporcu oldu.",
+  "src": "https://www.motogp.com/en/news/2025/06/10/toprak-razgatlioglu-signs-prima-pramac-yamaha-motogp-deal/751925"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Fenerbahçe Beko, Mayıs 2025'te Abu Dabi'de oynanan EuroLeague finalinde hangi takımı yenerek ikinci kez Avrupa şampiyonu olmuştur?",
+  "o": [
+   "Panathinaikos",
+   "Olympiakos",
+   "Real Madrid",
+   "Anadolu Efes",
+   "AS Monaco"
+  ],
+  "a": 4,
+  "c": "Fenerbahçe Beko Mayıs 2025'te Abu Dabi'de AS Monaco'yu 81-70 yenerek 2017'den sonra ikinci EuroLeague şampiyonluğunu kazandı.",
+  "src": "https://www.aa.com.tr/tr/basketbol/fenerbahce-ikinci-kez-avrupa-basketbolunun-zirvesinde/3579265"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "20 Mayıs 2026'da İstanbul'daki Beşiktaş Stadyumu'nda oynanan UEFA Avrupa Ligi finalini kazanan takım aşağıdakilerden hangisidir?",
+  "o": [
+   "Aston Villa",
+   "SC Freiburg",
+   "Tottenham Hotspur",
+   "Manchester United",
+   "Galatasaray"
+  ],
+  "a": 0,
+  "c": "Aston Villa, 20 Mayıs 2026'da İstanbul'da SC Freiburg'u 3-0 yenerek ilk UEFA Avrupa Ligi kupasını kazandı.",
+  "src": "https://www.tff.org/default.aspx?pageID=471&ftxtID=50620"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Formula 1 ile 24 Nisan 2026'da imzalanan 5 yıllık anlaşmaya göre Türkiye Grand Prix'si hangi yıldan itibaren yeniden İstanbul Park'ta düzenlenecektir?",
+  "o": [
+   "2026",
+   "2027",
+   "2028",
+   "2029",
+   "2030"
+  ],
+  "a": 1,
+  "c": "24 Nisan 2026'da Dolmabahçe'de imzalanan anlaşmayla F1, 2027'den 2031 sonuna kadar İstanbul Park'ta yarışacak.",
+  "src": "https://www.otohaber.com.tr/formula-1-2027-den-itibaren-istanbul-park-a-geri-donuyor-5-yillik-dev-anlasma-imzalandi-h"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Kasım 2025'te Suudi Arabistan'ın başkenti Riyad'da düzenlenen 6. İslami Dayanışma Oyunları'nda Türkiye madalya sıralamasını kaçıncı sırada tamamlamıştır?",
+  "o": [
+   "İkinci",
+   "Üçüncü",
+   "Birinci",
+   "Dördüncü",
+   "Beşinci"
+  ],
+  "a": 2,
+  "c": "Türkiye Riyad 2025'i 72 altın, 44 gümüş, 39 bronz (155 madalya) ile zirvede bitirdi; Özbekistan ikinci, İran üçüncü oldu.",
+  "src": "https://www.fanatik.com.tr/6-islami-dayanisma-oyunlarina-turkiye-damgasi-72-altin-44-gumus-ve-39-bronz-2601785"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "İtalya'nın Taranto kentinde düzenlenen 2026 Akdeniz Oyunları'nda Türkiye toplam kaç madalya kazanarak ikinci sırada yer almıştır?",
+  "o": [
+   "108",
+   "97",
+   "124",
+   "111",
+   "155"
+  ],
+  "a": 3,
+  "c": "Türkiye Taranto 2026'yı 41 altın, 28 gümüş, 42 bronz ile 111 madalyayla ikinci tamamladı ve Oran 2022'deki 108 madalyalık rekorunu geçti.",
+  "src": "https://www.sporx.com/digersporlar/akdenizoyunlari/turkiye-taranto-2026-yi-111-madalyayla-tamamladi-SXHBQ1174622SXQ"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "2026 yılında düzenlenen 665. Tarihi Kırkpınar Yağlı Güreşleri'nde altın kemerin sahibi olan başpehlivan aşağıdakilerden hangisidir?",
+  "o": [
+   "Feyzullah Aktürk",
+   "Ali Gürbüz",
+   "Recep Kara",
+   "Orhan Okulu",
+   "Erkan Taş"
+  ],
+  "a": 4,
+  "c": "Erkan Taş, 2026'daki 665. Kırkpınar'ın finalinde Feyzullah Aktürk'ü yenerek başpehlivan oldu.",
+  "src": "https://www.milliyet.com.tr/skorer/live-665-tarihi-kirkpinar-yagli-gureslerinde-baspehlivan-belli-oldu-altin-kemeri-erkan-tas-kazandi-7617925"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Olimpiyat ikincisi milli boksör Hatice Akbaş, büyükler kategorisindeki ilk Avrupa şampiyonluğunu Eylül 2026'da hangi ülkede düzenlenen şampiyonada kazanmıştır?",
+  "o": [
+   "Bulgaristan",
+   "Sırbistan",
+   "İtalya",
+   "Polonya",
+   "Türkiye"
+  ],
+  "a": 0,
+  "c": "Hatice Akbaş, Bulgaristan'daki 2026 Avrupa Boks Şampiyonası'nda 51 kiloda İspanyol rakibini 5-0 yenerek altın madalya kazandı (25 Eylül 2026).",
+  "src": "https://www.takvim.com.tr/spor/2026/09/25/hatice-akbas-2026-avrupa-sampiyonasinda-altin-madalya-kazandi"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Gebze'de düzenlenen 2026 Avrupa Para Yüzme Şampiyonası'nda 5 altın madalya kazanarak bir Avrupa şampiyonasında bu başarıya ulaşan ilk Türk sporcu olan isim aşağıdakilerden hangisidir?",
+  "o": [
+   "Sevilay Öztürk",
+   "Defne Kurt",
+   "Sümeyye Boyacı",
+   "Beytullah Eroğlu",
+   "Umut Ünlü"
+  ],
+  "a": 1,
+  "c": "Defne Kurt, Gebze Olimpik Yüzme Havuzu'ndaki 2026 Avrupa Para Yüzme Şampiyonası'nda 5. altınını kazandı; Türkiye şampiyonayı 9 altın, 7 gümüşle tamamladı.",
+  "src": "https://www.dunya.com/spor/turkiye-avrupa-para-yuzme-sampiyonasini-16-madalyayla-tamamladi-haberi-839800"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Birmingham'da düzenlenen 2026 Avrupa Atletizm Şampiyonası'nda Türkiye'nin kazandığı tek madalya hangi branştan gelmiştir?",
+  "o": [
+   "Erkekler çekiç atma",
+   "Kadınlar cirit atma",
+   "Erkekler 400 metre engelli",
+   "Erkekler 110 metre engelli",
+   "Kadınlar disk atma"
+  ],
+  "a": 2,
+  "c": "İsmail Nezir, 10-16 Ağustos 2026'da Birmingham'daki şampiyonada erkekler 400 m engelli finalinde 48.26 ile bronz madalya kazandı.",
+  "src": "https://www.birgun.net/haber/avrupa-atletizm-sampiyonasi-sona-erdi-turkiye-den-bir-madalya-5-rekor-729668"
+ },
+ {
+  "d": "guncel",
+  "k": "Spor",
+  "q": "Endonezya'nın başkenti Cakarta'da düzenlenen 2025 Dünya Artistik Cimnastik Şampiyonası'nda halka aletinde gümüş madalya kazanan milli cimnastikçi aşağıdakilerden hangisidir?",
+  "o": [
+   "Ferhat Arıcan",
+   "İbrahim Çolak",
+   "Ahmet Önder",
+   "Adem Asil",
+   "Mehmet Ayberk Koşak"
+  ],
+  "a": 3,
+  "c": "Adem Asil, Ekim 2025'te Cakarta'da halkada 14.566 puanla dünya ikincisi oldu; 2022'de bu alette dünya şampiyonu olmuştu.",
+  "src": "https://www.aa.com.tr/tr/spor/milli-cimnastikci-adem-asil-dunya-2ncisi-oldu/3725780"
+ },
+ {
+  "d": "guncel",
+  "k": "Zirve",
+  "q": "Türk Devletleri Teşkilatı tarihinde ilk kez bir gözlemci ülkenin ev sahipliğinde yapılan gayriresmî zirve 21 Mayıs 2025'te hangi şehirde düzenlenmiştir?",
+  "o": [
+   "Gebele",
+   "Astana",
+   "Bişkek",
+   "Lefkoşa",
+   "Budapeşte"
+  ],
+  "a": 4,
+  "c": "TDT Devlet Başkanları Gayriresmî Zirvesi 21 Mayıs 2025'te gözlemci ülke Macaristan'ın başkenti Budapeşte'de \"Doğu ile Batı'nın Buluşma Noktası\" temasıyla yapıldı.",
+  "src": "https://www.turkicstates.org/tr/haber/informal-summit-of-the-ots-held-in-budapest"
+ },
+ {
+  "d": "guncel",
+  "k": "Zirve",
+  "q": "21-22 Haziran 2025'te İstanbul'da toplanan ve Türkiye'nin bir yıllık dönem başkanlığını devraldığı toplantı aşağıdakilerden hangisidir?",
+  "o": [
+   "İslam İşbirliği Teşkilatı Dışişleri Bakanları Konseyi",
+   "Türk Devletleri Teşkilatı Liderler Zirvesi",
+   "NATO Dışişleri Bakanları Toplantısı",
+   "D-8 Liderler Zirvesi",
+   "G20 Dışişleri Bakanları Toplantısı"
+  ],
+  "a": 0,
+  "c": "İİT Dışişleri Bakanları Konseyi 51. Oturumu 21-22 Haziran 2025'te \"Dönüşen Dünyada İslam İşbirliği Teşkilatı\" temasıyla İstanbul'da yapıldı; dönem başkanlığı Kamerun'dan Türkiye'ye geçti.",
+  "src": "https://www.mfa.gov.tr/islam-isbirligi-teskilati-disisleri-bakanlari-konseyi-51-oturumu-21-22-haziran-2025-istanbul.tr.mfa"
+ },
+ {
+  "d": "guncel",
+  "k": "Doğal afet",
+  "q": "23 Nisan 2025'te merkez üssü Marmara Denizi'nde, İstanbul'un Silivri açıklarında olan depremin AFAD verilerine göre büyüklüğü kaçtır?",
+  "o": [
+   "5,8",
+   "6,2",
+   "6,8",
+   "7,1",
+   "5,4"
+  ],
+  "a": 1,
+  "c": "23 Nisan 2025 saat 12.49'da Silivri açıklarında Mw 6,2 büyüklüğünde deprem meydana geldi.",
+  "src": "https://deprem.afad.gov.tr/assets/pdf/marmara-denizi-depremi.pdf"
+ },
+ {
+  "d": "guncel",
+  "k": "Doğal afet",
+  "q": "10 Ağustos 2025'te meydana gelen 6,1 büyüklüğündeki depremin merkez üssü olan Sındırgı hangi ile bağlıdır?",
+  "o": [
+   "Manisa",
+   "Kütahya",
+   "Balıkesir",
+   "Uşak",
+   "Bursa"
+  ],
+  "a": 2,
+  "c": "10 Ağustos 2025 saat 19.53'te merkez üssü Sındırgı (Balıkesir) olan Mw 6,1 deprem meydana geldi; Manisa, İzmir, Uşak ve Bursa'da da hissedildi.",
+  "src": "https://www.aa.com.tr/tr/gundem/afadin-sindirgi-6-1-depremi-raporu-yayimlandi/3706966"
+ },
+ {
+  "d": "guncel",
+  "k": "Türkiye",
+  "q": "\"Terörsüz Türkiye\" hedefi doğrultusunda TBMM bünyesinde kurulan ve ilk toplantısını 5 Ağustos 2025'te TBMM Başkanı Numan Kurtulmuş başkanlığında yapan komisyonun adı aşağıdakilerden hangisidir?",
+  "o": [
+   "Anayasa Uzlaşma Komisyonu",
+   "Toplumsal Barış ve Kardeşlik Komisyonu",
+   "İnsan Haklarını İnceleme Komisyonu",
+   "Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu",
+   "Millî Birlik ve Beraberlik Komisyonu"
+  ],
+  "a": 3,
+  "c": "Millî Dayanışma, Kardeşlik ve Demokrasi Komisyonu ilk toplantısını 5 Ağustos 2025'te TBMM Başkanı Numan Kurtulmuş başkanlığında yaptı.",
+  "src": "https://www.trthaber.com/haber/gundem/tarihi-komisyon-ilk-toplantisini-yapti-916028.html"
+ },
+ {
+  "d": "guncel",
+  "k": "Türkiye",
+  "q": "TÜİK'in Şubat 2026'da açıkladığı Adrese Dayalı Nüfus Kayıt Sistemi sonuçlarına göre 31 Aralık 2025 itibarıyla Türkiye'nin nüfusu yaklaşık kaç kişidir?",
+  "o": [
+   "85,7 milyon",
+   "84,7 milyon",
+   "87,4 milyon",
+   "88,0 milyon",
+   "86,1 milyon"
+  ],
+  "a": 4,
+  "c": "TÜİK'e göre Türkiye nüfusu 2025 sonunda 86 milyon 92 bin 168 kişi oldu; yıllık nüfus artış hızı binde 5 olarak gerçekleşti.",
+  "src": "https://www.tuik.gov.tr/media/announcements/ADNKS_2025TR.pdf"
+ },
+ {
+  "d": "guncel",
+  "k": "Türkiye",
+  "q": "TÜİK verilerine göre Türkiye'nin 2025 yılı turizm geliri yaklaşık kaç milyar dolar olarak gerçekleşerek rekor kırmıştır?",
+  "o": [
+   "65,2",
+   "61,1",
+   "54,3",
+   "72,8",
+   "48,6"
+  ],
+  "a": 0,
+  "c": "Turizm geliri 2025'te bir önceki yıla göre %6,8 artarak 65 milyar 230 milyon dolar oldu (Ocak 2026'da açıklandı); 2024'te 61,1 milyar dolardı.",
+  "src": "https://www.apara.com.tr/piyasalar/2026/01/30/tuik-acikladi-turkiyenin-turizm-geliri-2025te-rekor-kirdi"
+ },
+ {
+  "d": "guncel",
+  "k": "Yıl ilanları",
+  "q": "Emine Erdoğan'ın Aralık 2025'te Yeşilay'ın düzenlediği zirvede \"Bağımsız Gelecek, Sağlıklı Nesiller\" anlayışıyla 2026 için yaptığı ilan aşağıdakilerden hangisidir?",
+  "o": [
+   "Aile Yılı",
+   "Bağımsızlık Yılı",
+   "Sıfır Atık Yılı",
+   "Gençlik Yılı",
+   "Sağlıklı Yaşam Yılı"
+  ],
+  "a": 1,
+  "c": "Emine Erdoğan, Aralık 2025'te Yeşilay zirvesinde tütün, alkol, uyuşturucu, kumar ve dijital bağımlılıklara karşı 2026'yı \"Bağımsızlık Yılı\" ilan etti.",
+  "src": "https://www.aa.com.tr/tr/gundem/emine-erdogan-bagimsiz-gelecek-saglikli-nesiller-anlayisiyla-2026yi-bagimsizlik-yili-ilan-ediyoruz/3775812"
+ },
+ {
+  "d": "guncel",
+  "k": "Bilim-teknoloji",
+  "q": "TEKNOFEST, tarihinde ilk kez yurt dışında 1-4 Mayıs 2025'te nerede düzenlenmiştir?",
+  "o": [
+   "Azerbaycan",
+   "Kazakistan",
+   "Kuzey Kıbrıs Türk Cumhuriyeti",
+   "Özbekistan",
+   "Almanya"
+  ],
+  "a": 2,
+  "c": "TEKNOFEST KKTC, 1-4 Mayıs 2025'te Eski Ercan Havalimanı'nda yapıldı ve yaklaşık 225 bin ziyaretçi ağırladı.",
+  "src": "https://www.airlinehaber.com/teknofest-ilk-kez-kktcde-gerceklestirildi-225-bin-ziyaretci-47-bin-yarismaci/"
+ },
+ {
+  "d": "guncel",
+  "k": "Bilim-teknoloji",
+  "q": "30 Eylül-4 Ekim 2026 tarihleri arasında düzenlenen TEKNOFEST 2026 hangi ilde yapılmaktadır?",
+  "o": [
+   "Gaziantep",
+   "Diyarbakır",
+   "Samsun",
+   "Şanlıurfa",
+   "İzmir"
+  ],
+  "a": 3,
+  "c": "TEKNOFEST 2026, 30 Eylül-4 Ekim 2026'da Şanlıurfa GAP Havalimanı'nda düzenleniyor.",
+  "src": "https://www.teknofest.org/tr/duyurular/teknofest-2026-yilinda-sanliurfada/"
+ },
+ {
+  "d": "guncel",
+  "k": "Uzay",
+  "q": "Türkiye'nin ilk Ay görevi için geliştirilen ve üretim-entegrasyonu tamamlanarak 14 Eylül 2026'da kamuoyuna tanıtılan uzay aracını geliştiren kurum aşağıdakilerden hangisidir?",
+  "o": [
+   "TUSAŞ",
+   "ASELSAN",
+   "ROKETSAN",
+   "Türksat",
+   "TÜBİTAK UZAY"
+  ],
+  "a": 4,
+  "c": "TÜBİTAK UZAY'ın geliştirdiği yaklaşık 3,5 tonluk Ay uzay aracı 14 Eylül 2026'da tanıtıldı; fırlatmanın 2027'nin ilk yarısında yapılması hedefleniyor.",
+  "src": "https://uzay.tubitak.gov.tr/en/integration-activities-of-turkiyes-first-lunar-spacecraft-successfully-concluded/"
+ },
+ {
+  "d": "guncel",
+  "k": "Enerji",
+  "q": "Ağustos 2026'da günlük 83 bin 300 varil ile petrol üretim rekoru kırılan Gabar Dağı sahası hangi ilimizdedir?",
+  "o": [
+   "Şırnak",
+   "Batman",
+   "Siirt",
+   "Hakkâri",
+   "Mardin"
+  ],
+  "a": 0,
+  "c": "Bakan Bayraktar Ağustos 2026'da Şırnak'taki Gabar'da günlük üretimin 83.300 varille rekor kırdığını açıkladı; sahada üretim 2021'de Şehit Esma Çevik kuyusuyla başlamıştı.",
+  "src": "https://www.trthaber.com/haber/ekonomi/gabarda-petrol-uretimi-rekor-kirdi-gunluk-uretim-83-bin-300-varile-ulasti-953242.html"
+ },
+ {
+  "d": "guncel",
+  "k": "Enerji",
+  "q": "Çağrı Bey sondaj gemisi, Türkiye'nin yurt dışındaki ilk derin deniz arama sondajını 2026 yılında hangi ülkede yapmak üzere yola çıkmıştır?",
+  "o": [
+   "Libya",
+   "Somali",
+   "Azerbaycan",
+   "Irak",
+   "Cezayir"
+  ],
+  "a": 1,
+  "c": "Çağrı Bey 15 Şubat 2026'da Taşucu'ndan Somali'ye uğurlandı, Nisan 2026'da ulaştı; Mogadişu'ya 372 km uzaklıktaki CURAD-1 kuyusunu delecek.",
+  "src": "https://www.aa.com.tr/tr/ekonomi/cagri-bey-sondaj-gemisi-curad-1-kuyusuna-dogru-yola-cikti/3903076"
+ },
+ {
+  "d": "guncel",
+  "k": "Arkeoloji",
+  "q": "Taş Tepeler Projesi kapsamında 2025 kazılarında ilk kez insan yüzü tasvir edilmiş T biçimli dikilitaşın bulunduğu ören yeri aşağıdakilerden hangisidir?",
+  "o": [
+   "Göbeklitepe",
+   "Çatalhöyük",
+   "Karahantepe",
+   "Boncuklu Tarla",
+   "Sayburç"
+  ],
+  "a": 2,
+  "c": "Bakan Ersoy 2025'te Karahantepe'de insan yüzlü T biçimli dikilitaş bulunduğunu açıkladı; Karahantepe, Archaeology dergisinin 2025'in en önemli 10 keşfi listesine girdi.",
+  "src": "https://www.trthaber.com/foto-galeri/karahantepede-12-bin-yil-oncesine-ait-insan-yuzlu-dikili-tas-bulundu/73912.html"
+ },
+ {
+  "d": "guncel",
+  "k": "Arkeoloji",
+  "q": "Kültür ve Turizm Bakanı Mehmet Nuri Ersoy'un Eylül 2026'daki açıklamasına göre, henüz duyurulmamış 8 yeni alanla birlikte Taş Tepeler bölgesindeki Neolitik alan sayısı kaça ulaşmıştır?",
+  "o": [
+   "12",
+   "15",
+   "24",
+   "20",
+   "30"
+  ],
+  "a": 3,
+  "c": "Bakan Ersoy 17 Eylül 2026'da kamuoyuna açıklanan 12 alana ek olarak 8 yeni alan bulunduğunu ve sayının 20'ye ulaştığını duyurdu.",
+  "src": "https://www.tgrthaber.com/kultur-sanat/bakan-ersoy-acikladi-istanbulun-tarihi-garlari-icin-tarih-verildi-3359731"
+ },
+ {
+  "d": "guncel",
+  "k": "Kültür-sanat",
+  "q": "29 Ekim 2025'te açıklanan Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri kapsamında Atatürk Uluslararası Barış Ödülü kime verilmiştir?",
+  "o": [
+   "Papa XIV. Leo",
+   "Mahmud Abbas",
+   "Nelson Mandela Vakfı",
+   "Kızılay",
+   "António Guterres"
+  ],
+  "a": 4,
+  "c": "Cumhurbaşkanı Erdoğan 29 Ekim 2025'te ödülleri açıkladı; Atatürk Uluslararası Barış Ödülü BM Genel Sekreteri António Guterres'e verildi.",
+  "src": "https://www.iletisim.gov.tr/turkce/haberler/detay/cumhurbaskani-erdogan-cumhurbaskanligi-kultur-ve-sanat-buyuk-odullerinin-sahiplerini-acikladi-29-10-25"
+ }
+]

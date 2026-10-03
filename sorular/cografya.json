@@ -1,0 +1,590 @@
+[
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "Aşağıdakilerden hangisi Türkiye'nin matematik konumunun bir sonucudur?",
+  "o": [
+   "Karadeniz kıyılarında yağışın yıl boyunca fazla olması",
+   "Güneye bakan yamaçların kuzeye bakan yamaçlara göre daha sıcak olması",
+   "Boğazlar sayesinde önemli ticaret yollarının üzerinde bulunması",
+   "Doğu Anadolu'da kışların uzun ve sert geçmesi",
+   "Üç tarafının denizlerle çevrili olması"
+  ],
+  "a": 1,
+  "c": "Kuzey Yarım Küre'de bulunan Türkiye'de Güneş ışınları güneyden geldiği için güneye bakan yamaçlar daha fazla ısınır; bu, enlemle ilgili matematik konum sonucudur. Diğerleri yer şekilleri ve özel konumla ilgilidir."
+ },
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "Türkiye 26° ve 45° doğu meridyenleri arasında yer almaktadır.\nBuna göre Türkiye'nin en doğu ucu ile en batı ucu arasındaki yerel saat farkı kaç dakikadır?",
+  "o": [
+   "19",
+   "36",
+   "60",
+   "76",
+   "96"
+  ],
+  "a": 3,
+  "c": "Meridyenler arasında 45 − 26 = 19 fark vardır; her meridyen 4 dakikalık fark yarattığından 19 × 4 = 76 dakikadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "I. Kuzey Yarım Küre'de yer alması\nII. Asya, Avrupa ve Afrika kıtalarının birbirine yaklaştığı yerde bulunması\nIII. Dağların kıyıya paralel uzanması\nTürkiye'de kuzeye bakan dağ yamaçlarında kar örtüsünün daha uzun süre yerde kalması, yukarıdakilerden hangileriyle ilişkilidir?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 0,
+  "c": "Kuzey Yarım Küre'de Güneş ışınları güneyden geldiği için kuzey yamaçlar daha az ısınır ve kar daha geç erir. Kıtalara yakınlık ve dağların uzanışı bu durumla ilgili değildir."
+ },
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "Aşağıdakilerden hangisi Türkiye'nin göreceli (özel) konumuyla ilişkili değildir?",
+  "o": [
+   "Jeopolitik öneminin yüksek olması",
+   "Enerji nakil hatlarının topraklarından geçmesi",
+   "Zengin bir kültürel mirasa sahip olması",
+   "Kısa mesafelerde farklı iklim özelliklerinin görülmesi",
+   "Gece ile gündüz sürelerinin yıl içinde değişmesi"
+  ],
+  "a": 4,
+  "c": "Gece-gündüz sürelerinin yıl içinde değişmesi, Dünya'nın eksen eğikliği ve enlemle ilgili olup matematik konumun sonucudur."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Aşağıdaki göllerden hangisinin oluşumu diğerlerinden farklıdır?",
+  "o": [
+   "Tortum Gölü",
+   "Van Gölü",
+   "Sera Gölü",
+   "Yedigöller",
+   "Abant Gölü"
+  ],
+  "a": 1,
+  "c": "Tortum, Abant, Sera ve Yedigöller heyelan set gölüdür. Van Gölü ise Nemrut Dağı'ndan çıkan lavların önünü kapatmasıyla oluşmuş volkanik set gölüdür."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Aşağıdakilerden hangisi karstik bir yer şekli değildir?",
+  "o": [
+   "Pamukkale travertenleri",
+   "Damlataş Mağarası",
+   "Karapınar obrukları",
+   "Ürgüp peribacaları",
+   "Elmalı polyesi"
+  ],
+  "a": 3,
+  "c": "Peribacaları volkanik tüflerin sel suları ve akarsularla aşındırılmasıyla oluşur. Diğerleri kalkerli arazide suyun eritme ve biriktirme etkisiyle oluşan karstik şekillerdir."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Son buzul çağından kalan sirk gölleri ve buzul vadileri aşağıdaki dağların hangisinde yaygın olarak görülür?",
+  "o": [
+   "Yunt Dağı",
+   "Karacadağ",
+   "Madra Dağı",
+   "Kaz Dağı",
+   "Kaçkar Dağları"
+  ],
+  "a": 4,
+  "c": "Buzul şekilleri, yüksekliği fazla olan Kaçkar, Ağrı, Erciyes, Uludağ gibi dağlarda görülür. Diğer dağlar alçak olduğu için buzullaşmaya uğramamıştır."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Aşağıdaki ovalardan hangisi delta ovası değildir?",
+  "o": [
+   "Muş Ovası",
+   "Çarşamba Ovası",
+   "Silifke Ovası",
+   "Çukurova",
+   "Bafra Ovası"
+  ],
+  "a": 0,
+  "c": "Bafra (Kızılırmak), Çarşamba (Yeşilırmak), Silifke (Göksu) ve Çukurova (Seyhan-Ceyhan) akarsuların denize döküldüğü yerde oluşan delta ovalarıdır. Muş Ovası ise iç kesimde tektonik kökenli bir ovadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "I. Büyük Menderes Nehri'nin oluşturduğu büklümler\nII. Kızılırmak Deltası\nIII. Salda Gölü\nIV. Ağrı Dağı\nYukarıdaki yer şekillerinden hangilerinin oluşumunda akarsular etkili olmuştur?",
+  "o": [
+   "I ve II",
+   "I ve IV",
+   "II ve III",
+   "II ve IV",
+   "III ve IV"
+  ],
+  "a": 0,
+  "c": "Menderesler ve deltalar akarsu aşındırma ve biriktirmesiyle oluşur. Salda Gölü karstik, Ağrı Dağı ise volkanik kökenlidir."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Ege Bölgesi'nde Gediz, Küçük Menderes ve Büyük Menderes ovalarının oluşumunda temel etken aşağıdakilerden hangisidir?",
+  "o": [
+   "Kalkerli arazinin erimesi",
+   "Tektonik çöküntü alanlarının akarsu alüvyonlarıyla dolması",
+   "Buzulların aşındırması",
+   "Lavların geniş alanlara yayılması",
+   "Rüzgârın taşıdığı kumların birikmesi"
+  ],
+  "a": 1,
+  "c": "Bu ovalar kırılmalarla oluşan graben adlı çöküntü alanlarıdır; akarsuların getirdiği alüvyonlarla dolarak verimli ovalara dönüşmüşlerdir."
+ },
+ {
+  "d": "cografya",
+  "k": "İklim ve bitki örtüsü",
+  "q": "Kızılçam ormanlarının tahrip edildiği alanlarda ortaya çıkan, yaz kuraklığına dayanıklı, sık ve her mevsim yeşil kalan çalı topluluğu aşağıdakilerden hangisidir?",
+  "o": [
+   "Bozkır",
+   "Psödomaki",
+   "Dağ çayırı",
+   "Maki",
+   "Tundra"
+  ],
+  "a": 3,
+  "c": "Akdeniz ikliminin doğal bitki örtüsü kızılçam ormanlarıdır; bu ormanlar tahrip edilince yerini maki adı verilen sık çalılıklar alır."
+ },
+ {
+  "d": "cografya",
+  "k": "İklim ve bitki örtüsü",
+  "q": "Aşağıdaki illerin hangisinde yağışın mevsimlere dağılışı en dengelidir?",
+  "o": [
+   "Konya",
+   "Antalya",
+   "Edirne",
+   "Diyarbakır",
+   "Rize"
+  ],
+  "a": 4,
+  "c": "Rize'de Karadeniz iklimi görülür; bu iklimde her mevsim yağış alınır ve yağışın mevsimlere dağılışı en dengelidir."
+ },
+ {
+  "d": "cografya",
+  "k": "İklim ve bitki örtüsü",
+  "q": "Konya Ovası'nda yaz ile kış arasındaki sıcaklık farkının fazla olmasının temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Denizel etkilerin çevredeki dağlarla engellenmesi",
+   "Ekvator'a yakın olması",
+   "Orman varlığının fazla olması",
+   "Yükseltisinin deniz seviyesine yakın olması",
+   "Yaz aylarında bol yağış alması"
+  ],
+  "a": 0,
+  "c": "Kıyıya paralel uzanan dağlar denizin ılımanlaştırıcı etkisini engeller; bu nedenle iç kesimlerde karasallık artar ve yıllık sıcaklık farkı büyür."
+ },
+ {
+  "d": "cografya",
+  "k": "İklim ve bitki örtüsü",
+  "q": "Aşağıdaki bölge-bitki örtüsü eşleştirmelerinden hangisi yanlıştır?",
+  "o": [
+   "İç Anadolu – Bozkır",
+   "Güneydoğu Anadolu – Tropikal yağmur ormanları",
+   "Doğu Karadeniz kıyıları – Geniş yapraklı ormanlar",
+   "Doğu Anadolu'nun yüksek kesimleri – Dağ çayırları",
+   "Akdeniz kıyıları – Maki"
+  ],
+  "a": 1,
+  "c": "Türkiye'de tropikal yağmur ormanları bulunmaz; Güneydoğu Anadolu'da yaz kuraklığına bağlı olarak bozkır yaygındır."
+ },
+ {
+  "d": "cografya",
+  "k": "Toprak",
+  "q": "Kalkerli kayaçların ayrışmasıyla oluşan ve içerdiği demir oksit nedeniyle kırmızı renkli olan terra rossa toprakları aşağıdaki illerin hangisinde daha yaygındır?",
+  "o": [
+   "Erzurum",
+   "Rize",
+   "Antalya",
+   "Edirne",
+   "Kastamonu"
+  ],
+  "a": 2,
+  "c": "Terra rossa, Akdeniz ikliminin görüldüğü kalkerli alanlarda oluşur; en yaygın görüldüğü yerler Akdeniz kıyılarıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Akarsular ve göller",
+  "q": "I. Aras\nII. Fırat\nIII. Dicle\nIV. Çoruh\nYukarıdaki akarsulardan hangileri Türkiye'den doğup Basra Körfezi'ne ulaşır?",
+  "o": [
+   "I ve II",
+   "I ve IV",
+   "II ve III",
+   "II ve IV",
+   "III ve IV"
+  ],
+  "a": 2,
+  "c": "Fırat ve Dicle Irak'ta birleşip Şattülarap adıyla Basra Körfezi'ne dökülür. Aras Hazar Denizi'ne, Çoruh ise Gürcistan'dan geçerek Karadeniz'e ulaşır."
+ },
+ {
+  "d": "cografya",
+  "k": "Akarsular ve göller",
+  "q": "Aşağıdaki akarsulardan hangisi denize ulaşmayıp kapalı bir havzaya dökülür?",
+  "o": [
+   "Kızılırmak",
+   "Gediz",
+   "Seyhan",
+   "Bendimahi Çayı",
+   "Yeşilırmak"
+  ],
+  "a": 3,
+  "c": "Bendimahi Çayı Van Gölü'ne dökülür; Van Gölü havzası denizle bağlantısı olmayan kapalı bir havzadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Kıyı tipleri",
+  "q": "Karadeniz kıyılarının az girintili çıkıntılı olmasının temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Yağış miktarının fazla olması",
+   "Gel-git genliğinin fazla olması",
+   "Akarsuların kısa olması",
+   "Kıyıda kumul alanlarının yaygın olması",
+   "Dağların kıyıya paralel uzanması"
+  ],
+  "a": 4,
+  "c": "Karadeniz'de dağlar kıyıya paralel uzandığı için boyuna kıyı tipi oluşmuştur; bu kıyılar az girintili çıkıntılıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Kıyı tipleri",
+  "q": "Akarsu vadilerinin deniz suları altında kalmasıyla oluşan ria tipi kıyıya Türkiye'deki en tipik örnek aşağıdakilerden hangisidir?",
+  "o": [
+   "Haliç (İstanbul)",
+   "Kapıdağ Yarımadası",
+   "Antalya falezleri",
+   "Ölüdeniz lagünü",
+   "Bafra deltası"
+  ],
+  "a": 0,
+  "c": "İstanbul'daki Haliç, akarsu vadisinin deniz suları altında kalmasıyla oluşmuş bir ria örneğidir. Kapıdağ tombolo, Ölüdeniz lagün, Antalya falez kıyısıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Akarsular ve göller",
+  "q": "Van ve Tuz göllerinin sularının sodalı ya da tuzlu olmasında aşağıdakilerden hangisi belirleyicidir?",
+  "o": [
+   "Göllerin derin olması",
+   "Göllerin bir gideğeninin (denize akıntısının) olmaması",
+   "Göllerin yükseltisinin fazla olması",
+   "Göllere çok sayıda akarsu dökülmesi",
+   "Göllerin çevresinde ormanların bulunması"
+  ],
+  "a": 1,
+  "c": "Gideğeni olmayan göllerde su yalnızca buharlaşmayla kaybedilir; akarsuların getirdiği mineraller birikir ve su tuzlu ya da sodalı hâle gelir."
+ },
+ {
+  "d": "cografya",
+  "k": "Nüfus",
+  "q": "Aşağıdaki illerin hangisinde aritmetik nüfus yoğunluğu en azdır?",
+  "o": [
+   "İstanbul",
+   "Kocaeli",
+   "Tunceli",
+   "İzmir",
+   "Bursa"
+  ],
+  "a": 2,
+  "c": "Tunceli engebeli yüzeyi ve sınırlı ekonomik olanakları nedeniyle Türkiye'de nüfus yoğunluğu en düşük illerdendir."
+ },
+ {
+  "d": "cografya",
+  "k": "Nüfus",
+  "q": "Tabanı geniş, tepesi dar olan bir nüfus piramidine sahip ülke için;\nI. Doğum oranı yüksektir.\nII. Genç nüfus oranı fazladır.\nIII. Ortanca yaş yüksektir.\nyargılarından hangileri söylenebilir?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 2,
+  "c": "Geniş taban doğum oranının ve genç nüfusun fazla olduğunu gösterir. Böyle ülkelerde ortanca yaş düşüktür."
+ },
+ {
+  "d": "cografya",
+  "k": "Yerleşme",
+  "q": "Doğu Karadeniz'de kırsal yerleşmelerin dağınık olmasının temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Kurak iklim koşullarının görülmesi",
+   "Geniş düzlüklerin bulunması",
+   "Maden yataklarının fazla olması",
+   "Engebeli arazi ve her yerde su bulunabilmesi",
+   "Nüfusun büyük kısmının sanayide çalışması"
+  ],
+  "a": 3,
+  "c": "Eğimli arazi toplu yerleşmeyi zorlaştırır; bol yağış nedeniyle her yerde su bulunabildiği için konutlar tarım alanlarının yakınına dağınık biçimde kurulur."
+ },
+ {
+  "d": "cografya",
+  "k": "Göç",
+  "q": "I. Tarımda makineleşme\nII. Şehirlerde sanayinin gelişmesi\nIII. Kırsal nüfusun azalması\nTürkiye'de 1950'li yıllardan sonra kırdan kente göçü hızlandıran etkenler yukarıdakilerden hangileridir?",
+  "o": [
+   "Yalnız I",
+   "Yalnız III",
+   "I ve II",
+   "I ve III",
+   "II ve III"
+  ],
+  "a": 2,
+  "c": "Makineleşme kırda iş gücü ihtiyacını azaltmış, sanayi kentlerde iş olanağı yaratmıştır. Kırsal nüfusun azalması göçün nedeni değil, sonucudur."
+ },
+ {
+  "d": "cografya",
+  "k": "Göç",
+  "q": "Aşağıdakilerden hangisi mevsimlik göçe örnektir?",
+  "o": [
+   "1960'larda Almanya'ya yapılan işçi göçü",
+   "Nüfus mübadelesiyle Balkanlardan gelenler",
+   "Köyden büyük şehre kalıcı olarak taşınma",
+   "Nitelikli iş gücünün yurt dışına gitmesi",
+   "Fındık hasadında Ordu ve Giresun'a gelen tarım işçileri"
+  ],
+  "a": 4,
+  "c": "Fındık hasadı gibi belli dönemlerde gidilip iş bitince dönülen hareketler mevsimlik göçtür."
+ },
+ {
+  "d": "cografya",
+  "k": "Tarım",
+  "q": "Aşağıdakilerden hangisi çay bitkisinin yetişme koşullarından biri değildir?",
+  "o": [
+   "Belirgin bir yaz kuraklığı",
+   "Nemli hava",
+   "Asitli topraklar",
+   "Bol ve düzenli yağış",
+   "Kışların ılık geçmesi"
+  ],
+  "a": 0,
+  "c": "Çay her mevsim yağış ve nem ister; yaz kuraklığı çay için olumsuzdur. Bu nedenle Doğu Karadeniz kıyılarında yetişir."
+ },
+ {
+  "d": "cografya",
+  "k": "Tarım",
+  "q": "Aşağıdaki illerin hangisinde zeytin tarımı yapılamaz?",
+  "o": [
+   "Balıkesir",
+   "Erzurum",
+   "Muğla",
+   "Hatay",
+   "Bursa"
+  ],
+  "a": 1,
+  "c": "Zeytin kış soğuklarına dayanıksızdır; ılıman kıyı illerinde yetişir. Kışları çok sert geçen Erzurum'da zeytin yetişmez."
+ },
+ {
+  "d": "cografya",
+  "k": "Tarım",
+  "q": "Aşağıdaki ürün-il eşleştirmelerinden hangisi yanlıştır?",
+  "o": [
+   "Fındık – Ordu",
+   "Çay – Rize",
+   "Muz – Kars",
+   "Antep fıstığı – Gaziantep",
+   "Haşhaş – Afyonkarahisar"
+  ],
+  "a": 2,
+  "c": "Muz yüksek sıcaklık ister ve Türkiye'de Anamur-Alanya kıyılarında yetişir. Kars, soğuk iklimi nedeniyle muz yetiştiriciliğine uygun değildir."
+ },
+ {
+  "d": "cografya",
+  "k": "Hayvancılık",
+  "q": "Akdeniz Bölgesi'nde Toros Dağları'nın makilerle kaplı engebeli yamaçlarında yaygın olarak beslenen hayvan aşağıdakilerden hangisidir?",
+  "o": [
+   "Tiftik keçisi",
+   "Manda",
+   "Merinos koyunu",
+   "Kıl keçisi",
+   "Kültür ırkı sığır"
+  ],
+  "a": 3,
+  "c": "Kıl keçisi engebeli arazilere ve maki örtüsüne uyum sağlar; bu nedenle Toroslarda yaygındır."
+ },
+ {
+  "d": "cografya",
+  "k": "Tarım",
+  "q": "GAP kapsamındaki sulama çalışmalarından sonra Harran Ovası'nda üretimi en fazla artan sanayi bitkisi aşağıdakilerden hangisidir?",
+  "o": [
+   "Çay",
+   "Tütün",
+   "Şeker pancarı",
+   "Haşhaş",
+   "Pamuk"
+  ],
+  "a": 4,
+  "c": "Pamuk yüksek sıcaklık ve sulama ister; Harran Ovası sulamaya açılınca Türkiye'nin en önemli pamuk üretim alanlarından biri olmuştur."
+ },
+ {
+  "d": "cografya",
+  "k": "Madenler",
+  "q": "Dünya rezervlerinin büyük bölümü Türkiye'de bulunan ve Eskişehir-Kırka, Balıkesir-Bigadiç ile Kütahya-Emet'te çıkarılan maden aşağıdakilerden hangisidir?",
+  "o": [
+   "Bor",
+   "Boksit",
+   "Krom",
+   "Bakır",
+   "Linyit"
+  ],
+  "a": 0,
+  "c": "Türkiye dünya bor rezervlerinin yaklaşık dörtte üçüne sahiptir; başlıca yataklar Kırka, Bigadiç, Emet ve Kestelek'tedir."
+ },
+ {
+  "d": "cografya",
+  "k": "Enerji kaynakları",
+  "q": "Türkiye'de taşkömürü üretiminin yapıldığı başlıca havza aşağıdakilerden hangisidir?",
+  "o": [
+   "Afşin-Elbistan",
+   "Zonguldak",
+   "Tunçbilek",
+   "Soma",
+   "Batman"
+  ],
+  "a": 1,
+  "c": "Taşkömürü Zonguldak ve çevresinde çıkarılır. Afşin-Elbistan, Soma ve Tunçbilek linyit, Batman ise petrol üretim alanıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Enerji kaynakları",
+  "q": "Türkiye'de jeotermal enerjiden elektrik üretiminin en fazla yapıldığı iller aşağıdakilerin hangisinde birlikte verilmiştir?",
+  "o": [
+   "Konya ve Karaman",
+   "Rize ve Artvin",
+   "Aydın ve Denizli",
+   "Edirne ve Kırklareli",
+   "Hakkari ve Şırnak"
+  ],
+  "a": 2,
+  "c": "Jeotermal kaynakların sıcaklığı Batı Anadolu'nun fay hatları boyunca yüksektir; jeotermal elektrik santrallerinin çoğu Aydın ve Denizli'dedir."
+ },
+ {
+  "d": "cografya",
+  "k": "Sanayi",
+  "q": "Aşağıdaki illerin hangisinde demir-çelik fabrikası bulunmaz?",
+  "o": [
+   "Karabük",
+   "Zonguldak",
+   "Hatay",
+   "Nevşehir",
+   "İzmir"
+  ],
+  "a": 3,
+  "c": "Karabük, Zonguldak (Ereğli), Hatay (İskenderun) ve İzmir (Aliağa) demir-çelik üretimi yapılan yerlerdir; Nevşehir'de demir-çelik tesisi yoktur."
+ },
+ {
+  "d": "cografya",
+  "k": "Sanayi",
+  "q": "Şeker fabrikalarının şeker pancarı tarımının yapıldığı alanlara yakın kurulmasının temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Enerji ihtiyacının az olması",
+   "Liman olanaklarından yararlanılması",
+   "Ürünün dışa satımının kolaylaşması",
+   "Nitelikli iş gücüne ihtiyaç duyulması",
+   "Hammaddenin uzun süre bekletilememesi ve taşımanın maliyetli olması"
+  ],
+  "a": 4,
+  "c": "Şeker pancarı hasattan sonra uzun süre bekletilince şeker oranı düşer ve hacimli olduğundan taşınması pahalıdır; bu yüzden fabrikalar hammaddeye yakın kurulur."
+ },
+ {
+  "d": "cografya",
+  "k": "Ulaşım",
+  "q": "Aşağıdakilerden hangisi İstanbul Boğazı'nın iki yakasını birbirine bağlayan ulaşım yapılarından biri değildir?",
+  "o": [
+   "1915 Çanakkale Köprüsü",
+   "Yavuz Sultan Selim Köprüsü",
+   "15 Temmuz Şehitler Köprüsü",
+   "Avrasya Tüneli",
+   "Marmaray"
+  ],
+  "a": 0,
+  "c": "1915 Çanakkale Köprüsü İstanbul Boğazı'nda değil, Çanakkale Boğazı üzerinde Lapseki ile Gelibolu arasındadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Ulaşım",
+  "q": "Karadeniz Bölgesi'nde kıyı boyunca demir yolu ağının gelişmemesinin temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Nüfusun az olması",
+   "Dağların kıyıya paralel uzanması ve arazinin engebeli olması",
+   "Kıyıda büyük limanların bulunmaması",
+   "Tarım ürünlerinin az olması",
+   "Kış aylarında denizin donması"
+  ],
+  "a": 1,
+  "c": "Engebeli ve eğimli arazi, demir yolu yapımını teknik açıdan güçleştirir ve maliyetini çok artırır."
+ },
+ {
+  "d": "cografya",
+  "k": "Turizm",
+  "q": "Aşağıdaki turizm varlıklarından hangisi Nevşehir ilinde bulunmaz?",
+  "o": [
+   "Göreme",
+   "Derinkuyu Yeraltı Şehri",
+   "Sümela Manastırı",
+   "Avanos",
+   "Ürgüp"
+  ],
+  "a": 2,
+  "c": "Sümela Manastırı Trabzon'un Maçka ilçesindedir. Göreme, Derinkuyu, Ürgüp ve Avanos Kapadokya bölgesinde, Nevşehir'dedir."
+ },
+ {
+  "d": "cografya",
+  "k": "Turizm",
+  "q": "Aşağıdakilerden hangisi bir kış turizmi merkezi değildir?",
+  "o": [
+   "Palandöken",
+   "Erciyes",
+   "Sarıkamış",
+   "Ölüdeniz",
+   "Kartalkaya"
+  ],
+  "a": 3,
+  "c": "Ölüdeniz Muğla-Fethiye'de bir deniz-kum-güneş turizmi merkezidir. Diğerleri kayak merkezleridir."
+ },
+ {
+  "d": "cografya",
+  "k": "Bölgesel kalkınma projeleri",
+  "q": "Aşağıdaki illerden hangisi Güneydoğu Anadolu Projesi (GAP) kapsamında yer almaz?",
+  "o": [
+   "Batman",
+   "Kilis",
+   "Şırnak",
+   "Adıyaman",
+   "Malatya"
+  ],
+  "a": 4,
+  "c": "GAP; Adıyaman, Batman, Diyarbakır, Gaziantep, Kilis, Mardin, Siirt, Şanlıurfa ve Şırnak'ı kapsar. Malatya Doğu Anadolu Projesi (DAP) içindedir."
+ },
+ {
+  "d": "cografya",
+  "k": "Doğal afetler",
+  "q": "Aşağıdaki illerin hangisinde deprem tehlikesi diğerlerine göre daha azdır?",
+  "o": [
+   "Konya",
+   "Bingöl",
+   "Düzce",
+   "Erzincan",
+   "Kahramanmaraş"
+  ],
+  "a": 0,
+  "c": "Bingöl, Düzce, Erzincan ve Kahramanmaraş aktif fay hatları üzerindedir. İç Anadolu'nun orta kesimlerinde yer alan Konya'da deprem tehlikesi görece azdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Doğal afetler",
+  "q": "Eğimin fazla olması, killi toprakların yaygınlığı ve bol yağış nedeniyle heyelanın en sık yaşandığı bölge aşağıdakilerden hangisidir?",
+  "o": [
+   "Ege",
+   "Karadeniz",
+   "İç Anadolu",
+   "Güneydoğu Anadolu",
+   "Marmara"
+  ],
+  "a": 1,
+  "c": "Karadeniz Bölgesi'nde eğimli yamaçlar, killi topraklar ve her mevsim düşen yağış heyelan riskini artırır."
+ }
+]

@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1446">
+<title>KPSS Koala</title>
+<style>
+:root{
+  --bg1:#170f3d; --bg2:#2d1b69; --ink:#1f1a3d; --muted:#6b6790;
+  --pri:#7c5cff; --pri-d:#5b3fd9; --pri-l:#c4b5fd;
+  --ok:#22c55e; --ok-d:#15803d; --bad:#ef4444; --bad-d:#b91c1c;
+  --gold:#fbbf24; --pink:#ff6ba6; --cyan:#22d3ee;
+  --glass:rgba(255,255,255,.08); --glass-b:rgba(255,255,255,.14);
+  --r:22px;
+  --font:"Segoe UI Variable Display","Segoe UI","SF Pro Rounded",ui-rounded,system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --spring:cubic-bezier(.2,1.5,.4,1);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{min-height:100dvh;color:#fff;font-family:var(--font);overflow-x:hidden;
+  background:radial-gradient(120% 80% at 50% -10%,#3b2a8f 0%,transparent 60%),linear-gradient(165deg,var(--bg1),var(--bg2) 60%,#1a1050)}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+h1,h2,h3{margin:0;line-height:1.15}
+h2.sec{font-size:15px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin:26px 4px 12px}
+
+/* ---------- arka plan ---------- */
+.bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.blob{position:absolute;width:60vmax;height:60vmax;border-radius:50%;opacity:.35;animation:drift 22s ease-in-out infinite alternate}
+.blob.a{background:radial-gradient(circle,#ff6ba6 0%,transparent 60%);top:-25vmax;left:-20vmax}
+.blob.b{background:radial-gradient(circle,#22d3ee 0%,transparent 60%);bottom:-30vmax;right:-25vmax;animation-delay:-8s}
+.blob.c{background:radial-gradient(circle,#7c5cff 0%,transparent 60%);top:30%;left:40%;animation-duration:30s}
+@keyframes drift{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:.9;transform:scale(1.2)}}
+.floater{position:absolute;font-size:22px;opacity:.18;animation:floatUp linear infinite}
+@keyframes floatUp{from{transform:translateY(110vh) rotate(0)}to{transform:translateY(-15vh) rotate(360deg)}}
+
+#app{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:16px 16px calc(32px + env(safe-area-inset-bottom))}
+.screen{animation:screenIn .45s var(--spring) both}
+.screen.leaving{animation:screenOut .2s ease-in both}
+@keyframes screenIn{from{opacity:0;transform:translateY(24px) scale(.98)}}
+@keyframes screenOut{to{opacity:0;transform:translateY(-12px) scale(.98)}}
+.stagger>*{animation:popIn .5s var(--spring) both;animation-delay:calc(var(--i,0)*60ms)}
+@keyframes popIn{from{opacity:0;transform:translateY(16px) scale(.94)}}
+
+.glass{background:var(--glass);border:1px solid var(--glass-b);border-radius:var(--r);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:16px;font-weight:800;font-size:16px;
+  background:var(--pri);box-shadow:0 5px 0 var(--pri-d);transition:transform .1s,box-shadow .1s,filter .2s;min-height:50px}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--pri-d)}
+.btn.gold{background:var(--gold);color:#3b2600;box-shadow:0 5px 0 #b7791f}
+.btn.ok{background:var(--ok);box-shadow:0 5px 0 var(--ok-d)}
+.btn.bad{background:var(--bad);box-shadow:0 5px 0 var(--bad-d)}
+.btn.ghost{background:rgba(255,255,255,.1);box-shadow:0 5px 0 rgba(0,0,0,.25)}
+.btn.wide{width:100%}
+.btn:focus-visible,.opt:focus-visible,.node:focus-visible,.tile:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+
+/* ---------- üst bar ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.brand{font-weight:900;font-size:22px;letter-spacing:-.02em}
+.brand span{background:linear-gradient(90deg,var(--gold),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;margin-left:4px}
+.chips{display:flex;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);font-weight:800;font-size:14px;white-space:nowrap}
+.chip.fire.on{background:linear-gradient(135deg,#ff8a00,#ff3d6e);animation:glow 2s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 18px rgba(255,90,60,.7)}}
+
+/* ---------- maskot ---------- */
+.owl{width:110px;height:auto;overflow:visible;flex:none}
+.owl .body{transform-origin:60px 120px;animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px) rotate(-1.5deg)}}
+.owl .lid{transform-box:fill-box;transform-origin:top;transform:scaleY(0);animation:blink 4.5s infinite}
+@keyframes blink{0%,92%,100%{transform:scaleY(0)}95%{transform:scaleY(1)}}
+.owl .pupil{transition:transform .3s}
+.owl .heart{transform-box:fill-box;transform-origin:center;animation:beat 1.3s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.2)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
+.owl .ear{transform-box:fill-box;transform-origin:center bottom;animation:ear 3.8s ease-in-out infinite}
+.owl .ear.r{animation-delay:-1.9s}
+@keyframes ear{0%,80%,100%{transform:rotate(0)}88%{transform:rotate(-9deg)}94%{transform:rotate(7deg)}}
+.owl .wing{transform-box:fill-box;transform-origin:top center}
+.owl .joy,.owl .brow{opacity:0;transition:opacity .2s}
+.owl.happy .body{animation:hop .6s var(--spring) 2}
+.owl.happy .eyes{opacity:0}.owl.happy .joy{opacity:1}
+.owl.happy .wing.l{animation:flapL .3s ease-in-out 4}.owl.happy .wing.r{animation:flapR .3s ease-in-out 4}
+@keyframes hop{40%{transform:translateY(-16px) scale(1.04,.96)}}
+@keyframes flapL{50%{transform:rotate(35deg)}}@keyframes flapR{50%{transform:rotate(-35deg)}}
+.owl.sad .body{animation:droop 1.2s ease-in-out both}
+.owl.sad .brow{opacity:1}.owl.sad .pupil{transform:translateY(4px)}
+@keyframes droop{30%{transform:rotate(-6deg)}60%{transform:rotate(4deg)}100%{transform:translateY(3px)}}
+.owl.think .pupil{transform:translate(4px,-4px)}
+.speaker{display:flex;align-items:flex-end;gap:12px}
+.bubble{position:relative;background:#fff;color:var(--ink);padding:12px 15px;border-radius:18px 18px 18px 4px;font-weight:700;font-size:15px;line-height:1.4;
+  animation:bubble .55s var(--spring) both .15s;box-shadow:0 6px 0 rgba(0,0,0,.18)}
+@keyframes bubble{from{opacity:0;transform:scale(.4) translate(-30px,20px)}}
+
+/* ---------- ana sayfa ---------- */
+.hero{padding:18px}
+.lvl{margin-top:16px}
+.lvl-row{display:flex;justify-content:space-between;font-weight:800;font-size:14px;margin-bottom:7px}
+.lvl-row small{opacity:.7;font-weight:700}
+.bar{height:14px;border-radius:99px;background:rgba(0,0,0,.3);overflow:hidden;position:relative}
+.bar>i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--gold),var(--pink));width:0;transition:width 1s var(--spring);position:relative;overflow:hidden}
+.bar>i::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);animation:shimmer 2.2s infinite}
+@keyframes shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.stat{text-align:center;padding:12px 6px;border-radius:16px;background:rgba(0,0,0,.18)}
+.stat b{display:block;font-size:22px;font-weight:900}
+.stat>span{font-size:12px;opacity:.75;font-weight:700}
+.cta{margin-top:16px;font-size:18px;min-height:56px;animation:popIn .5s var(--spring) both,ctaPulse 2.4s ease-in-out 1s infinite}
+@keyframes ctaPulse{50%{transform:scale(1.03);box-shadow:0 5px 0 #b7791f,0 0 26px rgba(251,191,36,.55)}}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.tile{padding:14px 8px;border-radius:18px;background:var(--glass);border:1px solid var(--glass-b);font-weight:800;font-size:13px;display:flex;flex-direction:column;align-items:center;gap:6px;transition:transform .2s var(--spring),background .2s;position:relative}
+.tile:hover{transform:translateY(-3px);background:rgba(255,255,255,.14)}
+.tile .ic{font-size:26px}
+.tile .badge-n{position:absolute;top:6px;right:8px;background:var(--bad);border-radius:99px;font-size:11px;padding:2px 7px}
+
+/* harita */
+.map{position:relative;margin:0 auto;max-width:440px}
+.map svg.path{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.map{--c:#7c5cff}
+.map::before{content:"";position:absolute;inset:0 -15%;background:radial-gradient(closest-side,color-mix(in srgb,var(--c) 16%,transparent),transparent);pointer-events:none}
+.map .path path{fill:none;stroke:color-mix(in srgb,var(--c) 55%,transparent);stroke-width:5;stroke-dasharray:2 14;stroke-linecap:round;animation:march 1.2s linear infinite}
+@keyframes march{to{stroke-dashoffset:-16}}
+.node{position:absolute;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:26px;
+  background:linear-gradient(160deg,color-mix(in srgb,var(--c) 65%,#fff),var(--c));box-shadow:0 7px 0 color-mix(in srgb,var(--c) 50%,#000),0 12px 22px rgba(0,0,0,.35);transition:transform .2s var(--spring);color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.25)}
+.node:hover{transform:translate(-50%,-50%) scale(1.08)}
+.node:active{transform:translate(-50%,-46%)}
+.node.done{background:linear-gradient(160deg,#fcd34d,#f59e0b);box-shadow:0 7px 0 #b45309,0 12px 22px rgba(0,0,0,.35);color:#4a2c00}
+.node.locked{background:#3a3363;box-shadow:0 7px 0 #262046;color:rgba(255,255,255,.35);cursor:not-allowed}
+.node.cur{animation:nodeBounce 1.6s var(--spring) infinite}
+.node.cur::before{content:"";position:absolute;inset:-10px;border-radius:50%;border:4px solid var(--c);animation:ring 1.6s ease-out infinite}
+@keyframes ring{from{transform:scale(.85);opacity:1}to{transform:scale(1.35);opacity:0}}
+@keyframes nodeBounce{0%,100%{transform:translate(-50%,-50%)}20%{transform:translate(-50%,-62%)}40%{transform:translate(-50%,-50%)}}
+.node .stars{position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);font-size:14px;letter-spacing:-1px;white-space:nowrap}
+.node .stars .off{filter:grayscale(1);opacity:.3}
+.node .lbl{position:absolute;top:-30px;left:50%;transform:translateX(-50%);background:#fff;color:var(--ink);font-size:12px;font-weight:900;padding:4px 10px;border-radius:10px;white-space:nowrap;animation:bob 1.6s ease-in-out infinite}
+.node .lbl::after{content:"";position:absolute;bottom:-5px;left:50%;margin-left:-5px;border:5px solid transparent;border-bottom:0;border-top-color:#fff}
+
+.badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:10px}
+.bdg{text-align:center;padding:12px 6px;border-radius:16px;background:var(--glass);border:1px solid var(--glass-b);font-size:12px;font-weight:700;line-height:1.25}
+.bdg .e{font-size:30px;display:block;margin-bottom:4px}
+.bdg.off{opacity:.35}.bdg.off .e{filter:grayscale(1)}
+.bdg.on .e{animation:bdgWiggle 3s ease-in-out infinite}
+@keyframes bdgWiggle{0%,85%,100%{transform:rotate(0)}90%{transform:rotate(-12deg) scale(1.15)}95%{transform:rotate(12deg) scale(1.15)}}
+.yollar{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:4px 16px 12px;scrollbar-width:none}
+.yollar::-webkit-scrollbar{display:none}
+.yol{flex:none;display:flex;align-items:center;gap:6px;padding:10px 14px;border-radius:16px;font-weight:800;font-size:14px;background:rgba(255,255,255,.07);
+  border:2px solid color-mix(in srgb,var(--c) 55%,transparent);transition:transform .25s var(--spring),background .2s}
+.yol small{opacity:.75;font-size:11px}
+.yol:hover{transform:translateY(-2px)}
+.yol.on{background:var(--c);color:#1b1035;border-color:var(--c);transform:scale(1.06);box-shadow:0 6px 18px color-mix(in srgb,var(--c) 55%,transparent)}
+.yol:focus-visible{outline:3px solid #fff;outline-offset:2px}
+h2.yolbas{opacity:1;color:var(--c)}
+.isim{width:100%;padding:12px 14px;border-radius:14px;border:2px solid var(--glass-b);background:rgba(0,0,0,.25);color:#fff;font:inherit;font-weight:700;margin-bottom:14px}
+.pool{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px;justify-content:center;font-size:12px;opacity:.75}
+.pool span{padding:4px 9px;border-radius:99px;background:rgba(255,255,255,.08)}
+
+/* ---------- quiz ---------- */
+.quiz{max-width:680px;margin:0 auto;padding-bottom:40px}
+.qtop{display:flex;align-items:center;gap:12px}
+.qtop .x{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.1);font-size:18px;font-weight:900;flex:none}
+.qtop .bar{flex:1;height:18px}
+.qtop .bar>i{background:linear-gradient(90deg,var(--ok),#a3e635)}
+.combo{font-weight:900;min-width:58px;text-align:right;font-size:16px;transition:transform .3s var(--spring)}
+.combo.hot{color:var(--gold);animation:comboPop .5s var(--spring)}
+@keyframes comboPop{40%{transform:scale(1.6) rotate(-8deg)}}
+.qmeta{display:flex;justify-content:space-between;align-items:center;margin:16px 2px 10px;font-weight:800;font-size:13px}
+.dchip{padding:6px 12px;border-radius:99px;background:color-mix(in srgb,var(--c) 28%,transparent);border:1px solid color-mix(in srgb,var(--c) 60%,transparent)}
+.qcard{background:#fff;color:var(--ink);border-radius:24px;padding:22px 20px;font-size:17px;line-height:1.6;box-shadow:0 8px 0 rgba(0,0,0,.18);
+  animation:cardIn .55s var(--spring) both;white-space:pre-line;font-weight:500}
+.qcard u{text-decoration-thickness:2px;text-underline-offset:3px;font-weight:700}
+@keyframes cardIn{from{opacity:0;transform:translateX(60px) rotate(3deg)}}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;padding:13px 14px;border-radius:16px;background:#fff;color:var(--ink);font-size:16px;font-weight:600;line-height:1.4;
+  border:2px solid #e3defc;border-bottom-width:5px;transition:transform .12s,border-color .2s,background .2s,opacity .3s;animation:popIn .45s var(--spring) both;animation-delay:calc(.15s + var(--i)*55ms);min-height:56px}
+.opt:hover:not(:disabled){border-color:var(--pri-l);transform:translateY(-2px)}
+.opt:active:not(:disabled){transform:translateY(3px);border-bottom-width:2px}
+.opt .l{flex:none;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#f0edff;color:var(--pri-d);font-weight:900}
+.opt:disabled{cursor:default}
+.opt.ok{background:#dcfce7;border-color:var(--ok);animation:okPulse .6s var(--spring)}
+.opt.ok .l{background:var(--ok);color:#fff}
+.opt.bad{background:#fee2e2;border-color:var(--bad);animation:shake .45s}
+.opt.bad .l{background:var(--bad);color:#fff}
+.opt.dim{opacity:.45}
+@keyframes okPulse{40%{transform:scale(1.04)}}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:20;transform:translateY(110%);transition:transform .45s var(--spring);padding:0 12px calc(12px + env(safe-area-inset-bottom))}
+.sheet.open{transform:none}
+.sheet-in{max-width:680px;margin:0 auto;border-radius:24px;padding:16px;color:var(--ink);max-height:62vh;overflow:auto;box-shadow:0 -10px 40px rgba(0,0,0,.4)}
+.sheet.okk .sheet-in{background:#d9fbe5}
+.sheet.badd .sheet-in{background:#ffe1e1}
+.sheet .speaker .owl{width:64px}
+.sheet h3{font-size:20px;font-weight:900}
+.sheet .btn{color:#fff}
+.sheet.okk h3{color:var(--ok-d)}.sheet.badd h3{color:var(--bad-d)}
+.sheet .exp{margin:10px 0 14px;font-size:15px;line-height:1.55;white-space:pre-line}
+.sheet .exp b{color:var(--ink)}
+.sheet .src{font-size:12px;opacity:.7;word-break:break-all}
+.xpfloat{position:fixed;z-index:30;font-weight:900;font-size:22px;color:var(--gold);text-shadow:0 2px 0 #7a4b00;pointer-events:none;animation:xpUp 1.1s ease-out forwards}
+@keyframes xpUp{from{opacity:0;transform:translate(-50%,0) scale(.6)}20%{opacity:1;transform:translate(-50%,-20px) scale(1.2)}to{opacity:0;transform:translate(-50%,-90px) scale(1)}}
+.kbd{font-size:12px;opacity:.5;text-align:center;margin-top:14px}
+@media (hover:none){.kbd{display:none}}
+
+/* ---------- overlay ---------- */
+.overlay{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:20px;background:rgba(14,8,40,.78);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);animation:fadeIn .3s both}
+.overlay.out{animation:fadeOut .25s both}
+@keyframes fadeIn{from{opacity:0}}@keyframes fadeOut{to{opacity:0}}
+.ov-card{text-align:center;max-width:380px;width:100%;animation:ovIn .6s var(--spring) both}
+@keyframes ovIn{from{opacity:0;transform:scale(.6) rotate(-6deg)}}
+.ov-card .owl{width:150px;margin:0 auto 8px;display:block}
+.ov-card h2{font-size:28px;font-weight:900;margin-bottom:10px}
+.ov-card p{font-size:17px;line-height:1.5;opacity:.92;margin:0 0 8px}
+.ov-card .tip{display:inline-block;margin:10px 0 22px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.1);font-size:14px;font-weight:700}
+.count{font-size:120px;font-weight:900;line-height:1;background:linear-gradient(180deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;animation:countPop .8s var(--spring) both}
+@keyframes countPop{from{transform:scale(2.5);opacity:0}60%{opacity:1}to{transform:scale(1)}}
+.breath{width:120px;height:120px;margin:6px auto 14px;border-radius:50%;background:radial-gradient(circle,var(--cyan),transparent 70%);animation:breath 8s ease-in-out infinite;display:grid;place-items:center;font-weight:800;font-size:13px}
+@keyframes breath{0%,100%{transform:scale(.6)}50%{transform:scale(1.15)}}
+
+/* ---------- sonuç ---------- */
+.result{max-width:560px;margin:0 auto;text-align:center}
+.ring{width:190px;height:190px;margin:10px auto;border-radius:50%;display:grid;place-items:center;
+  background:conic-gradient(var(--gold) calc(var(--p)*1%),rgba(255,255,255,.12) 0);transition:--p 1s;animation:popIn .6s var(--spring) both}
+@property --p{syntax:"<number>";inherits:false;initial-value:0}
+.ring>div{width:150px;height:150px;border-radius:50%;background:var(--bg2);display:grid;place-items:center;align-content:center}
+.ring b{font-size:46px;font-weight:900}.ring span{font-size:13px;opacity:.7;font-weight:700}
+.bigstars{display:flex;justify-content:center;gap:10px;font-size:52px;margin:6px 0}
+.bigstars i{font-style:normal;display:inline-block;animation:starIn .7s var(--spring) both}
+.bigstars i.off{filter:grayscale(1) brightness(.6);opacity:.4}
+@keyframes starIn{from{transform:scale(0) rotate(-180deg)}}
+.rstats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.racts{display:grid;gap:12px;margin-top:8px}
+.review{text-align:left;margin-top:26px}
+.rv{padding:12px 14px;border-radius:16px;background:var(--glass);border:1px solid var(--glass-b);margin-bottom:8px}
+.rv summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;gap:8px}
+.rv summary::-webkit-details-marker{display:none}
+.rv .body{font-size:14px;line-height:1.55;margin-top:10px;opacity:.9;white-space:pre-line}
+
+.toast{position:fixed;top:14px;left:50%;z-index:50;transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:18px;
+  background:linear-gradient(135deg,#fcd34d,#f59e0b);color:#3b2600;font-weight:900;box-shadow:0 10px 30px rgba(0,0,0,.4);animation:toast 3.2s var(--spring) forwards;white-space:nowrap}
+.toast .e{font-size:28px}
+@keyframes toast{0%{transform:translate(-50%,-140%)}12%,85%{transform:translate(-50%,0)}100%{transform:translate(-50%,-140%)}}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:60}
+
+/* ---------- formlar ---------- */
+.panel{padding:18px;margin-bottom:14px}
+.panel h3{font-size:17px;font-weight:900;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:12px 0;font-weight:700}
+input[type=range]{width:100%;accent-color:var(--gold)}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.ck{position:relative}
+.ck input{position:absolute;opacity:0}
+.ck span{display:inline-flex;gap:6px;padding:9px 13px;border-radius:99px;background:rgba(255,255,255,.08);border:2px solid transparent;font-weight:800;font-size:14px;transition:.2s}
+.ck input:checked+span{background:color-mix(in srgb,var(--c) 35%,transparent);border-color:var(--c)}
+.ck input:focus-visible+span{outline:3px solid var(--cyan)}
+textarea{width:100%;min-height:180px;border-radius:14px;border:0;padding:12px;font:13px/1.45 ui-monospace,Consolas,monospace;background:rgba(0,0,0,.3);color:#fff}
+pre.ex{background:rgba(0,0,0,.3);padding:12px;border-radius:14px;font-size:12px;overflow:auto;white-space:pre-wrap}
+.note{font-size:14px;line-height:1.5;opacity:.85}
+.msg{margin-top:10px;font-weight:800}
+.msg.ok{color:#86efac}.msg.bad{color:#fca5a5}
+
+@media (min-width:960px){
+  #app{max-width:1100px;padding-top:28px}
+  .home{display:grid;grid-template-columns:400px 1fr;grid-template-rows:auto 1fr;column-gap:36px;align-items:start}
+  .yollar{flex-wrap:wrap;margin:0;padding-inline:2px}
+  .home .side{grid-column:1;grid-row:1}.home .bdgs{grid-column:1;grid-row:2}.home .main{grid-column:2;grid-row:1/span 2}
+  .owl{width:130px}
+  .qcard{font-size:18px;padding:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+<main id="app"></main>
+<div class="sheet" id="sheet" aria-live="polite"><div class="sheet-in" id="sheetIn"></div></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="live" class="sr" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"></div>
+
+<script id="veri" type="application/json">__SORULAR__</script>
+<script>
+"use strict";
+const DERS = {
+  turkce:{ad:"Türkçe",c:"#f472b6",ic:"📖"},
+  matematik:{ad:"Matematik",c:"#60a5fa",ic:"🔢"},
+  tarih:{ad:"Tarih",c:"#f59e0b",ic:"🏛️"},
+  cografya:{ad:"Coğrafya",c:"#34d399",ic:"🌍"},
+  vatandaslik:{ad:"Vatandaşlık",c:"#a78bfa",ic:"⚖️"},
+  guncel:{ad:"Güncel",c:"#22d3ee",ic:"📰"},
+  ek:{ad:"Benim Sorularım",c:"#fb923c",ic:"✍️"}
+};
+const UNVAN = ["Tatlı Çaylak","Meraklı Sevgili","Azimli","Çalışkan","Odaklı","Uzman","Usta","Kadro Avcısı","Efsane","KPSS Efsanesi"];
+const ROZET = [
+  {id:"ilk",e:"🐣",ad:"İlk Adım",ac:"İlk testini bitir"},
+  {id:"kusursuz",e:"💯",ad:"Kusursuz",ac:"Bir testte tam puan"},
+  {id:"combo5",e:"🔥",ad:"Alev Aldı",ac:"5 doğru üst üste"},
+  {id:"combo10",e:"⚡",ad:"Yıldırım",ac:"10 doğru üst üste"},
+  {id:"seri3",e:"📅",ad:"Kararlı",ac:"3 gün seri"},
+  {id:"seri7",e:"🏆",ad:"Haftanın Yıldızı",ac:"7 gün seri"},
+  {id:"yuz",e:"🎯",ad:"Yüzlük",ac:"100 soru çöz"},
+  {id:"bes",e:"🚀",ad:"Roket",ac:"500 soru çöz"},
+  {id:"defter",e:"🧹",ad:"Temizlikçi",ac:"Yanlışlardan 10 soru temizle"},
+  {id:"harita",e:"👑",ad:"Harita Fatihi",ac:"Bir yolun tüm testlerini bitir"}
+];
+const HITAP = ["aşkım","sevgilim","hayatım","bir tanem","canım","birtanecik aşkım"];
+const MOTIV = [
+  "Seninle gurur duyuyorum {h}, her soru seni hayallerine yaklaştırıyor 💕","Sen çalıştıkça ben sana biraz daha âşık oluyorum 😍",
+  "Kadroyu alınca kutlama yemeği benden {h}! 🍰","Yorulursan sarılmaya gel, sonra kaldığımız yerden devam 🤗",
+  "Dünyanın en akıllı adayı sensin {h} 💖","Azmin bana her gün ilham veriyor ✨","Bir test daha {h}, sonra çay benden ☕💕",
+  "Ben hep yanındayım, sen yeter ki vazgeçme 💪❤️","Atama listesinde ilk arayacağım isim seninki olacak 💌",
+  "Bugün çalışan {h}, yarın atanır 💗","Gülüşün kadar parlak bir gelecek seni bekliyor 🌟","Senin başaramayacağın şey yok {h} 🌹"
+];
+const DOGRU = ["Bravo {h}! 😘","İşte benim zeki sevgilim! 💖","Tam isabet, kalbimi de kazandın 🎯❤️","Sen bir dahisin {h}! 🧠💕","Aşkım bilir, aşkım yapar! ✨","Muhteşemsin {h}! 🌹","Seninle gurur duyuyorum! 🥰"];
+const YANLIS = ["Olsun {h}, şimdi öğrendin 💗","Bir yanlışla moral bozulmaz, devam! 🤗","Defterine yazdım, birlikte tekrar ederiz 📒💕","Sakin {h}, sıradaki senin! 🌸","Tuzağa düştük ama birlikte çıkarız 💞"];
+const MOLA = [
+  ["Yarıyı geçtin {h}! 🏁","Omuzlarını gevşet; uzaktan sımsıkı sarılıyorum 🤗"],
+  ["Mini mola ☕","O güzel gözlerini 20 saniye uzağa bakarak dinlendir 👀💕"],
+  ["Nefes molası 🌬️","Daireyle birlikte nefes al… ve ver. Seni çok seviyorum 💗"],
+  ["Süper gidiyorsun {h}! 🚀","Bir yudum su iç, dik otur, kaldığımız yerden devam 💪"]
+];
+const hit = () => S.ayar.isim && Math.random() < .5 ? S.ayar.isim : rnd(HITAP);
+const sz = t => t.replace(/\{h\}/g, hit);
+
+/* ---------- durum ---------- */
+const KEY = "kpss-baykus-v1";
+const VARS = () => ({xp:0,testler:{},gorulen:{},yanlis:{},rozet:[],seri:{n:0,son:""},cozulen:0,dogru:0,temiz:0,
+  ayar:{testSayisi:10,soruSayisi:10,dersler:Object.keys(DERS),ses:true,isim:""},ek:[],yol:{},aktifYol:"karisik"});
+let S = VARS();
+try { const k = JSON.parse(localStorage.getItem(KEY)); if (k) S = Object.assign(VARS(), k, {ayar:Object.assign(VARS().ayar, k.ayar)}); } catch (e) {}
+if (S.testler) { if (Object.keys(S.testler).length && !Object.keys(S.yol).length) S.yol.karisik = S.testler; delete S.testler; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+
+const hash = s => { let h = 0; for (const ch of s) h = (h * 31 + ch.charCodeAt(0)) | 0; return "q" + (h >>> 0).toString(36); };
+let DATA = [];
+try { DATA = JSON.parse(document.getElementById("veri").textContent); } catch (e) { DATA = []; }
+const tumu = () => [...DATA, ...S.ek].map(q => (q.id ||= hash(q.q + q.o.join("|")), q));
+const dk = q => DERS[q.d] ? q.d : "ek";
+const yolHavuz = y => y === "karisik" ? havuz() : tumu().filter(q => dk(q) === y);
+const yollar = () => [{id:"karisik", ad:"Karışık", ic:"🎲", c:"#ff6ba6"}, ...Object.entries(DERS).filter(([k]) => k !== "ek" || S.ek.length).map(([id, D]) => ({id, ...D}))];
+const yolAd = y => (yollar().find(x => x.id === y) || {ad:""}).ad;
+const yolTest = y => (S.yol[y] ||= {});
+const havuz = () => tumu().filter(q => S.ayar.dersler.includes(DERS[q.d] ? q.d : "ek"));
+
+/* ---------- yardımcılar ---------- */
+const $ = s => document.querySelector(s);
+const app = $("#app");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = s => esc(s).replace(/\[\[(.+?)\]\]/g, "<u>$1</u>").replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+const rnd = a => a[Math.floor(Math.random() * a.length)];
+const karistir = a => { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const azHareket = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const bugun = () => new Date().toLocaleDateString("sv");
+const say = t => { $("#live").textContent = t; };
+
+function seviye(xp) {
+  let lv = 1, need = 150;
+  while (xp >= need) { xp -= need; lv++; need = 150 + lv * 25; }
+  return {lv, cur:xp, need, unvan:UNVAN[Math.min(lv - 1, UNVAN.length - 1)]};
+}
+
+function koala(cls = "") {
+  return `<svg class="owl ${cls}" viewBox="0 0 120 132" aria-hidden="true"><g class="body">
+  <ellipse cx="60" cy="104" rx="31" ry="24" fill="#97a3b6"/>
+  <ellipse cx="60" cy="108" rx="19" ry="16" fill="#e3e7ef"/>
+  <g class="ear l"><circle cx="24" cy="34" r="21" fill="#a9b4c6"/><circle cx="24" cy="35" r="13" fill="#f6c9d6"/><path d="M7 30q-4 6 0 12M10 21q-5 4-4 10" stroke="#eef1f6" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <g class="ear r"><circle cx="96" cy="34" r="21" fill="#a9b4c6"/><circle cx="96" cy="35" r="13" fill="#f6c9d6"/><path d="M113 30q4 6 0 12M110 21q5 4 4 10" stroke="#eef1f6" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+  <ellipse cx="60" cy="58" rx="40" ry="35" fill="#b2bccc"/>
+  <ellipse cx="60" cy="74" rx="22" ry="15" fill="#c3cbd8"/>
+  <g class="eyes"><g class="pupil"><circle cx="42" cy="53" r="6.5" fill="#2a2540"/><circle cx="78" cy="53" r="6.5" fill="#2a2540"/><circle cx="44" cy="51" r="2.2" fill="#fff"/><circle cx="80" cy="51" r="2.2" fill="#fff"/></g>
+    <ellipse class="lid" cx="42" cy="53" rx="7.5" ry="7.5" fill="#b2bccc"/><ellipse class="lid" cx="78" cy="53" rx="7.5" ry="7.5" fill="#b2bccc"/></g>
+  <g class="joy" stroke="#2a2540" stroke-width="3.5" fill="none" stroke-linecap="round"><path d="M35 55q7-9 14 0"/><path d="M71 55q7-9 14 0"/></g>
+  <g class="brow" stroke="#2a2540" stroke-width="3" stroke-linecap="round"><path d="M34 44l14-6"/><path d="M86 44l-14-6"/></g>
+  <circle cx="30" cy="70" r="6.5" fill="#ff9fbf" opacity=".8"/><circle cx="90" cy="70" r="6.5" fill="#ff9fbf" opacity=".8"/>
+  <ellipse cx="60" cy="67" rx="11" ry="13" fill="#3b3552"/><ellipse cx="56" cy="62" rx="3" ry="4" fill="#6b6390"/>
+  <path d="M54 85q6 5 12 0" stroke="#3b3552" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <g class="wing l"><ellipse cx="36" cy="102" rx="9" ry="15" fill="#8592a7" transform="rotate(30 36 102)"/></g>
+  <g class="wing r"><ellipse cx="84" cy="102" rx="9" ry="15" fill="#8592a7" transform="rotate(-30 84 102)"/></g>
+  <path class="heart" d="M60 122C44 111 45 97 54 98c3 0 5 2 6 4 1-2 3-4 6-4 9-1 10 13-6 24z" fill="#ff4d7e" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="46" cy="127" rx="9" ry="4.5" fill="#8592a7"/><ellipse cx="74" cy="127" rx="9" ry="4.5" fill="#8592a7"/>
+  </g></svg>`;
+}
+
+/* ---------- ses + titreşim ---------- */
+let ac;
+function ses(t) {
+  if (!S.ayar.ses) return;
+  try {
+    ac ||= new (window.AudioContext || window.webkitAudioContext)();
+    const n = {ok:[660,990], bad:[200,150], tik:[520], win:[523,659,784,1046], lvl:[392,523,659,784,1046,1318]}[t];
+    n.forEach((f, i) => {
+      const o = ac.createOscillator(), g = ac.createGain(), t0 = ac.currentTime + i * .09;
+      o.type = t === "bad" ? "square" : "triangle"; o.frequency.value = f;
+      g.gain.setValueAtTime(.0001, t0); g.gain.exponentialRampToValueAtTime(t === "bad" ? .06 : .16, t0 + .02); g.gain.exponentialRampToValueAtTime(.0001, t0 + .2);
+      o.connect(g).connect(ac.destination); o.start(t0); o.stop(t0 + .22);
+    });
+  } catch (e) {}
+}
+const titret = ms => { try { navigator.vibrate && navigator.vibrate(ms); } catch (e) {} };
+
+/* ---------- konfeti ---------- */
+function konfeti(n = 140) {
+  if (azHareket) return;
+  const cv = $("#confetti"), cx = cv.getContext("2d");
+  cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio; cx.scale(devicePixelRatio, devicePixelRatio);
+  const renk = ["#fbbf24","#ff6ba6","#22d3ee","#7c5cff","#22c55e","#fff"];
+  const p = Array.from({length:n}, () => ({x:innerWidth/2 + (Math.random()-.5)*120, y:innerHeight*.35, vx:(Math.random()-.5)*14, vy:-Math.random()*16-4,
+    r:Math.random()*Math.PI, vr:(Math.random()-.5)*.3, w:6+Math.random()*7, h:4+Math.random()*5, c:rnd(renk)}));
+  let f = 0;
+  (function tick() {
+    cx.clearRect(0, 0, innerWidth, innerHeight);
+    p.forEach(q => { q.vy += .42; q.vx *= .99; q.x += q.vx; q.y += q.vy; q.r += q.vr;
+      cx.save(); cx.translate(q.x, q.y); cx.rotate(q.r); cx.fillStyle = q.c; cx.fillRect(-q.w/2, -q.h/2, q.w, q.h * Math.cos(f/6 + q.r)); cx.restore(); });
+    if (++f < 170) requestAnimationFrame(tick); else cx.clearRect(0, 0, innerWidth, innerHeight);
+  })();
+}
+function toast(e, t) {
+  const d = document.createElement("div"); d.className = "toast"; d.innerHTML = `<span class="e">${e}</span><span>${esc(t)}</span>`;
+  document.body.appendChild(d); setTimeout(() => d.remove(), 3300);
+}
+function xpUcur(el, txt) {
+  const r = el.getBoundingClientRect(), d = document.createElement("div");
+  d.className = "xpfloat"; d.textContent = txt; d.style.left = (r.left + r.width/2) + "px"; d.style.top = (r.top) + "px";
+  document.body.appendChild(d); setTimeout(() => d.remove(), 1200);
+}
+function sayac(el, hedef, sure = 900) {
+  if (!el) return; const t0 = performance.now();
+  (function t(n) { const k = Math.min(1, (n - t0) / sure); el.textContent = Math.round(hedef * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(t); })(t0);
+}
+
+/* ---------- ekran geçişi ---------- */
+let tutScroll = null;
+function goster(html, sonra) {
+  $("#sheet").classList.remove("open");
+  const eski = app.firstElementChild;
+  const yap = () => { app.innerHTML = `<div class="screen">${html}</div>`; scrollTo({top:tutScroll ?? 0}); tutScroll = null; sonra && sonra(); };
+  if (eski && !azHareket) { eski.classList.add("leaving"); setTimeout(yap, 180); } else yap();
+}
+function overlay(html, sure) {
+  return new Promise(res => {
+    const o = document.createElement("div"); o.className = "overlay"; o.setAttribute("role","dialog"); o.innerHTML = html;
+    document.body.appendChild(o);
+    const kapat = () => { if (!o.isConnected) return; o.classList.add("out"); setTimeout(() => { o.remove(); res(); }, 240); document.removeEventListener("keydown", kd); };
+    const kd = e => { if (e.key === "Enter" || e.key === " " || e.key === "Escape") { e.preventDefault(); kapat(); } };
+    o.querySelectorAll("[data-kapat]").forEach(b => b.onclick = kapat);
+    o.querySelector("[data-kapat]")?.focus();
+    setTimeout(() => document.addEventListener("keydown", kd), 50);
+    if (sure) setTimeout(kapat, sure);
+  });
+}
+
+/* ---------- rozet + seri ---------- */
+function rozetVer(id) {
+  if (S.rozet.includes(id)) return;
+  S.rozet.push(id); const r = ROZET.find(x => x.id === id);
+  setTimeout(() => { toast(r.e, "Rozet: " + r.ad); ses("win"); }, 600 + Math.random() * 400);
+}
+function seriGuncelle() {
+  const b = bugun(); if (S.seri.son === b) return;
+  const dun = new Date(Date.now() - 864e5).toLocaleDateString("sv");
+  S.seri.n = S.seri.son === dun ? S.seri.n + 1 : 1; S.seri.son = b;
+  if (S.seri.n >= 3) rozetVer("seri3"); if (S.seri.n >= 7) rozetVer("seri7");
+}
+const seriAktif = () => S.seri.son === bugun() || S.seri.son === new Date(Date.now() - 864e5).toLocaleDateString("sv");
+
+/* ================= ANA SAYFA ================= */
+function anaSayfa() {
+  const sv = seviye(S.xp), N = S.ayar.testSayisi, YL = yollar();
+  if (!YL.some(y => y.id === S.aktifYol)) S.aktifYol = "karisik";
+  const Y = YL.find(y => y.id === S.aktifYol), TT = yolTest(Y.id), H = yolHavuz(Y.id);
+  const acik = i => i === 0 || TT[i - 1];
+  let sonAcik = 0; for (let i = 0; i < N; i++) if (acik(i)) sonAcik = i;
+  const cur = TT[sonAcik] ? -1 : sonAcik;
+  const yanlisN = Object.keys(S.yanlis).length;
+  const oran = S.cozulen ? Math.round(S.dogru / S.cozulen * 100) : 0;
+
+  // her yolun kendi kıvrımı olsun
+  const faz = YL.indexOf(Y) * 1.7, STEP = 120, top = i => 70 + i * STEP, x = i => 50 + Math.sin(i * 1.1 + faz) * 28;
+  let d = ""; for (let i = 0; i < N; i++) d += (i ? " L " : "M ") + x(i) + " " + top(i);
+  const nodes = Array.from({length:N}, (_, i) => {
+    const t = TT[i], st = t ? t.yildiz : 0, kilit = !acik(i);
+    return `<button class="node ${t ? "done" : ""} ${kilit ? "locked" : ""} ${i === cur ? "cur" : ""}" style="left:${x(i)}%;top:${top(i)}px" data-test="${i}" ${kilit ? 'aria-disabled="true"' : ""} aria-label="${Y.ad} test ${i + 1}${kilit ? ", kilitli" : ""}${t ? ", " + st + " yıldız" : ""}">
+      ${i === cur ? '<span class="lbl">BAŞLA!</span>' : ""}${kilit ? "🔒" : i + 1}
+      ${t ? `<span class="stars">${[1,2,3].map(k => `<span class="${k <= st ? "" : "off"}">⭐</span>`).join("")}</span>` : ""}
+    </button>`;
+  }).join("");
+  const sayim = {}; H.forEach(q => { sayim[dk(q)] = (sayim[dk(q)] || 0) + 1; });
+
+  goster(`
+  <div class="home">
+    <div class="side">
+      <header class="top">
+        <div class="brand">KPSS<span>Koala 💕</span></div>
+        <div class="chips"><span class="chip fire ${seriAktif() && S.seri.n ? "on" : ""}" title="Günlük seri">🔥 ${seriAktif() ? S.seri.n : 0}</span><span class="chip" title="Toplam XP">⭐ ${S.xp}</span></div>
+      </header>
+      <section class="hero glass stagger">
+        <div class="speaker" style="--i:0">${koala()}<div class="bubble">${esc(sz(S.cozulen ? rnd(MOTIV) : "Merhaba {h}! Ben Pamuk 🐨 KPSS yolculuğunda hep yanındayım. İlk testle başlayalım mı? 💕"))}</div></div>
+        <div class="lvl" style="--i:1">
+          <div class="lvl-row"><span>Seviye ${sv.lv} · ${sv.unvan}</span><small>${sv.cur}/${sv.need} XP</small></div>
+          <div class="bar"><i id="lvbar"></i></div>
+        </div>
+        <div class="stats" style="--i:2">
+          <div class="stat"><b id="s1">0</b><span>Çözülen</span></div>
+          <div class="stat"><b>%<span id="s2">0</span></b><span>Başarı</span></div>
+          <div class="stat"><b id="s3">0</b><span>Rozet</span></div>
+        </div>
+        <button class="btn gold wide cta" id="cta" style="--i:3">▶ ${Y.ic} ${esc(Y.ad)} · ${cur >= 0 ? `Test ${cur + 1}'e Başla` : "Test 1'i Tekrarla"}</button>
+      </section>
+      <div class="tiles stagger">
+        <button class="tile" style="--i:3" id="t-yanlis"><span class="ic">📒</span>Yanlışlarım${yanlisN ? `<span class="badge-n">${yanlisN}</span>` : ""}</button>
+        <button class="tile" style="--i:4" id="t-ekle"><span class="ic">✍️</span>Soru Ekle</button>
+        <button class="tile" style="--i:5" id="t-ayar"><span class="ic">⚙️</span>Ayarlar</button>
+      </div>
+    </div>
+    <div class="main">
+      <h2 class="sec">Yol Haritaları</h2>
+      <div class="yollar" role="tablist">${YL.map(y => { const n = Object.keys(yolTest(y.id)).filter(k => +k < N).length;
+        return `<button class="yol ${y.id === Y.id ? "on" : ""}" role="tab" aria-selected="${y.id === Y.id}" style="--c:${y.c}" data-yol="${y.id}">${y.ic} ${esc(y.ad)} <small>${n}/${N}</small></button>`; }).join("")}</div>
+      <h2 class="sec yolbas" style="--c:${Y.c}">${Y.ic} ${esc(Y.ad)} Yolu · ${N} test × ${S.ayar.soruSayisi} soru</h2>
+      <div class="map" style="--c:${Y.c};height:${top(N - 1) + 90}px">
+        <svg class="path" viewBox="0 0 100 ${top(N - 1) + 90}" preserveAspectRatio="none"><path d="${d}" vector-effect="non-scaling-stroke"/></svg>
+        ${nodes}
+      </div>
+      <div class="pool">Bu yolda ${H.length} soru${Y.id === "karisik" ? " · " + Object.entries(sayim).map(([k, v]) => `<span>${DERS[k].ic} ${DERS[k].ad} ${v}</span>`).join("") : ""}</div>
+      ${Object.keys(TT).length ? `<div style="text-align:center;margin-top:14px"><button class="btn ghost" id="yolsifir" style="--c:${Y.c}">↺ ${esc(Y.ad)} yolunu sıfırla</button></div>` : ""}
+    </div>
+    <div class="bdgs">
+      <h2 class="sec">Rozetler</h2>
+      <div class="badges stagger">${ROZET.map((r, i) => `<div class="bdg ${S.rozet.includes(r.id) ? "on" : "off"}" style="--i:${i}" title="${esc(r.ac)}"><span class="e">${r.e}</span>${esc(r.ad)}</div>`).join("")}</div>
+    </div>
+  </div>`, () => {
+    $("#cta").onclick = () => testBaslat({tip:"test", yol:Y.id, no:cur >= 0 ? cur : 0});
+    requestAnimationFrame(() => setTimeout(() => { $("#lvbar").style.width = (sv.cur / sv.need * 100) + "%"; }, 120));
+    sayac($("#s1"), S.cozulen); sayac($("#s2"), oran); sayac($("#s3"), S.rozet.length);
+    const on = app.querySelector(".yol.on"), sr = on?.parentElement;
+    if (sr) sr.scrollLeft = on.offsetLeft - sr.clientWidth / 2 + on.offsetWidth / 2;
+    app.querySelectorAll(".yol").forEach(b => b.onclick = () => { S.aktifYol = b.dataset.yol; save(); ses("tik"); tutScroll = scrollY; anaSayfa(); });
+    app.querySelectorAll(".node").forEach(b => b.onclick = () => {
+      const i = +b.dataset.test; if (!acik(i)) { b.animate([{marginLeft:"-6px"},{marginLeft:"6px"},{marginLeft:"0"}], {duration:250}); ses("bad"); return; }
+      testBaslat({tip:"test", yol:Y.id, no:i});
+    });
+    $("#t-yanlis").onclick = () => yanlisN ? testBaslat({tip:"yanlis"}) : toast("📒", sz("Yanlış yok, harikasın {h}! 💖"));
+    $("#t-ekle").onclick = soruEkle;
+    $("#t-ayar").onclick = ayarlar;
+    $("#yolsifir") && ($("#yolsifir").onclick = e => {
+      if (!e.target.dataset.o) { e.target.dataset.o = 1; e.target.textContent = "Emin misin? Yıldızlar silinecek, tekrar dokun"; return; }
+      S.yol[Y.id] = {}; save(); toast("↺", Y.ad + " yolu sıfırlandı"); tutScroll = scrollY; anaSayfa();
+    });
+  });
+}
+
+/* ================= TEST ================= */
+let T = null;
+const sabitSira = o => o.every(x => /^[\s\d.,/%√²³()π+\-−×:]+$/.test(x)) || o.some(x => /^(Yalnız|I\b|II\b|III\b|IV\b)/.test(x.trim()));
+
+function soruSec(n, yol) {
+  const H = yolHavuz(yol); if (!H.length) return [];
+  const gruplar = {};
+  H.forEach(q => { const k = DERS[q.d] ? q.d : "ek"; (gruplar[k] ||= []).push(q); });
+  // az görülen önce, eşitler rastgele; dersler sırayla harmanlanır
+  for (const k in gruplar) gruplar[k] = karistir(gruplar[k]).sort((a, b) => (S.gorulen[a.id] || 0) - (S.gorulen[b.id] || 0));
+  const sira = karistir(Object.keys(gruplar)), out = [];
+  while (out.length < n && sira.some(k => gruplar[k].length)) for (const k of sira) { if (out.length < n && gruplar[k].length) out.push(gruplar[k].shift()); }
+  return karistir(out);
+}
+function hazirla(q) {
+  const idx = q.o.map((_, i) => i), perm = sabitSira(q.o) ? idx : karistir(idx);
+  return {...q, perm, dogruK: perm.indexOf(q.a)};
+}
+
+async function testBaslat(opt) {
+  let sorular;
+  if (opt.tip === "yanlis") {
+    const m = new Map(tumu().map(q => [q.id, q]));
+    sorular = karistir(Object.keys(S.yanlis).map(id => m.get(id)).filter(Boolean)).slice(0, S.ayar.soruSayisi);
+  } else sorular = soruSec(S.ayar.soruSayisi, opt.yol || "karisik");
+  if (!sorular.length) { toast("⚠️", "Seçili derslerde soru yok"); return; }
+  T = {...opt, sorular:sorular.map(hazirla), i:0, dogru:0, combo:0, maxCombo:0, xp:0, cevap:[], t0:Date.now(), molaVerildi:false};
+  if (!azHareket) {
+    for (const n of ["3","2","1"]) await overlay(`<div class="ov-card"><div class="count">${n}</div></div>`, 650);
+  }
+  soruGoster();
+}
+
+function soruGoster() {
+  const q = T.sorular[T.i], n = T.sorular.length, dk = DERS[q.d] ? q.d : "ek", D = DERS[dk];
+  goster(`
+  <div class="quiz">
+    <div class="qtop">
+      <button class="x" id="cik" aria-label="Testten çık">✕</button>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="${n}" aria-valuenow="${T.i}"><i id="pbar" style="width:${T.i / n * 100}%"></i></div>
+      <div class="combo ${T.combo >= 2 ? "hot" : ""}" id="combo">${T.combo >= 2 ? "🔥" + T.combo : ""}</div>
+    </div>
+    <div class="qmeta"><span class="dchip" style="--c:${D.c}">${D.ic} ${esc(D.ad)}${q.k ? " · " + esc(q.k) : ""}</span><span>${T.tip === "yanlis" ? "📒 " : ""}${T.i + 1} / ${n}</span></div>
+    <div class="qcard" id="qcard">${fmt(q.q)}</div>
+    <div class="opts" role="group" aria-label="Seçenekler">
+      ${q.perm.map((oi, k) => `<button class="opt" style="--i:${k}" data-k="${k}"><span class="l">${"ABCDE"[k]}</span><span>${fmt(q.o[oi])}</span></button>`).join("")}
+    </div>
+    <div class="kbd">Klavye: A–E veya 1–5 ile seç · Enter ile devam</div>
+  </div>`, () => {
+    $("#cik").onclick = () => { T = null; anaSayfa(); };
+    app.querySelectorAll(".opt").forEach(b => b.onclick = () => cevapla(+b.dataset.k));
+    requestAnimationFrame(() => { const p = $("#pbar"); if (p) p.style.width = (T.i / n * 100) + "%"; });
+    say(`Soru ${T.i + 1}. ${q.q}`);
+  });
+}
+
+function cevapla(k) {
+  if (!T || T.cevaplandi === T.i) return;
+  T.cevaplandi = T.i;
+  const q = T.sorular[T.i], ok = k === q.dogruK, btns = [...app.querySelectorAll(".opt")];
+  btns.forEach((b, j) => { b.disabled = true; if (j === q.dogruK) b.classList.add("ok"); else if (j === k) b.classList.add("bad"); else b.classList.add("dim"); });
+  S.gorulen[q.id] = (S.gorulen[q.id] || 0) + 1; S.cozulen++;
+  T.cevap.push({q, k, ok});
+  let kazanc = 0;
+  if (ok) {
+    T.dogru++; T.combo++; T.maxCombo = Math.max(T.maxCombo, T.combo); S.dogru++;
+    kazanc = 10 + Math.min(T.combo - 1, 5) * 2; T.xp += kazanc; S.xp += kazanc;
+    if (S.yanlis[q.id]) { delete S.yanlis[q.id]; S.temiz++; if (S.temiz >= 10) rozetVer("defter"); }
+    if (T.combo === 5) rozetVer("combo5"); if (T.combo === 10) rozetVer("combo10");
+    ses("ok"); xpUcur(btns[k], "+" + kazanc + " XP");
+    if (T.combo >= 3 && !azHareket) konfeti(40);
+  } else {
+    T.combo = 0; S.yanlis[q.id] = 1; ses("bad"); titret(120);
+  }
+  if (S.cozulen >= 100) rozetVer("yuz"); if (S.cozulen >= 500) rozetVer("bes");
+  save();
+  const c = $("#combo"); c.textContent = T.combo >= 2 ? "🔥" + T.combo : ""; c.classList.toggle("hot", T.combo >= 2);
+  $("#pbar").style.width = ((T.i + 1) / T.sorular.length * 100) + "%";
+
+  const sh = $("#sheet"), son = T.i === T.sorular.length - 1;
+  sh.className = "sheet " + (ok ? "okk" : "badd");
+  $("#sheetIn").innerHTML = `
+    <div class="speaker">${koala(ok ? "happy" : "sad")}<div><h3>${esc(sz(rnd(ok ? DOGRU : YANLIS)))}</h3>
+    ${ok ? "" : `<div style="font-weight:800;margin-top:4px">Doğru cevap: ${"ABCDE"[q.dogruK]}) ${fmt(q.o[q.a])}</div>`}</div></div>
+    ${q.c ? `<div class="exp"><b>Çözüm:</b> ${fmt(q.c)}</div>` : "<div style='height:12px'></div>"}
+    ${q.src ? `<div class="src">Kaynak: ${esc(q.src)}</div><div style="height:10px"></div>` : ""}
+    <button class="btn wide ${ok ? "ok" : "bad"}" id="devam">${son ? "Sonucu Gör 🏁" : "Devam →"}</button>`;
+  requestAnimationFrame(() => sh.classList.add("open"));
+  const qz = app.querySelector(".quiz"); if (qz) qz.style.paddingBottom = "60vh";
+  setTimeout(() => $("#devam")?.focus({preventScroll:true}), 300);
+  $("#devam").onclick = ilerle;
+}
+
+async function ilerle() {
+  if (!T) return;
+  $("#sheet")?.classList.remove("open");
+  T.i++;
+  if (T.i >= T.sorular.length) return sonuc();
+  const n = T.sorular.length;
+  // dikkat molası: yarıda bir kez, ya da 3 yanlış üst üste
+  const sonUc = T.cevap.slice(-3);
+  if (n >= 6 && !T.molaVerildi && T.i === Math.floor(n / 2)) {
+    T.molaVerildi = true;
+    const [b, ipucu] = rnd(MOLA).map(sz);
+    await overlay(`<div class="ov-card">${koala("happy")}<h2>${esc(b)}</h2><p>${T.dogru} / ${T.i} doğru · ${T.xp} XP topladın</p>
+      ${b.includes("Nefes") ? '<div class="breath">nefes</div>' : ""}<div class="tip">💡 ${esc(ipucu)}</div><button class="btn gold wide" data-kapat>Devam et!</button></div>`);
+  } else if (sonUc.length === 3 && sonUc.every(c => !c.ok) && !T.teselli) {
+    T.teselli = true;
+    await overlay(`<div class="ov-card">${koala("sad")}<h2>${esc(sz("Hey {h}, moral bozmak yok! 🤗"))}</h2><p>Zor sorular en çok öğreten sorulardır. Hepsini defterine yazdım, birlikte tekrar edeceğiz. Ben sana inanıyorum 💗</p>
+      <div class="tip">💡 Soruyu okurken anahtar kelimelerin altını zihninde çiz.</div><button class="btn gold wide" data-kapat>Hadi devam!</button></div>`);
+  }
+  soruGoster();
+}
+
+/* ================= SONUÇ ================= */
+async function sonuc() {
+  const n = T.sorular.length, d = T.dogru, p = Math.round(d / n * 100);
+  const yildiz = p >= 90 ? 3 : p >= 70 ? 2 : p >= 50 ? 1 : 0;
+  const lvOnce = seviye(S.xp).lv;
+  let bonus = 0;
+  if (T.tip === "test") {
+    bonus = 20 + yildiz * 10;
+    const TT = yolTest(T.yol), eski = TT[T.no];
+    TT[T.no] = {yildiz:Math.max(yildiz, eski?.yildiz || 0), en:Math.max(d, eski?.en || 0)};
+    rozetVer("ilk");
+    if ([...Array(S.ayar.testSayisi).keys()].every(i => TT[i])) rozetVer("harita");
+  }
+  if (d === n && n >= 5) rozetVer("kusursuz");
+  S.xp += bonus; T.xp += bonus;
+  seriGuncelle(); save();
+  const lvSonra = seviye(S.xp).lv, sure = Math.round((Date.now() - T.t0) / 1000);
+  const mesaj = esc(sz(p >= 90 ? "Muhteşemsin {h}! Seninle gurur duyuyorum 🏆💖" : p >= 70 ? "Çok iyi {h}! Biraz daha ve zirvedesin 🚀💕" : p >= 50 ? "Güzel gidiyor {h}, yanlışları birlikte tekrar edelim 💪❤️" : "Her uzman bir zamanlar acemiydi {h}, ben sana inanıyorum 🌱💗"));
+  const sonraki = T.tip === "test" && T.no + 1 < S.ayar.testSayisi ? T.no + 1 : null;
+  const R = T;
+
+  goster(`
+  <div class="result">
+    <div class="speaker" style="justify-content:center">${koala(p >= 50 ? "happy" : "sad")}<div class="bubble">${mesaj}</div></div>
+    <h2 style="font-size:24px;font-weight:900;margin-top:14px">${R.tip === "test" ? `${esc(yolAd(R.yol))} · Test ${R.no + 1} bitti!` : "Yanlışlar tekrarı bitti!"}</h2>
+    ${R.tip === "test" ? `<div class="bigstars">${[1,2,3].map(k => `<i class="${k <= yildiz ? "" : "off"}" style="animation-delay:${.3 + k * .25}s">⭐</i>`).join("")}</div>` : ""}
+    <div class="ring" id="ring" style="--p:0"><div><b>${d}/${n}</b><span>%${p} başarı</span></div></div>
+    <div class="rstats">
+      <div class="stat"><b>+<span id="rx">0</span></b><span>XP</span></div>
+      <div class="stat"><b>🔥${R.maxCombo}</b><span>En iyi seri</span></div>
+      <div class="stat"><b>${Math.floor(sure / 60)}:${String(sure % 60).padStart(2, "0")}</b><span>Süre</span></div>
+    </div>
+    <div class="racts">
+      ${sonraki !== null ? `<button class="btn gold wide" id="r-next">Sonraki Test (${sonraki + 1}) →</button>` : ""}
+      ${R.cevap.some(c => !c.ok) ? `<button class="btn wide bad" id="r-yanlis">📒 Yanlışları Tekrar Et</button>` : ""}
+      <button class="btn ghost wide" id="r-tekrar">🔄 Yeni Sorularla Tekrar</button>
+      <button class="btn ghost wide" id="r-ev">🏠 Haritaya Dön</button>
+    </div>
+    <div class="review"><h2 class="sec">Cevapların</h2>
+      ${R.cevap.map((c, i) => `<details class="rv"><summary>${c.ok ? "✅" : "❌"} <span>${i + 1}. ${esc(c.q.q.replace(/\s+/g, " ").slice(0, 80))}…</span></summary>
+        <div class="body">${fmt(c.q.q)}\n\n<b>Doğru:</b> ${fmt(c.q.o[c.q.a])}${c.ok ? "" : `\n<b>Senin:</b> ${fmt(c.q.o[c.q.perm[c.k]])}`}${c.q.c ? `\n\n<b>Çözüm:</b> ${fmt(c.q.c)}` : ""}</div></details>`).join("")}
+    </div>
+  </div>`, () => {
+    setTimeout(() => { $("#ring").style.setProperty("--p", p); }, 200);
+    sayac($("#rx"), R.xp, 1200);
+    if (p >= 70) { konfeti(); ses("win"); }
+    $("#r-next") && ($("#r-next").onclick = () => testBaslat({tip:"test", yol:R.yol, no:sonraki}));
+    $("#r-yanlis") && ($("#r-yanlis").onclick = () => testBaslat({tip:"yanlis"}));
+    $("#r-tekrar").onclick = () => testBaslat(R.tip === "test" ? {tip:"test", yol:R.yol, no:R.no} : {tip:"yanlis"});
+    $("#r-ev").onclick = anaSayfa;
+    if (lvSonra > lvOnce) setTimeout(() => {
+      ses("lvl"); konfeti(200);
+      overlay(`<div class="ov-card">${koala("happy")}<h2>Seviye ${lvSonra}! 🎉</h2><p>Yeni unvanın: <b>${seviye(S.xp).unvan}</b></p><div class="tip">Pamuk da ben de seninle gurur duyuyoruz 💖</div><button class="btn gold wide" data-kapat>Süper!</button></div>`);
+    }, 1400);
+  });
+  T = null;
+}
+
+/* ================= AYARLAR ================= */
+function ayarlar() {
+  const A = S.ayar;
+  goster(`
+  <div class="quiz">
+    <header class="top"><button class="btn ghost" id="geri">← Geri</button><h2 style="font-weight:900">Ayarlar</h2><span style="width:80px"></span></header>
+    <section class="panel glass stagger">
+      <h3>Test düzeni</h3>
+      <div class="row"><span>Test sayısı</span><b id="tsv">${A.testSayisi}</b></div>
+      <input type="range" min="3" max="40" value="${A.testSayisi}" id="ts" aria-label="Test sayısı">
+      <div class="row"><span>Test başına soru</span><b id="ssv">${A.soruSayisi}</b></div>
+      <input type="range" min="5" max="40" value="${A.soruSayisi}" id="ss" aria-label="Test başına soru">
+      <p class="note">Sorular her başlatmada havuzdan rastgele seçilir; az gördüğün sorular önceliklidir.</p>
+    </section>
+    <section class="panel glass">
+      <h3>Karışık yolda hangi dersler olsun?</h3>
+      <div class="checks">${Object.entries(DERS).map(([k, D]) => `<label class="ck" style="--c:${D.c}"><input type="checkbox" value="${k}" ${A.dersler.includes(k) ? "checked" : ""}><span>${D.ic} ${D.ad}</span></label>`).join("")}</div>
+    </section>
+    <section class="panel glass">
+      <h3>Diğer</h3>
+      <label style="display:block;font-weight:700;margin-bottom:6px" for="isim">Sana nasıl seslenelim? 💕</label>
+      <input class="isim" id="isim" maxlength="24" placeholder="İsim ya da lakap (boşsa aşkım, sevgilim…)" value="${esc(A.isim || "")}">
+      <label class="row"><span>Ses efektleri</span><input type="checkbox" id="sesk" ${A.ses ? "checked" : ""} style="width:22px;height:22px;accent-color:var(--gold)"></label>
+    </section>
+    <section class="panel glass">
+      <h3>Sıfırlama</h3>
+      <p class="note" style="margin-top:0">Tek bir yolu sıfırlamak için ana sayfada haritanın altındaki “yolunu sıfırla” düğmesini kullan.</p>
+      <div style="display:grid;gap:12px">
+        <button class="btn ghost wide" id="yanlissifir">📒 Yanlışlar defterini temizle (${Object.keys(S.yanlis).length})</button>
+        <button class="btn bad wide" id="sifirla">↺ Tüm ilerlemeyi sıfırla</button>
+      </div>
+      <p class="note">Tüm ilerleme: XP, seviye, yıldızlar, rozetler, seri ve yanlışlar silinir. Ayarların ve eklediğin sorular kalır.</p>
+    </section>
+  </div>`, () => {
+    $("#geri").onclick = anaSayfa;
+    $("#ts").oninput = e => { A.testSayisi = +e.target.value; $("#tsv").textContent = A.testSayisi; save(); };
+    $("#ss").oninput = e => { A.soruSayisi = +e.target.value; $("#ssv").textContent = A.soruSayisi; save(); };
+    app.querySelectorAll(".ck input").forEach(c => c.onchange = () => {
+      const s = [...app.querySelectorAll(".ck input:checked")].map(x => x.value);
+      if (!s.length) { c.checked = true; toast("⚠️", "En az bir ders seçili olmalı"); return; }
+      A.dersler = s; save();
+    });
+    $("#isim").oninput = e => { A.isim = e.target.value.trim(); save(); };
+    $("#sesk").onchange = e => { A.ses = e.target.checked; save(); ses("tik"); };
+    const ikiDokun = (el, soru, yap) => el.onclick = () => {
+      if (!el.dataset.o) { el.dataset.o = 1; el.textContent = soru; return; }
+      yap();
+    };
+    ikiDokun($("#yanlissifir"), "Emin misin? Tekrar dokun", () => { S.yanlis = {}; save(); toast("📒", "Defter temizlendi"); ayarlar(); });
+    ikiDokun($("#sifirla"), "Emin misin? Her şey silinecek, tekrar dokun", () => {
+      const ek = S.ek, ayar = S.ayar; S = VARS(); S.ek = ek; S.ayar = ayar; save(); toast("🧽", "Sıfırlandı, yeni bir başlangıç 💕"); anaSayfa();
+    });
+  });
+}
+
+/* ================= SORU EKLE ================= */
+const ORNEK = [{d:"tarih",k:"Kurtuluş Savaşı",q:"Misakımillî hangi meclis tarafından kabul edilmiştir?",o:["Son Osmanlı Mebusan Meclisi","TBMM","Erzurum Kongresi","Sivas Kongresi","Heyet-i Temsiliye"],a:0,c:"28 Ocak 1920'de Son Osmanlı Mebusan Meclisinde kabul edildi."}];
+function soruEkle() {
+  goster(`
+  <div class="quiz">
+    <header class="top"><button class="btn ghost" id="geri">← Geri</button><h2 style="font-weight:900">Soru Ekle</h2><span style="width:80px"></span></header>
+    <section class="panel glass">
+      <h3>JSON dosyası ya da metin</h3>
+      <p class="note">Her soru: <b>d</b> ders (${Object.keys(DERS).join(", ")}), <b>k</b> konu, <b>q</b> soru, <b>o</b> şıklar (2–5), <b>a</b> doğru şıkkın sırası (0'dan başlar), <b>c</b> çözüm. Altı çizili ifade için <b>[[kelime]]</b> yaz.</p>
+      <pre class="ex">${esc(JSON.stringify(ORNEK, null, 1))}</pre>
+      <input type="file" accept=".json,application/json" id="dosya" style="margin:8px 0 12px">
+      <textarea id="metin" placeholder="[ { &quot;d&quot;: &quot;turkce&quot;, ... } ]" aria-label="Soru JSON metni"></textarea>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+        <button class="btn gold" id="yukle">Ekle</button><button class="btn ghost" id="indir">Örnek indir</button>
+      </div>
+      <div class="msg" id="msg"></div>
+    </section>
+    <section class="panel glass">
+      <h3>Eklediğin sorular: ${S.ek.length}</h3>
+      ${S.ek.length ? `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><button class="btn ghost" id="disa">Dışa aktar</button><button class="btn bad" id="sil">Hepsini sil</button></div>` : '<p class="note">Henüz yok.</p>'}
+    </section>
+  </div>`, () => {
+    $("#geri").onclick = anaSayfa;
+    const msg = (t, ok) => { const m = $("#msg"); m.className = "msg " + (ok ? "ok" : "bad"); m.textContent = t; };
+    const indir = (ad, veri) => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([JSON.stringify(veri, null, 1)], {type:"application/json"})); a.download = ad; a.click(); };
+    $("#dosya").onchange = async e => { const f = e.target.files[0]; if (f) $("#metin").value = await f.text(); };
+    $("#indir").onclick = () => indir("ornek-sorular.json", ORNEK);
+    $("#disa") && ($("#disa").onclick = () => indir("sorularim.json", S.ek));
+    $("#sil") && ($("#sil").onclick = e => { if (e.target.dataset.o) { S.ek = []; save(); soruEkle(); } else { e.target.dataset.o = 1; e.target.textContent = "Emin misin?"; } });
+    $("#yukle").onclick = () => {
+      let arr; try { arr = JSON.parse($("#metin").value); } catch (e) { return msg("JSON okunamadı: " + e.message, false); }
+      if (!Array.isArray(arr)) arr = [arr];
+      const var_ = new Set(tumu().map(q => q.id)), iyi = [], hata = [];
+      arr.forEach((q, i) => {
+        const ok = q && typeof q.q === "string" && q.q.trim() && Array.isArray(q.o) && q.o.length >= 2 && q.o.length <= 5 && q.o.every(x => typeof x === "string")
+          && Number.isInteger(q.a) && q.a >= 0 && q.a < q.o.length;
+        if (!ok) return hata.push(i + 1);
+        const s = {d:DERS[q.d] ? q.d : "ek", k:String(q.k || ""), q:q.q, o:q.o, a:q.a, c:String(q.c || "")};
+        s.id = hash(s.q + s.o.join("|"));
+        if (!var_.has(s.id)) { var_.add(s.id); iyi.push(s); }
+      });
+      S.ek.push(...iyi); save();
+      msg(`${iyi.length} soru eklendi.` + (hata.length ? ` Hatalı kayıtlar: ${hata.slice(0, 10).join(", ")}` : ""), iyi.length > 0);
+      if (iyi.length) { ses("win"); konfeti(60); }
+    };
+  });
+}
+
+/* ---------- klavye ---------- */
+document.addEventListener("keydown", e => {
+  if (!T || document.querySelector(".overlay") || e.target.matches("input,textarea")) return;
+  const k = "abcde".indexOf(e.key.toLowerCase()), n = "12345".indexOf(e.key);
+  const sec = k >= 0 ? k : n;
+  if (sec >= 0 && T.cevaplandi !== T.i && sec < T.sorular[T.i].o.length) cevapla(sec);
+  else if (e.key === "Enter" && T.cevaplandi === T.i && document.activeElement?.id !== "devam") { e.preventDefault(); ilerle(); }
+});
+
+/* ---------- arka plan süsleri ---------- */
+(() => {
+  const bg = $(".bg");
+  for (let i = 0; i < 40; i++) { const s = document.createElement("i"); s.className = "star"; s.style.cssText = `left:${Math.random() * 100}%;top:${Math.random() * 100}%;animation-delay:${-Math.random() * 3}s`; bg.appendChild(s); }
+  ["💕","📚","✨","🐨","💗","🌸","⭐","💖"].forEach((e, i) => { const f = document.createElement("i"); f.className = "floater"; f.textContent = e;
+    f.style.cssText = `left:${5 + i * 12}%;animation-duration:${26 + i * 4}s;animation-delay:${-i * 5}s;font-style:normal`; bg.appendChild(f); });
+})();
+
+anaSayfa();
+</script>
+</body>
+</html>

@@ -1,0 +1,702 @@
+[
+ {
+  "d": "tarih",
+  "k": "İslamiyet öncesi Türk tarihi",
+  "q": "Balamir önderliğinde Karadeniz'in kuzeyinden batıya ilerleyen, Kavimler Göçü'nü başlatan ve Attila döneminde en güçlü hâline ulaşan Türk devleti aşağıdakilerden hangisidir?",
+  "o": [
+   "Avrupa Hun Devleti",
+   "Asya Hun Devleti",
+   "Ak Hun (Eftalit) Devleti",
+   "Avar Kağanlığı",
+   "Hazar Kağanlığı"
+  ],
+  "a": 0,
+  "c": "Balamir liderliğindeki Hunların 375'te batıya ilerlemesi Kavimler Göçü'nü başlatmış, Avrupa Hun Devleti Attila döneminde zirveye ulaşmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "İslamiyet öncesi Türk tarihi",
+  "q": "Ticaret yollarına hâkim olan, yönetici kesimi Musevi (Yahudi) dinini benimseyen ve farklı inançlara hoşgörüyle yaklaşan Türk devleti aşağıdakilerden hangisidir?",
+  "o": [
+   "Avarlar",
+   "Hazarlar",
+   "Peçenekler",
+   "Tuna Bulgarları",
+   "Kırgızlar"
+  ],
+  "a": 1,
+  "c": "Hazar hükümdarı ve yönetici kesimi Museviliği benimsemiştir; devlet farklı dinlere hoşgörüsüyle tanınır."
+ },
+ {
+  "d": "tarih",
+  "k": "İslamiyet öncesi Türk tarihi",
+  "q": "Kavimler Göçü'nün sonuçlarıyla ilgili,\nI. Avrupa'da feodalite rejimi ortaya çıkmıştır.\nII. Roma İmparatorluğu Doğu ve Batı olarak ikiye ayrılmıştır.\nIII. Avrupa'nın bugünkü etnik yapısı büyük ölçüde şekillenmiştir.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "I, II ve III"
+  ],
+  "a": 4,
+  "c": "Kavimler Göçü feodaliteyi doğurmuş, Roma'nın ikiye ayrılmasına (395) yol açmış ve Avrupa'nın etnik yapısını şekillendirmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "İslamiyet öncesi Türk tarihi",
+  "q": "Aşağıdakilerden hangisi İslamiyet öncesi Türk kültürüne ait bir kavram değildir?",
+  "o": [
+   "Kurultay",
+   "Töre",
+   "İkta",
+   "Tamga",
+   "Yuğ"
+  ],
+  "a": 2,
+  "c": "İkta, İslamiyet sonrası Türk-İslam devletlerinde (Büyük Selçuklu vb.) uygulanan toprak sistemidir; diğerleri İslamiyet öncesi Türk kültürüne aittir."
+ },
+ {
+  "d": "tarih",
+  "k": "İslamiyet öncesi Türk tarihi",
+  "q": "I. Kök Türk Devleti'nin kurulması\nII. Mete Han'ın Asya Hun tahtına geçmesi\nIII. Uygur Devleti'nin kurulması\nYukarıdaki gelişmelerin kronolojik sıralaması aşağıdakilerden hangisidir?",
+  "o": [
+   "I - II - III",
+   "II - I - III",
+   "II - III - I",
+   "III - I - II",
+   "I - III - II"
+  ],
+  "a": 1,
+  "c": "Mete Han MÖ 209'da tahta geçmiş, Kök Türk Devleti 552'de, Uygur Devleti 744'te kurulmuştur."
+ },
+ {
+  "d": "tarih",
+  "k": "İlk Türk-İslam devletleri ve Türkiye Selçukluları",
+  "q": "Hindistan'a on yedi sefer düzenleyen ve kaynaklarda \"sultan\" unvanını kullanan ilk Türk hükümdarı olarak bilinen kişi aşağıdakilerden hangisidir?",
+  "o": [
+   "Tuğrul Bey",
+   "Alp Arslan",
+   "Melikşah",
+   "Gazneli Mahmut",
+   "Satuk Buğra Han"
+  ],
+  "a": 3,
+  "c": "Gazneli Mahmut Hindistan'a 17 sefer yapmış ve sultan unvanını kullanan ilk Türk hükümdarı olmuştur."
+ },
+ {
+  "d": "tarih",
+  "k": "İlk Türk-İslam devletleri ve Türkiye Selçukluları",
+  "q": "Bu savaşta Gaznelileri yenen Selçuklular bağımsızlıklarını kesinleştirmiş ve Büyük Selçuklu Devleti resmen kurulmuştur.\nSözü edilen savaş aşağıdakilerden hangisidir?",
+  "o": [
+   "Pasinler Savaşı",
+   "Malazgirt Meydan Muharebesi",
+   "Katvan Savaşı",
+   "Talas Savaşı",
+   "Dandanakan Savaşı"
+  ],
+  "a": 4,
+  "c": "1040 Dandanakan Savaşı'nda Gazneliler yenilmiş, Büyük Selçuklu Devleti resmen kurulmuştur."
+ },
+ {
+  "d": "tarih",
+  "k": "İlk Türk-İslam devletleri ve Türkiye Selçukluları",
+  "q": "Büyük Selçuklu Devleti ile ilgili,\nI. Nizamülmülk döneminde Nizamiye Medreseleri açılmıştır.\nII. Tuğrul Bey, Bağdat'a girerek Abbasi halifesini Büveyhoğulları baskısından kurtarmıştır.\nIII. Ridaniye Savaşı ile Mısır'daki Memlûk Devleti'ne son vermiştir.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız III",
+   "I ve II",
+   "II ve III",
+   "I, II ve III"
+  ],
+  "a": 2,
+  "c": "Nizamiye Medreseleri ve Tuğrul Bey'in Bağdat seferi (1055) Büyük Selçuklulara aittir; Memlûkleri Ridaniye'de yıkan Osmanlı Devleti'dir (1517)."
+ },
+ {
+  "d": "tarih",
+  "k": "İlk Türk-İslam devletleri ve Türkiye Selçukluları",
+  "q": "Türkiye Selçukluları döneminde Kayseri'de Gevher Nesibe adına yaptırılan, hastaların tedavi edildiği ve aynı zamanda tıp eğitimi verilen yapı türü aşağıdakilerden hangisidir?",
+  "o": [
+   "Darüşşifa",
+   "Kervansaray",
+   "Ribat",
+   "Kümbet",
+   "Bedesten"
+  ],
+  "a": 0,
+  "c": "Selçuklularda hastaneye darüşşifa denir; Kayseri'deki Gevher Nesibe Darüşşifası'nda tıp eğitimi de verilmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "İlk Türk-İslam devletleri ve Türkiye Selçukluları",
+  "q": "Aşağıdakilerden hangisi I. Alaaddin Keykubat dönemine ait bir gelişme değildir?",
+  "o": [
+   "Alanya'nın alınarak burada tersane kurulması",
+   "Kösedağ Savaşı'nda Moğollara yenilinmesi",
+   "Kırım'daki Suğdak'a deniz aşırı sefer düzenlenmesi",
+   "Yassıçemen Savaşı'nda Harezmşahların yenilmesi",
+   "Kubadabad Sarayı'nın yaptırılması"
+  ],
+  "a": 1,
+  "c": "Kösedağ Savaşı (1243) II. Gıyaseddin Keyhüsrev döneminde yapılmıştır; diğerleri I. Alaaddin Keykubat dönemine aittir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Divan-ı Hümayun'da askerî sınıfa mensup kişilerin davalarına bakan, kadı ve müderrislerin atanmasında söz sahibi olan görevli aşağıdakilerden hangisidir?",
+  "o": [
+   "Defterdar",
+   "Nişancı",
+   "Kazasker",
+   "Reisülküttap",
+   "Kaptan-ı derya"
+  ],
+  "a": 2,
+  "c": "Kazasker, divanda askerî sınıfın davalarına bakar; kadı ve müderris atamalarında yetkilidir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Osmanlı dirlik sisteminde yıllık geliri 100.000 akçeden fazla olan ve padişaha, hanedan üyelerine, vezirlere ayrılan topraklara ne ad verilir?",
+  "o": [
+   "Zeamet",
+   "Tımar",
+   "Vakıf",
+   "Has",
+   "Mülk"
+  ],
+  "a": 3,
+  "c": "Geliri 100.000 akçenin üzerindeki dirliklere has denir; zeamet 20.000-100.000, tımar 3.000-20.000 akçe arasındadır."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Osmanlı Devleti'nde bazı vergi kaynaklarının toplanma hakkının açık artırma yoluyla, peşin para karşılığında belirli bir süre için kişilere devredilmesi sistemi aşağıdakilerden hangisidir?",
+  "o": [
+   "Esham",
+   "Gedik",
+   "Avarız",
+   "Müsadere",
+   "İltizam"
+  ],
+  "a": 4,
+  "c": "Vergi gelirlerinin peşin para karşılığında belirli süreliğine devredilmesine iltizam denir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Osmanlı Devleti'nde halkın ve üreticinin korunması amacıyla malların satış fiyatlarının devlet tarafından belirlenmesine ne ad verilir?",
+  "o": [
+   "Narh",
+   "Cizye",
+   "Öşür",
+   "Haraç",
+   "Çift bozan"
+  ],
+  "a": 0,
+  "c": "Devletin mallara koyduğu resmî fiyata narh denir; diğerleri vergi türleridir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Devşirme yoluyla toplanan çocuklar arasından seçilen yetenekli gençlerin saray hizmetine ve devlet yönetimine hazırlandığı Osmanlı eğitim kurumu aşağıdakilerden hangisidir?",
+  "o": [
+   "Sıbyan mektebi",
+   "Enderun",
+   "Acemi Oğlanlar Ocağı",
+   "Sahn-ı Seman Medresesi",
+   "Mühendishane"
+  ],
+  "a": 1,
+  "c": "Enderun, devşirmelerin en yeteneklilerini devlet yöneticisi olarak yetiştiren saray okuludur."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "I. Yeniçeriler\nII. Akıncılar\nIII. Kapıkulu süvarileri\nYukarıdakilerden hangileri Osmanlı Kapıkulu ordusunda yer alır?",
+  "o": [
+   "Yalnız I",
+   "Yalnız II",
+   "I ve II",
+   "I ve III",
+   "I, II ve III"
+  ],
+  "a": 3,
+  "c": "Yeniçeriler ve Kapıkulu süvarileri merkez (Kapıkulu) ordusuna aittir; akıncılar eyalet askerleri arasında yer alır."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "I. Niğbolu Savaşı\nII. Varna Savaşı\nIII. I. Kosova Savaşı\nYukarıdaki savaşların kronolojik sıralaması aşağıdakilerden hangisidir?",
+  "o": [
+   "I - II - III",
+   "I - III - II",
+   "II - III - I",
+   "III - I - II",
+   "III - II - I"
+  ],
+  "a": 3,
+  "c": "I. Kosova 1389, Niğbolu 1396, Varna 1444 yılında yapılmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı kuruluş ve yükselme",
+  "q": "Aşağıdakilerden hangisi Fatih Sultan Mehmet dönemine ait bir gelişme değildir?",
+  "o": [
+   "Otlukbeli Savaşı'nda Akkoyunluların yenilmesi",
+   "Sahn-ı Seman Medreselerinin kurulması",
+   "Rodos Adası'nın alınması",
+   "Kanunname-i Âl-i Osman'ın hazırlanması",
+   "Belgrad'ın kuşatılması"
+  ],
+  "a": 2,
+  "c": "Rodos 1522'de Kanuni Sultan Süleyman döneminde alınmıştır; diğerleri Fatih dönemine aittir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Osmanlı Devleti'nin ilk kez büyük çaplı toprak kaybına uğradığı, Macaristan'ın büyük bölümünü yitirdiği ve II. Viyana Kuşatması sonrasındaki savaşlara son veren antlaşma aşağıdakilerden hangisidir?",
+  "o": [
+   "Zitvatorok Antlaşması",
+   "Pasarofça Antlaşması",
+   "Küçük Kaynarca Antlaşması",
+   "Karlofça Antlaşması",
+   "Belgrad Antlaşması"
+  ],
+  "a": 3,
+  "c": "1699 Karlofça Antlaşması ile Osmanlı ilk kez büyük toprak kaybı yaşamış, Macaristan'ın büyük bölümü Avusturya'ya geçmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Bu antlaşmayla Kırım'a bağımsızlık verilmiş, Rusya Osmanlı'daki Ortodoksların haklarını koruma bahanesiyle iç işlere karışma imkânı elde etmiş ve Osmanlı ilk kez savaş tazminatı ödemeyi kabul etmiştir.\nSözü edilen antlaşma aşağıdakilerden hangisidir?",
+  "o": [
+   "Yaş Antlaşması",
+   "Bükreş Antlaşması",
+   "Edirne Antlaşması",
+   "Ziştovi Antlaşması",
+   "Küçük Kaynarca Antlaşması"
+  ],
+  "a": 4,
+  "c": "1774 Küçük Kaynarca Antlaşması ile Kırım bağımsız olmuş, Rusya Ortodokslar üzerinde koruyuculuk iddiası kazanmış ve ilk kez savaş tazminatı ödenmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Aşağıdakilerden hangisi Tanzimat Fermanı ile getirilen düzenlemelerden biri değildir?",
+  "o": [
+   "Meclis-i Mebusan'ın açılması",
+   "Herkesin kanun önünde eşit sayılması",
+   "Can, mal ve namus güvenliğinin sağlanması",
+   "Kimsenin yargılanmadan cezalandırılmaması",
+   "Vergilerin herkesin gelirine göre alınması"
+  ],
+  "a": 0,
+  "c": "Meclis-i Mebusan 1877'de I. Meşrutiyet döneminde açılmıştır; diğerleri 1839 Tanzimat Fermanı'nın hükümleridir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "II. Meşrutiyet'in ilanından kısa süre sonra İstanbul'da çıkan, Selanik'ten gelen Hareket Ordusu tarafından bastırılan ve ardından II. Abdülhamit'in tahttan indirilmesiyle sonuçlanan olay aşağıdakilerden hangisidir?",
+  "o": [
+   "Kabakçı Mustafa İsyanı",
+   "31 Mart Olayı",
+   "Patrona Halil İsyanı",
+   "Babıali Baskını",
+   "Edirne Vakası"
+  ],
+  "a": 1,
+  "c": "1909'daki 31 Mart Olayı'nı Hareket Ordusu bastırmış, II. Abdülhamit tahttan indirilmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "II. Balkan Savaşı sonunda Bulgaristan ile imzalanan ve Edirne'nin Osmanlı Devleti'nde kalmasını sağlayan antlaşma aşağıdakilerden hangisidir?",
+  "o": [
+   "Londra Antlaşması",
+   "Bükreş Antlaşması",
+   "İstanbul Antlaşması",
+   "Atina Antlaşması",
+   "Uşi Antlaşması"
+  ],
+  "a": 2,
+  "c": "1913 İstanbul Antlaşması ile Bulgaristan, II. Balkan Savaşı'nda geri alınan Edirne'nin Osmanlı'da kalmasını kabul etmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Bu cephede kazanılan başarı sonucunda Rusya'ya yardım ulaştırılamamış, bu durum Rusya'da Bolşevik İhtilali'nin çıkmasını kolaylaştırmış ve I. Dünya Savaşı'nın uzamasına yol açmıştır.\nSözü edilen cephe aşağıdakilerden hangisidir?",
+  "o": [
+   "Kafkas Cephesi",
+   "Kanal Cephesi",
+   "Irak Cephesi",
+   "Çanakkale Cephesi",
+   "Galiçya Cephesi"
+  ],
+  "a": 3,
+  "c": "Çanakkale'de İtilaf Devletlerinin geçişinin engellenmesi Rusya'ya yardımı önlemiş, Bolşevik İhtilali'ne zemin hazırlamış ve savaşı uzatmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Aşağıdakilerden hangisi II. Mahmut döneminde yapılan yeniliklerden biri değildir?",
+  "o": [
+   "İlk resmî gazete Takvim-i Vekayi'nin çıkarılması",
+   "İlk nüfus sayımının yapılması",
+   "Mekteb-i Harbiye'nin açılması",
+   "Asakir-i Mansure-i Muhammediye ordusunun kurulması",
+   "Mühendishane-i Bahrî-i Hümayun'un açılması"
+  ],
+  "a": 4,
+  "c": "Mühendishane-i Bahrî-i Hümayun 1773'te III. Mustafa döneminde açılmıştır; diğerleri II. Mahmut dönemine aittir."
+ },
+ {
+  "d": "tarih",
+  "k": "Osmanlı duraklama, gerileme ve dağılma",
+  "q": "Devleti kurtarmak için Batı'nın yalnızca bilim ve teknolojisinin değil, yaşam biçimi ve kurumlarının da benimsenmesi gerektiğini savunan fikir akımı aşağıdakilerden hangisidir?",
+  "o": [
+   "Batıcılık",
+   "Osmanlıcılık",
+   "İslamcılık",
+   "Türkçülük",
+   "Adem-i merkeziyetçilik"
+  ],
+  "a": 0,
+  "c": "Batıcılık, Avrupa'nın bilim ve teknolojisiyle birlikte kültür ve kurumlarının da alınmasını savunur."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Toplanış biçimi bakımından bölgesel, aldığı kararlar bakımından ulusal nitelik taşıyan ve \"Manda ve himaye kabul olunamaz.\" kararının ilk kez alındığı toplantı aşağıdakilerden hangisidir?",
+  "o": [
+   "Sivas Kongresi",
+   "Erzurum Kongresi",
+   "Balıkesir Kongresi",
+   "Alaşehir Kongresi",
+   "Amasya Görüşmeleri"
+  ],
+  "a": 1,
+  "c": "Erzurum Kongresi doğu illerinden delegelerle toplanmış ama ulusal kararlar almış, manda ve himayeyi ilk kez reddetmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Aşağıdakilerden hangisi Millî Mücadele döneminde kurulan zararlı cemiyetlerden biri değildir?",
+  "o": [
+   "Kürt Teali Cemiyeti",
+   "İngiliz Muhipleri Cemiyeti",
+   "Redd-i İlhak Cemiyeti",
+   "Sulh ve Selamet-i Osmaniye Cemiyeti",
+   "Mavri Mira Cemiyeti"
+  ],
+  "a": 2,
+  "c": "Redd-i İlhak Cemiyeti İzmir'in Yunanistan'a ilhakını önlemek için kurulmuş yararlı (millî) bir cemiyettir; diğerleri zararlı cemiyetlerdir."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Temsil Heyeti ile İstanbul Hükûmeti temsilcisi Salih Paşa arasında yapılan ve İstanbul Hükûmeti'nin Temsil Heyeti'ni dolaylı olarak tanıdığı görüşme aşağıdakilerden hangisidir?",
+  "o": [
+   "Havza Genelgesi",
+   "Amasya Genelgesi",
+   "Sivas Kongresi",
+   "Amasya Görüşmeleri",
+   "Erzurum Kongresi"
+  ],
+  "a": 3,
+  "c": "Ekim 1919'daki Amasya Görüşmeleri'nde Salih Paşa ile görüşülmüş ve İstanbul Hükûmeti Temsil Heyeti'ni dolaylı olarak tanımıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "23 Nisan 1920'de açılan TBMM ile ilgili,\nI. Yasama ve yürütme yetkilerini kendinde toplayarak güçler birliği ilkesini benimsemiştir.\nII. Yeni bir devlet kurma iradesi taşıyan olağanüstü yetkili bir meclistir.\nIII. Açıldığı gün saltanatı kaldırmıştır.\nifadelerinden hangileri doğrudur?",
+  "o": [
+   "Yalnız I",
+   "Yalnız III",
+   "I ve II",
+   "II ve III",
+   "I, II ve III"
+  ],
+  "a": 2,
+  "c": "TBMM güçler birliğini benimsemiş, kurucu ve olağanüstü yetkili bir meclistir; saltanat 1 Kasım 1922'de kaldırılmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Kuva-yı Millîye birliklerinin düzenli orduya katılmasını kabul etmeyerek TBMM'ye karşı ayaklanan ve bastırılınca Yunanlara sığınan kişinin çıkardığı isyan aşağıdakilerden hangisidir?",
+  "o": [
+   "Anzavur İsyanı",
+   "Delibaş Mehmet İsyanı",
+   "Koçgiri İsyanı",
+   "Yozgat İsyanı",
+   "Çerkez Ethem İsyanı"
+  ],
+  "a": 4,
+  "c": "Çerkez Ethem düzenli orduya katılmayı reddederek ayaklanmış, yenilince Yunan kuvvetlerine sığınmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "I. Sakarya Meydan Muharebesi\nII. I. İnönü Muharebesi\nIII. Kütahya-Eskişehir Muharebeleri\nYukarıdaki savaşların kronolojik sıralaması aşağıdakilerden hangisidir?",
+  "o": [
+   "I - II - III",
+   "I - III - II",
+   "II - I - III",
+   "II - III - I",
+   "III - II - I"
+  ],
+  "a": 3,
+  "c": "I. İnönü Ocak 1921, Kütahya-Eskişehir Temmuz 1921, Sakarya Ağustos-Eylül 1921'de yapılmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Bu yenilginin ardından ordu Sakarya'nın doğusuna çekilmiş, Mustafa Kemal'e Başkomutanlık Kanunu ile üç ay süreyle meclisin yetkileri verilmiş ve Tekalif-i Millîye Emirleri yayımlanmıştır.\nSözü edilen yenilgi aşağıdakilerden hangisidir?",
+  "o": [
+   "Kütahya-Eskişehir Muharebeleri",
+   "I. İnönü Muharebesi",
+   "II. İnönü Muharebesi",
+   "Sakarya Meydan Muharebesi",
+   "Büyük Taarruz"
+  ],
+  "a": 0,
+  "c": "Kütahya-Eskişehir yenilgisi sonrası ordu Sakarya'nın doğusuna çekilmiş, Başkomutanlık Kanunu çıkarılmış ve Tekalif-i Millîye Emirleri yayımlanmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "TBMM'yi tanıyan ilk İtilaf devletiyle imzalanan, Güney Cephesi'ndeki savaşı sona erdiren ve Hatay dışındaki güney sınırını büyük ölçüde belirleyen antlaşma aşağıdakilerden hangisidir?",
+  "o": [
+   "Kars Antlaşması",
+   "Ankara Antlaşması",
+   "Moskova Antlaşması",
+   "Gümrü Antlaşması",
+   "Mudanya Ateşkes Antlaşması"
+  ],
+  "a": 1,
+  "c": "1921 Ankara Antlaşması ile Fransa TBMM'yi tanıyan ilk İtilaf devleti olmuş, Güney Cephesi kapanmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Doğu Cephesi ile ilgili aşağıdakilerden hangisi yanlıştır?",
+  "o": [
+   "Ermenilere karşı mücadele edilmiştir.",
+   "Cephe komutanı Kâzım Karabekir'dir.",
+   "Savaş, Mudanya Ateşkes Antlaşması ile sona ermiştir.",
+   "TBMM düzenli ordusunun ilk askerî başarısı bu cephede kazanılmıştır.",
+   "Kazanılan zaferle doğu sınırı büyük ölçüde güvence altına alınmıştır."
+  ],
+  "a": 2,
+  "c": "Doğu Cephesi Ermenilerle 1920'de imzalanan Gümrü Antlaşması ile kapanmıştır; Mudanya Ateşkesi Batı Cephesi'ndeki savaşı sona erdirmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Aşağıdakilerden hangisi Lozan Barış Antlaşması'nın hükümlerinden biri değildir?",
+  "o": [
+   "Kapitülasyonların kaldırılması",
+   "Boğazlarda Türk başkanlığında uluslararası bir komisyon kurulması",
+   "Batı Trakya sınırının Meriç Nehri olarak belirlenmesi",
+   "Hatay'ın Türkiye sınırlarına katılması",
+   "Osmanlı borçlarının, Osmanlı'dan ayrılan devletler arasında paylaştırılması"
+  ],
+  "a": 3,
+  "c": "Hatay, Lozan'da Fransız mandası altındaki Suriye sınırları içinde kalmış ve ancak 1939'da Türkiye'ye katılmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Mustafa Kemal'in Samsun'a çıkışından kısa süre sonra yayımladığı ve halkı işgalleri protesto etmek amacıyla mitingler düzenlemeye çağıran belge aşağıdakilerden hangisidir?",
+  "o": [
+   "Amasya Genelgesi",
+   "Misak-ı Millî",
+   "Erzurum Kongresi Beyannamesi",
+   "Sivas Kongresi Beyannamesi",
+   "Havza Genelgesi"
+  ],
+  "a": 4,
+  "c": "Mayıs 1919'da yayımlanan Havza Genelgesi ile işgallere karşı mitingler düzenlenmesi istenmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Millî Mücadele",
+  "q": "Kuva-yı Millîye ile ilgili aşağıdakilerden hangisi söylenemez?",
+  "o": [
+   "Sakarya Meydan Muharebesi'ni kazanan birliklerdir.",
+   "Halkın işgallere karşı kendiliğinden oluşturduğu silahlı birliklerdir.",
+   "Düzenli ordu kuruluncaya kadar düşman ilerleyişini yavaşlatmıştır.",
+   "Batı Anadolu'da Yunan işgaline karşı etkili olmuştur.",
+   "Bölgesel nitelikte, merkezî bir otoriteye bağlı olmayan birliklerdir."
+  ],
+  "a": 0,
+  "c": "Kuva-yı Millîye birlikleri düzenli ordu kurulunca bu orduya katılmıştır; Sakarya'yı düzenli ordu kazanmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "I. Soyadı Kanunu\nII. Şapka Kanunu\nIII. Harf İnkılabı\nYukarıdaki inkılapların kronolojik sıralaması aşağıdakilerden hangisidir?",
+  "o": [
+   "I - II - III",
+   "II - I - III",
+   "II - III - I",
+   "III - I - II",
+   "III - II - I"
+  ],
+  "a": 2,
+  "c": "Şapka Kanunu 1925, Harf İnkılabı 1928, Soyadı Kanunu 1934 yılında kabul edilmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "\"Devletin dini İslam'dır.\" ifadesinin 1928'de anayasadan çıkarılmasının ardından laiklik ilkesi hangi yıl anayasaya girmiştir?",
+  "o": [
+   "1924",
+   "1928",
+   "1931",
+   "1934",
+   "1937"
+  ],
+  "a": 4,
+  "c": "Laiklik, diğer Atatürk ilkeleriyle birlikte 1937'de anayasaya girmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "Şeyh Sait İsyanı üzerine 1925'te çıkarılan ve hükûmete olağanüstü yetkiler tanıyan kanun aşağıdakilerden hangisidir?",
+  "o": [
+   "Hıyanet-i Vataniye Kanunu",
+   "Takrir-i Sükûn Kanunu",
+   "Teşkilat-ı Esasiye Kanunu",
+   "Tevhid-i Tedrisat Kanunu",
+   "Teşvik-i Sanayi Kanunu"
+  ],
+  "a": 1,
+  "c": "Takrir-i Sükûn Kanunu Şeyh Sait İsyanı üzerine 1925'te çıkarılmış, hükûmete geniş yetkiler vermiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "Cumhuriyet döneminin ilk muhalefet partisi olan, Kâzım Karabekir başkanlığında 1924'te kurulan ve Şeyh Sait İsyanı'nın ardından kapatılan parti aşağıdakilerden hangisidir?",
+  "o": [
+   "Serbest Cumhuriyet Fırkası",
+   "Ahali Cumhuriyet Fırkası",
+   "Halk Fırkası",
+   "Terakkiperver Cumhuriyet Fırkası",
+   "Millî Kalkınma Partisi"
+  ],
+  "a": 3,
+  "c": "Terakkiperver Cumhuriyet Fırkası 1924'te kurulmuş, 1925'te Şeyh Sait İsyanı'nın ardından kapatılmıştır."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "Cumhuriyet'in ilanından önce, 1923'te toplanan ve Misak-ı İktisadi'nin kabul edilerek millî ekonominin esaslarının belirlendiği toplantı aşağıdakilerden hangisidir?",
+  "o": [
+   "Sivas Kongresi",
+   "Balıkesir Kongresi",
+   "Lozan Konferansı",
+   "Londra Konferansı",
+   "İzmir İktisat Kongresi"
+  ],
+  "a": 4,
+  "c": "Şubat 1923'te toplanan İzmir İktisat Kongresi'nde Misak-ı İktisadi kabul edilmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "Toplumda hiçbir kişiye, aileye, sınıfa veya zümreye ayrıcalık tanınmamasını ve kanun önünde eşitliği esas alan Atatürk ilkesi aşağıdakilerden hangisidir?",
+  "o": [
+   "Halkçılık",
+   "Cumhuriyetçilik",
+   "Devletçilik",
+   "Milliyetçilik",
+   "İnkılapçılık"
+  ],
+  "a": 0,
+  "c": "Halkçılık, sınıf ve zümre ayrıcalığını reddeder, herkesin kanun önünde eşit olmasını esas alır."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "1926'da çıkarılan ve Türk karasularında yük ile yolcu taşıma hakkını yalnızca Türk gemilerine veren kanun aşağıdakilerden hangisidir?",
+  "o": [
+   "Teşvik-i Sanayi Kanunu",
+   "Kabotaj Kanunu",
+   "Takrir-i Sükûn Kanunu",
+   "Ölçüler Kanunu",
+   "Türk Medeni Kanunu"
+  ],
+  "a": 1,
+  "c": "Kabotaj Kanunu (1926) ile kıyı taşımacılığı hakkı Türk gemilerine verilmiştir."
+ },
+ {
+  "d": "tarih",
+  "k": "Atatürk ilke ve inkılapları",
+  "q": "Aşağıdakilerden hangisi toplumsal hayatın düzenlenmesi alanında yapılan inkılaplardan biri değildir?",
+  "o": [
+   "Şapka Kanunu'nun kabul edilmesi",
+   "Soyadı Kanunu'nun çıkarılması",
+   "Ölçüler Kanunu ile metrik sisteme geçilmesi",
+   "Uluslararası takvim ve saat sisteminin kabul edilmesi",
+   "Teşvik-i Sanayi Kanunu'nun çıkarılması"
+  ],
+  "a": 4,
+  "c": "Teşvik-i Sanayi Kanunu (1927) ekonomi alanındaki bir düzenlemedir; diğerleri toplumsal hayatı düzenleyen inkılaplardır."
+ },
+ {
+  "d": "tarih",
+  "k": "Dış politika ve çağdaş tarih",
+  "q": "Atatürk döneminde başlayan, ancak Atatürk'ün ölümünden sonra 1939'da yerel meclisin Türkiye'ye katılma kararıyla çözüme kavuşan dış politika sorunu aşağıdakilerden hangisidir?",
+  "o": [
+   "Hatay sorunu",
+   "Musul sorunu",
+   "Boğazlar sorunu",
+   "Nüfus mübadelesi sorunu",
+   "Yabancı okullar sorunu"
+  ],
+  "a": 0,
+  "c": "Hatay Meclisi 1939'da Türkiye'ye katılma kararı almış ve sorun Atatürk'ün ölümünden sonra çözülmüştür."
+ },
+ {
+  "d": "tarih",
+  "k": "Dış politika ve çağdaş tarih",
+  "q": "Türkiye, Milletler Cemiyeti'ne hangi yıl üye olmuştur?",
+  "o": [
+   "1923",
+   "1926",
+   "1932",
+   "1936",
+   "1939"
+  ],
+  "a": 2,
+  "c": "Türkiye 1932'de Milletler Cemiyeti'ne davet üzerine üye olmuştur."
+ },
+ {
+  "d": "tarih",
+  "k": "Dış politika ve çağdaş tarih",
+  "q": "ABD'nin 1947'de Sovyet tehdidine karşı Türkiye ve Yunanistan'a askerî ve ekonomik yardım yapılmasını öngören politikası aşağıdakilerden hangisidir?",
+  "o": [
+   "Marshall Planı",
+   "Truman Doktrini",
+   "Eisenhower Doktrini",
+   "Bağdat Paktı",
+   "Balkan Paktı"
+  ],
+  "a": 1,
+  "c": "1947 Truman Doktrini Türkiye ve Yunanistan'a yönelik askerî ve ekonomik yardım öngörmüştür."
+ },
+ {
+  "d": "tarih",
+  "k": "Dış politika ve çağdaş tarih",
+  "q": "I. Japonya'nın Mançurya'yı işgal etmesi\nII. İtalya'nın Habeşistan'ı işgal etmesi\nIII. Almanya'nın Polonya'ya saldırması\nII. Dünya Savaşı'na giden süreçteki bu gelişmelerin kronolojik sıralaması aşağıdakilerden hangisidir?",
+  "o": [
+   "I - II - III",
+   "I - III - II",
+   "II - I - III",
+   "II - III - I",
+   "III - I - II"
+  ],
+  "a": 0,
+  "c": "Japonya 1931'de Mançurya'yı, İtalya 1935'te Habeşistan'ı işgal etmiş, Almanya 1939'da Polonya'ya saldırmıştır."
+ }
+]

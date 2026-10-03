@@ -1,0 +1,492 @@
+[
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "Türkiye'de güneyden kuzeye doğru gidildikçe aşağıdakilerden hangisi azalır?",
+  "o": [
+   "Güneş ışınlarının yere düşme açısı",
+   "Öğle vakti cisimlerin gölge boyu",
+   "Kutup Yıldızı'nın ufuk düzlemiyle yaptığı açı",
+   "Yaz mevsiminde gündüz süresi",
+   "Kış mevsiminde gece süresi"
+  ],
+  "a": 0,
+  "c": "Kuzeye gidildikçe enlem artar ve Güneş ışınlarının geliş açısı küçülür. Buna bağlı olarak gölge boyu, Kutup Yıldızı'nın yükseklik açısı ve mevsimlere göre gün uzunluğu farkı artar."
+ },
+ {
+  "d": "cografya",
+  "k": "Coğrafi konum",
+  "q": "Aşağıdaki ülkelerden hangisinin Türkiye ile kara sınırı yoktur?",
+  "o": [
+   "Azerbaycan",
+   "Lübnan",
+   "Ermenistan",
+   "Bulgaristan",
+   "Irak"
+  ],
+  "a": 1,
+  "c": "Türkiye'nin kara komşuları Yunanistan, Bulgaristan, Gürcistan, Ermenistan, Azerbaycan (Nahçıvan), İran, Irak ve Suriye'dir. Lübnan'ın Türkiye ile kara sınırı yoktur."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Aşağıdaki dağlardan hangisi Ege Bölgesi'nde kırılma sonucu yükselmiş horst özelliği gösterir?",
+  "o": [
+   "Erciyes Dağı",
+   "Kaçkar Dağları",
+   "Bozdağlar",
+   "Nemrut Dağı",
+   "Hasan Dağı"
+  ],
+  "a": 2,
+  "c": "Ege'de fay hatları boyunca yükselen bloklar (horst) dağları, çöken bloklar (graben) ovaları oluşturmuştur; Bozdağlar bir horsttur. Erciyes, Nemrut ve Hasan volkanik, Kaçkarlar kıvrım dağıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Aşağıdaki dağlardan hangisi volkanik kökenli değildir?",
+  "o": [
+   "Erciyes Dağı",
+   "Süphan Dağı",
+   "Karacadağ",
+   "Uludağ",
+   "Hasan Dağı"
+  ],
+  "a": 3,
+  "c": "Erciyes, Süphan, Karacadağ ve Hasan Dağı volkanik dağlardır. Uludağ ise kırılmalarla yükselmiş, granitten oluşan bir kütle dağıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Kıyı şekilleri",
+  "q": "Eskiden bir ada iken kıyı ile arasındaki sığ alanın akarsu ve dalga birikintileriyle dolarak karaya bağlanmasıyla oluşan (tombolo) yarımadaya Türkiye'deki örnek aşağıdakilerden hangisidir?",
+  "o": [
+   "Gelibolu Yarımadası",
+   "Biga Yarımadası",
+   "Kocaeli Yarımadası",
+   "Teke Yarımadası",
+   "Kapıdağ Yarımadası"
+  ],
+  "a": 4,
+  "c": "Marmara Denizi'ndeki Kapıdağ, eskiden bir ada iken kıyıyla arasının dolmasıyla karaya bağlanmış bir tombolodur. Diğerleri ana karanın uzantısı olan yarımadalardır."
+ },
+ {
+  "d": "cografya",
+  "k": "Kıyı tipleri",
+  "q": "Aşağıdaki kıyı tipi–yer eşleştirmelerinden hangisi yanlıştır?",
+  "o": [
+   "Enine kıyı – Doğu Karadeniz",
+   "Boyuna kıyı – Akdeniz",
+   "Enine kıyı – Ege",
+   "Ria kıyı – Haliç",
+   "Boyuna kıyı – Karadeniz"
+  ],
+  "a": 0,
+  "c": "Doğu Karadeniz'de dağlar kıyıya paralel uzandığı için boyuna kıyı görülür. Enine kıyı, dağların kıyıya dik uzandığı Ege'de tipiktir."
+ },
+ {
+  "d": "cografya",
+  "k": "İklim",
+  "q": "Dağ yamacı boyunca alçalan havanın ısınıp kuruması sonucu oluşan ve Doğu Karadeniz kıyılarında kış aylarında ani sıcaklık artışlarına yol açan rüzgâr aşağıdakilerden hangisidir?",
+  "o": [
+   "Poyraz",
+   "Föhn",
+   "Lodos",
+   "Meltem",
+   "Karayel"
+  ],
+  "a": 1,
+  "c": "Föhn, dağı aşan havanın inişe geçtiği yamaçta adyabatik olarak ısınmasıyla oluşan sıcak ve kuru rüzgârdır. Doğu Karadeniz'de kışın sıcaklığın birden yükselmesine neden olur."
+ },
+ {
+  "d": "cografya",
+  "k": "Bitki örtüsü",
+  "q": "Aşağıdaki ağaç türlerinden hangisi Akdeniz kıyı kuşağının alçak kesimlerinde en geniş yayılışa sahiptir?",
+  "o": [
+   "Ladin",
+   "Sarıçam",
+   "Kızılçam",
+   "Kayın",
+   "Doğu kara çamı"
+  ],
+  "a": 2,
+  "c": "Kızılçam sıcağa ve yaz kuraklığına dayanıklıdır; Akdeniz ve Ege kıyılarının alçak kesimlerinde yaygındır. Ladin ve kayın Karadeniz'de, sarıçam ise Sarıkamış gibi soğuk alanlarda öne çıkar."
+ },
+ {
+  "d": "cografya",
+  "k": "Toprak",
+  "q": "Çayır ve uzun boylu ot örtüsü altında oluşan, organik maddece zengin çernozyom (kara topraklar) Türkiye'de en çok hangi yörede görülür?",
+  "o": [
+   "Antalya-Alanya",
+   "Rize-Hopa",
+   "Muğla-Fethiye",
+   "Kars-Ardahan",
+   "İzmir-Torbalı"
+  ],
+  "a": 3,
+  "c": "Çernozyomlar yaz yağışlarıyla gelişen çayırların bulunduğu Kars-Ardahan platosunda yaygındır. Bu topraklar humusça zengin ve verimlidir."
+ },
+ {
+  "d": "cografya",
+  "k": "Toprak",
+  "q": "Aşağıdakilerden hangisi oluştuğu yerden taşınarak biriken (azonal) topraklara örnektir?",
+  "o": [
+   "Terra rossa",
+   "Podzol",
+   "Çernozyom",
+   "Kahverengi bozkır toprağı",
+   "Alüvyal toprak"
+  ],
+  "a": 4,
+  "c": "Alüvyal topraklar akarsuların taşıyıp ova ve deltalarda biriktirdiği malzemeden oluşur, bu yüzden taşınmış topraktır. Diğerleri bulundukları yerde oluşmuş yerli topraklardır."
+ },
+ {
+  "d": "cografya",
+  "k": "Akarsular",
+  "q": "Aşağıdaki akarsulardan hangisi Karadeniz'e dökülür?",
+  "o": [
+   "Sakarya",
+   "Seyhan",
+   "Gediz",
+   "Meriç",
+   "Asi"
+  ],
+  "a": 0,
+  "c": "Sakarya Nehri İç Anadolu'dan doğup Karadeniz'e dökülür. Seyhan ve Asi Akdeniz'e, Gediz ve Meriç Ege Denizi'ne dökülür."
+ },
+ {
+  "d": "cografya",
+  "k": "Barajlar",
+  "q": "Aşağıdaki baraj–akarsu eşleştirmelerinden hangisi yanlıştır?",
+  "o": [
+   "Keban – Fırat",
+   "Sarıyar – Seyhan",
+   "Hirfanlı – Kızılırmak",
+   "Ilısu – Dicle",
+   "Deriner – Çoruh"
+  ],
+  "a": 1,
+  "c": "Sarıyar Barajı Sakarya Nehri üzerindedir. Diğer eşleştirmeler doğrudur."
+ },
+ {
+  "d": "cografya",
+  "k": "Nüfus",
+  "q": "Cumhuriyet döneminde Türkiye'nin ilk genel nüfus sayımı hangi yıl yapılmıştır?",
+  "o": [
+   "1923",
+   "1935",
+   "1927",
+   "1945",
+   "1950"
+  ],
+  "a": 2,
+  "c": "Cumhuriyet'in ilk genel nüfus sayımı 1927'de yapılmıştır. 2007'den itibaren nüfus bilgileri Adrese Dayalı Nüfus Kayıt Sistemi ile her yıl belirlenmektedir."
+ },
+ {
+  "d": "cografya",
+  "k": "Nüfus",
+  "q": "Tarımsal nüfus yoğunluğu aşağıdakilerden hangisiyle hesaplanır?",
+  "o": [
+   "Toplam nüfus / Yüzölçümü",
+   "Toplam nüfus / Tarım alanı",
+   "Kır nüfusu / Yüzölçümü",
+   "Tarımla geçinen nüfus / Tarım alanı",
+   "Tarımla geçinen nüfus / Toplam nüfus"
+  ],
+  "a": 3,
+  "c": "Tarımsal nüfus yoğunluğu, tarımla geçinen nüfusun tarım alanına bölünmesiyle bulunur. Toplam nüfusun yüzölçümüne oranı aritmetik, tarım alanına oranı fizyolojik yoğunluktur."
+ },
+ {
+  "d": "cografya",
+  "k": "Yerleşme",
+  "q": "Köy yerleşmesine bağlı, az sayıda konuttan oluşan ve tarım alanlarına yakın kurulan; özellikle Doğu ve Güneydoğu Anadolu'da yaygın olan kır yerleşmesi aşağıdakilerden hangisidir?",
+  "o": [
+   "Yayla",
+   "Oba",
+   "Dalyan",
+   "Ağıl",
+   "Mezra"
+  ],
+  "a": 4,
+  "c": "Mezra, köye bağlı birkaç evden oluşan ve tarım arazisine yakın kurulan küçük yerleşmedir. Oba göçebelerin çadır yerleşmesi, dalyan balıkçılık, yayla ise yaz otlatmacılığı yerleşmesidir."
+ },
+ {
+  "d": "cografya",
+  "k": "Göç",
+  "q": "Türkiye'den yurt dışına resmî işçi göçünün başlamasını sağlayan ilk iş gücü anlaşması 1961 yılında hangi ülkeyle imzalanmıştır?",
+  "o": [
+   "Federal Almanya",
+   "Fransa",
+   "Hollanda",
+   "İngiltere",
+   "Avusturya"
+  ],
+  "a": 0,
+  "c": "1961'de Federal Almanya ile imzalanan iş gücü anlaşmasıyla Türkiye'den Avrupa'ya düzenli işçi göçü başlamıştır. Diğer Avrupa ülkeleriyle anlaşmalar daha sonra imzalanmıştır."
+ },
+ {
+  "d": "cografya",
+  "k": "Tarım",
+  "q": "Aşağıdaki ürünlerden hangisinin üretiminde Türkiye dünyada ilk sıradadır?",
+  "o": [
+   "Pirinç",
+   "Fındık",
+   "Soya fasulyesi",
+   "Mısır",
+   "Pamuk"
+  ],
+  "a": 1,
+  "c": "Türkiye, Ordu, Giresun ve Samsun başta olmak üzere Karadeniz kıyılarında yetiştirdiği fındıkta dünya üretiminin yarıdan fazlasını sağlar."
+ },
+ {
+  "d": "cografya",
+  "k": "Hayvancılık",
+  "q": "Erzurum-Kars yöresinde büyükbaş hayvancılığın yaygın olmasının temel doğal nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Kışların ılık geçmesi",
+   "Makilerin geniş yer kaplaması",
+   "Yaz yağışlarıyla gür çayırların oluşması",
+   "Sulamalı tarım alanlarının fazlalığı",
+   "Kıyıya yakın olması"
+  ],
+  "a": 2,
+  "c": "Yüksek ve soğuk olan bu yörede yaz yağışları gür çayır ve meraların oluşmasını sağlar. Bu otlaklar büyükbaş hayvancılığın temel dayanağıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Madenler",
+  "q": "Artvin-Murgul, Kastamonu-Küre ve Elazığ-Maden'de çıkarılan maden aşağıdakilerden hangisidir?",
+  "o": [
+   "Bor",
+   "Krom",
+   "Boksit",
+   "Bakır",
+   "Linyit"
+  ],
+  "a": 3,
+  "c": "Murgul, Küre ve Maden Türkiye'nin başlıca bakır yataklarıdır. Bor Eskişehir-Kütahya-Balıkesir, krom Elazığ-Guleman ve Bursa-Orhaneli, boksit Seydişehir çevresinde öne çıkar."
+ },
+ {
+  "d": "cografya",
+  "k": "Enerji kaynakları",
+  "q": "Kahramanmaraş'taki Afşin-Elbistan termik santrallerinde yakıt olarak kullanılan kaynak aşağıdakilerden hangisidir?",
+  "o": [
+   "Taş kömürü",
+   "Doğal gaz",
+   "Petrol",
+   "Asfaltit",
+   "Linyit"
+  ],
+  "a": 4,
+  "c": "Afşin-Elbistan havzası Türkiye'nin en büyük linyit rezervine sahiptir. Buradaki termik santraller bu linyiti yakıt olarak kullanır."
+ },
+ {
+  "d": "cografya",
+  "k": "Enerji kaynakları",
+  "q": "Türkiye'de rüzgâr enerjisinden elektrik üretiminin en yoğun yapıldığı kesim aşağıdakilerden hangisidir?",
+  "o": [
+   "Ege ve Marmara kıyıları",
+   "Doğu Karadeniz kıyıları",
+   "Hakkâri yöresi",
+   "Dicle Havzası",
+   "Erzurum-Kars yöresi"
+  ],
+  "a": 0,
+  "c": "Sürekli ve kuvvetli rüzgârlar alan Çanakkale, Balıkesir ve İzmir gibi Ege ve Marmara kıyı illeri rüzgâr santrallerinin en yoğun olduğu yerlerdir."
+ },
+ {
+  "d": "cografya",
+  "k": "Enerji kaynakları",
+  "q": "Türkiye'nin ilk nükleer güç santrali olan Akkuyu Nükleer Santrali hangi ilde kurulmaktadır?",
+  "o": [
+   "Sinop",
+   "Mersin",
+   "Antalya",
+   "Muğla",
+   "Kırklareli"
+  ],
+  "a": 1,
+  "c": "Akkuyu Nükleer Güç Santrali Mersin'in Gülnar ilçesinde kurulmaktadır. Sinop ikinci santral için düşünülen sahalardan biridir."
+ },
+ {
+  "d": "cografya",
+  "k": "Sanayi",
+  "q": "Aşağıdaki illerin hangisinde petrol rafinerisi bulunmaz?",
+  "o": [
+   "Batman",
+   "Kocaeli",
+   "Rize",
+   "İzmir",
+   "Kırıkkale"
+  ],
+  "a": 2,
+  "c": "Türkiye'deki rafineriler Kocaeli (İzmit), İzmir (Aliağa), Kırıkkale ve Batman'dadır. Rize'de rafineri yoktur; ildeki sanayi daha çok çay işlemeye dayanır."
+ },
+ {
+  "d": "cografya",
+  "k": "Ulaşım",
+  "q": "Türkiye'de kara ve demir yollarının genellikle doğu-batı yönünde uzanmasının temel nedeni aşağıdakilerden hangisidir?",
+  "o": [
+   "Nüfusun kıyılarda toplanması",
+   "Akarsuların kuzey-güney yönünde akması",
+   "İklimin doğuya doğru sertleşmesi",
+   "Dağların doğu-batı doğrultusunda uzanması",
+   "Sanayinin batıda yoğunlaşması"
+  ],
+  "a": 3,
+  "c": "Kuzey Anadolu ve Toros dağları doğu-batı doğrultusunda uzandığından ulaşım yolları da vadiler ve platolar boyunca bu yönde uzanır. Kuzey-güney yönlü bağlantılar ise geçitler sayesinde sağlanır."
+ },
+ {
+  "d": "cografya",
+  "k": "Ticaret",
+  "q": "Bir ülkenin belirli bir dönemdeki ihracat değerinin ithalat değerine oranının yüzde olarak ifadesine ne ad verilir?",
+  "o": [
+   "Dış ticaret hacmi",
+   "Dış ticaret açığı",
+   "Cari işlemler dengesi",
+   "Gümrük birliği",
+   "İhracatın ithalatı karşılama oranı"
+  ],
+  "a": 4,
+  "c": "İhracat/ithalat × 100 işlemi ihracatın ithalatı karşılama oranını verir. Dış ticaret hacmi ise ihracat ile ithalatın toplamıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Turizm",
+  "q": "Aşağıdaki turizm varlığı–il eşleştirmelerinden hangisi yanlıştır?",
+  "o": [
+   "Safranbolu evleri – Bartın",
+   "Sümela Manastırı – Trabzon",
+   "Nemrut Dağı – Adıyaman",
+   "Göbeklitepe – Şanlıurfa",
+   "Efes Antik Kenti – İzmir"
+  ],
+  "a": 0,
+  "c": "Safranbolu, UNESCO Dünya Mirası listesindeki geleneksel evleriyle Karabük iline bağlı bir ilçedir. Diğer eşleştirmeler doğrudur."
+ },
+ {
+  "d": "cografya",
+  "k": "Bölgesel kalkınma projeleri",
+  "q": "Aşağıdaki illerden hangisi Doğu Karadeniz Projesi (DOKAP) kapsamındadır?",
+  "o": [
+   "Malatya",
+   "Gümüşhane",
+   "Erzurum",
+   "Mardin",
+   "Konya"
+  ],
+  "a": 1,
+  "c": "DOKAP; Artvin, Bayburt, Giresun, Gümüşhane, Ordu, Rize ve Trabzon gibi Doğu Karadeniz illerini kapsar. Malatya ve Erzurum DAP, Mardin GAP, Konya KOP kapsamındadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Bölgesel kalkınma projeleri",
+  "q": "Akdeniz'e akan Göksu Havzası'ndaki suyun \"Mavi Tünel\" ile kapalı havzaya aktarılarak tarım alanlarının sulanması aşağıdaki projelerden hangisi kapsamındadır?",
+  "o": [
+   "GAP",
+   "DAP",
+   "KOP",
+   "DOKAP",
+   "Yeşil Yol Projesi"
+  ],
+  "a": 2,
+  "c": "Konya Ovası Projesi (KOP), su sıkıntısı çeken Konya Ovası'na Göksu Havzası'ndan Mavi Tünel ile su aktarılmasını kapsar."
+ },
+ {
+  "d": "cografya",
+  "k": "Doğal afetler",
+  "q": "Aşağıdaki illerin hangisinde çığ tehlikesi en fazladır?",
+  "o": [
+   "Antalya",
+   "İzmir",
+   "Edirne",
+   "Hakkâri",
+   "Konya"
+  ],
+  "a": 3,
+  "c": "Çığ, eğimli yamaçlarda biriken kalın kar örtüsünün kaymasıyla oluşur. Kışları uzun ve kar yağışlı, engebesi fazla olan Hakkâri bu bakımdan en riskli illerdendir."
+ },
+ {
+  "d": "cografya",
+  "k": "Doğal afetler",
+  "q": "Aşağıdakilerden hangisi toprak erozyonunu önlemeye yönelik bir uygulama değildir?",
+  "o": [
+   "Eğimli arazilerde taraçalama yapılması",
+   "Ağaçlandırma yapılması",
+   "Eğime dik sürüm yapılması",
+   "Rüzgâr perdeleri oluşturulması",
+   "Hasattan sonra anızın yakılması"
+  ],
+  "a": 4,
+  "c": "Anız yakmak toprağı örtüsüz bırakır ve organik maddeyi yok eder; erozyonu artırır. Diğer uygulamalar toprağı yerinde tutmaya yöneliktir."
+ },
+ {
+  "d": "cografya",
+  "k": "Korunan alanlar",
+  "q": "Türkiye'nin ilk millî parkı olarak 1958 yılında ilan edilen alan aşağıdakilerden hangisidir?",
+  "o": [
+   "Yozgat Çamlığı",
+   "Uludağ",
+   "Kuşcenneti",
+   "Göreme",
+   "Olimpos-Beydağları"
+  ],
+  "a": 0,
+  "c": "Yozgat Çamlığı, 1958'de Türkiye'nin ilk millî parkı ilan edilmiştir. Uludağ ve Kuşcenneti gibi alanlar daha sonra millî park olmuştur."
+ },
+ {
+  "d": "cografya",
+  "k": "Korunan alanlar",
+  "q": "Balıkesir'de yer alan ve göçmen kuşların konaklama alanı olan Kuşcenneti Millî Parkı aşağıdaki göllerden hangisinin kıyısındadır?",
+  "o": [
+   "Uluabat Gölü",
+   "Manyas (Kuş) Gölü",
+   "Sapanca Gölü",
+   "Eğirdir Gölü",
+   "Burdur Gölü"
+  ],
+  "a": 1,
+  "c": "Kuşcenneti Millî Parkı, Bandırma yakınındaki Manyas (Kuş) Gölü'nün kuzeydoğu kıyısındadır. Pek çok su kuşu türünün üreme ve konaklama alanıdır."
+ },
+ {
+  "d": "cografya",
+  "k": "Bölgeler",
+  "q": "Aşağıdakilerden hangisi Karadeniz Bölgesi'nde bulunmaz?",
+  "o": [
+   "Sümela Manastırı",
+   "Uzungöl",
+   "Köprülü Kanyon",
+   "Ayder Yaylası",
+   "Zigana Geçidi"
+  ],
+  "a": 2,
+  "c": "Köprülü Kanyon Antalya'dadır (Akdeniz Bölgesi). Sümela ve Uzungöl Trabzon'da, Ayder Rize'de, Zigana Geçidi Trabzon-Gümüşhane arasındadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Bölgeler",
+  "q": "Aşağıdakilerden hangisi Doğu Anadolu Bölgesi'nde yer almaz?",
+  "o": [
+   "İshak Paşa Sarayı",
+   "Nemrut Kalderası",
+   "Muradiye Şelalesi",
+   "Harran Ovası",
+   "Ağrı Dağı"
+  ],
+  "a": 3,
+  "c": "Harran Ovası Şanlıurfa'dadır ve Güneydoğu Anadolu Bölgesi'nde yer alır. İshak Paşa Sarayı ve Ağrı Dağı Ağrı'da, Nemrut Kalderası Bitlis'te, Muradiye Şelalesi Van'dadır."
+ },
+ {
+  "d": "cografya",
+  "k": "Yer şekilleri",
+  "q": "Türkiye haritasında Mersin ile Hatay arasında, Seyhan ve Ceyhan nehirlerinin taşıdığı alüvyonlarla oluşmuş geniş bir delta ovası işaretlenmiştir.\nİşaretlenen bu ova aşağıdakilerden hangisidir?",
+  "o": [
+   "Bafra Ovası",
+   "Amik Ovası",
+   "Silifke Ovası",
+   "Harran Ovası",
+   "Çukurova"
+  ],
+  "a": 4,
+  "c": "Seyhan ve Ceyhan nehirlerinin birlikte oluşturduğu delta ovası Çukurova'dır. Bafra Kızılırmak'ın, Silifke Göksu'nun deltasıdır; Amik ve Harran ise delta ovası değildir."
+ }
+]
